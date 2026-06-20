@@ -53,6 +53,16 @@ tr.lamp-PF td:not(.chart-cell){background:#fff1a8}
 .chart-H{color:#d4a800}
 .chart-N{color:#1fa64a}
 
+.table-wrapper{
+  width:100%;
+  overflow-x:auto;
+  -webkit-overflow-scrolling:touch;
+}
+
+table{
+  min-width:900px;
+}
+
 @media (max-width: 700px){
   body{padding:10px}
   table{font-size:13px}
@@ -90,6 +100,7 @@ tr.lamp-PF td:not(.chart-cell){background:#fff1a8}
 </label>
 </div>
 
+<div class="table-wrapper">
 <table>
 <thead>
 <tr>
@@ -103,6 +114,7 @@ tr.lamp-PF td:not(.chart-cell){background:#fff1a8}
 </thead>
 <tbody id="songBody"></tbody>
 </table>
+</div>
 
 <details id="dataManagement" class="data-management">
   <summary>データ管理</summary>
