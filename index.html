@@ -29,6 +29,30 @@ tr.lamp-PF{background:#f8f0ff}
 .level-tabs{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
 .level-tabs button.active{font-weight:bold;border:2px solid #333}
 #loginNotice{color:#555;margin-bottom:10px}
+
+/* ランプ色 */
+select.lamp{padding:6px;font-size:14px;font-weight:bold;border-radius:6px}
+select.lamp-F{background:#ffdddd;color:#b00020;border:1px solid #b00020}
+select.lamp-A{background:#ffe6c7;color:#b85c00;border:1px solid #b85c00}
+select.lamp-E{background:#ddffdd;color:#157a1f;border:1px solid #157a1f}
+select.lamp-C{background:#ead7c0;color:#6b3f1d;border:1px solid #6b3f1d}
+select.lamp-FC{background:#eeeeee;color:#555;border:1px solid #777}
+select.lamp-PF{background:#fff1a8;color:#8a6d00;border:1px solid #8a6d00}
+
+/* 行の色。譜面列だけは塗りつぶさない */
+tr.lamp-F td:not(.chart-cell){background:#ffdddd}
+tr.lamp-A td:not(.chart-cell){background:#ffe6c7}
+tr.lamp-E td:not(.chart-cell){background:#ddffdd}
+tr.lamp-C td:not(.chart-cell){background:#ead7c0}
+tr.lamp-FC td:not(.chart-cell){background:#eeeeee}
+tr.lamp-PF td:not(.chart-cell){background:#fff1a8}
+
+/* 譜面列 */
+.chart-cell{font-weight:bold;text-align:center;background:#fff !important}
+.chart-EX{color:#ff4fa3}
+.chart-H{color:#d4a800}
+.chart-N{color:#1fa64a}
+
 @media (max-width: 700px){
   body{padding:10px}
   table{font-size:13px}
@@ -451,7 +475,7 @@ onAuthStateChanged(auth, async user => {
 
   loginButton.style.display = "none";
   logoutButton.style.display = "";
-  userInfo.textContent = `${user.displayName || "ログイン中"} (${user.email || ""})`;
+  userInfo.textContent = "ログイン中";
   setStatus("Firebase接続中...");
   setInputsEnabled(true);
 
