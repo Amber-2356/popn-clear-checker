@@ -17,18 +17,36 @@ textarea.memo{width:220px;min-height:38px;resize:vertical;font-family:inherit}
 input[type="checkbox"]{transform:scale(1.3)}
 tr.cleared{background:#f0fff4}
 select.lamp{padding:6px;font-size:14px}
-tr.lamp-F{background:#fff5f5}
-tr.lamp-A{background:#fff8f0}
-tr.lamp-E{background:#f7fbff}
-tr.lamp-C{background:#f0fff4}
-tr.lamp-FC{background:#fffbea}
-tr.lamp-PF{background:#f8f0ff}
 .data-management{margin-top:28px;padding:12px;border-top:1px solid #ddd;color:#666;font-size:14px}
 .data-management summary{cursor:pointer;color:#555}
 .data-management button{margin-right:8px}
 .level-tabs{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
 .level-tabs button.active{font-weight:bold;border:2px solid #333}
 #loginNotice{color:#555;margin-bottom:10px}
+
+/* ランプ色 */
+select.lamp{padding:6px;font-size:14px;font-weight:bold;border-radius:6px}
+select.lamp-F{background:#ffdddd;color:#b00020;border:1px solid #b00020}
+select.lamp-A{background:#ffe6c7;color:#b85c00;border:1px solid #b85c00}
+select.lamp-E{background:#ddffdd;color:#157a1f;border:1px solid #157a1f}
+select.lamp-C{background:#ead7c0;color:#6b3f1d;border:1px solid #6b3f1d}
+select.lamp-FC{background:#eeeeee;color:#555;border:1px solid #777}
+select.lamp-PF{background:#fff1a8;color:#8a6d00;border:1px solid #8a6d00}
+
+/* 行の色。譜面列だけは塗りつぶさない */
+tr.lamp-F td:not(.chart-cell){background:#ffdddd}
+tr.lamp-A td:not(.chart-cell){background:#ffe6c7}
+tr.lamp-E td:not(.chart-cell){background:#ddffdd}
+tr.lamp-C td:not(.chart-cell){background:#ead7c0}
+tr.lamp-FC td:not(.chart-cell){background:#eeeeee}
+tr.lamp-PF td:not(.chart-cell){background:#fff1a8}
+
+/* 譜面列 */
+.chart-cell{font-weight:bold;text-align:center;background:#fff !important}
+.chart-EX{color:#ff4fa3}
+.chart-H{color:#d4a800}
+.chart-N{color:#1fa64a}
+
 @media (max-width: 700px){
   body{padding:10px}
   table{font-size:13px}
@@ -160,6 +178,13 @@ function setLampRowClass(row, lamp){
   row.classList.toggle("cleared", isClearedLamp(lamp));
 }
 
+function setLampSelectClass(select, lamp){
+  select.classList.remove("lamp-F", "lamp-A", "lamp-E", "lamp-C", "lamp-FC", "lamp-PF");
+  if(lamp){
+    select.classList.add("lamp-" + lamp);
+  }
+}
+
 function getLevelSongs(){
   const searchText = (document.getElementById("searchText")?.value || "").trim().toLowerCase();
   const selectedTypes = getSelectedChartTypes();
@@ -204,7 +229,9 @@ function renderSongs(){
     const tr = document.createElement("tr");
 
     const chartTd = document.createElement("td");
-    chartTd.textContent = getChartType(song.genre);
+    const chartType = getChartType(song.genre);
+    chartTd.textContent = chartType;
+    chartTd.className = "chart-cell chart-" + chartType;
 
     const genreTd = document.createElement("td");
     genreTd.textContent = getGenreName(song.genre);
@@ -222,12 +249,12 @@ function renderSongs(){
 
     const lampOptions = [
       ["", "未設定"],
-      ["F", "F / FAILED"],
-      ["A", "A / ASSIST CLEAR"],
-      ["E", "E / EASY"],
-      ["C", "C / CLEAR"],
-      ["FC", "FC / FULL COMBO"],
-      ["PF", "PF / PERFECT"]
+      ["F", "FAILED"],
+      ["A", "ASSIST"],
+      ["E", "EASY"],
+      ["C", "CLEAR"],
+      ["FC", "FULL COMBO"],
+      ["PF", "PERFECT"]
     ];
 
     lampOptions.forEach(([value, label]) => {
@@ -240,11 +267,13 @@ function renderSongs(){
     const savedLamp = userData.lamps?.[songKey(song)]
       || (userData.clears?.[songKey(song)] ? "C" : "");
     lampSelect.value = savedLamp;
+    setLampSelectClass(lampSelect, savedLamp);
     lampSelect.disabled = !currentUser;
 
     lampSelect.addEventListener("change", () => {
       userData.lamps[songKey(song)] = lampSelect.value;
       userData.clears[songKey(song)] = isClearedLamp(lampSelect.value);
+      setLampSelectClass(lampSelect, lampSelect.value);
       setLampRowClass(tr, lampSelect.value);
       updateProgress();
       applyFilter();
@@ -440,7 +469,7 @@ onAuthStateChanged(auth, async user => {
 
   loginButton.style.display = "none";
   logoutButton.style.display = "";
-  userInfo.textContent = `${user.displayName || "ログイン中"} (${user.email || ""})`;
+  userInfo.textContent = "ログイン中";
   setStatus("Firebase接続中...");
   setInputsEnabled(true);
 
