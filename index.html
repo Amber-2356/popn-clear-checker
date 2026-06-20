@@ -228,7 +228,11 @@ function renderSongs(){
     const tr = document.createElement("tr");
 
     const chartTd = document.createElement("td");
-    chartTd.textContent = getChartType(song.genre);
+
+    const chartType = getChartType(song.genre);
+
+    chartTd.textContent = chartType;
+    chartTd.className = "chart-cell chart-" + chartType;
 
     const genreTd = document.createElement("td");
     genreTd.textContent = getGenreName(song.genre);
@@ -246,12 +250,12 @@ function renderSongs(){
 
     const lampOptions = [
       ["", "未設定"],
-      ["F", "F / FAILED"],
-      ["A", "A / ASSIST CLEAR"],
-      ["E", "E / EASY"],
-      ["C", "C / CLEAR"],
-      ["FC", "FC / FULL COMBO"],
-      ["PF", "PF / PERFECT"]
+      ["F", "FAILED"],
+      ["A", "ASSIST CLEAR"],
+      ["E", "EASY"],
+      ["C", "CLEAR"],
+      ["FC", "FULL COMBO"],
+      ["PF", "PERFECT"]
     ];
 
     lampOptions.forEach(([value, label]) => {
