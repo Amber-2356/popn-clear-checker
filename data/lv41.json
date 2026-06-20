@@ -1,0 +1,1850 @@
+[
+  {
+    "id": "lv41|魔法のかくれんぼ(H)|魔法のかくれんぼ",
+    "level": "41",
+    "genre": "魔法のかくれんぼ(H)",
+    "title": "魔法のかくれんぼ",
+    "difficulty": "個人差(-1.5)"
+  },
+  {
+    "id": "lv41|Bolide(H)|Bolide",
+    "level": "41",
+    "genre": "Bolide(H)",
+    "title": "Bolide",
+    "difficulty": "個人差(-1.5)"
+  },
+  {
+    "id": "lv41|paparazzi(H)|paparazzi",
+    "level": "41",
+    "genre": "paparazzi(H)",
+    "title": "paparazzi",
+    "difficulty": "個人差(-1.5)"
+  },
+  {
+    "id": "lv41|NUスタイルロカビリー(UPPER)(H)|Electronic or Treat!",
+    "level": "41",
+    "genre": "NUスタイルロカビリー(UPPER)(H)",
+    "title": "Electronic or Treat!",
+    "difficulty": "個人差(-1.5)"
+  },
+  {
+    "id": "lv41|ドラムンコアダスト3(H)|Mychronicle",
+    "level": "41",
+    "genre": "ドラムンコアダスト3(H)",
+    "title": "Mychronicle",
+    "difficulty": "逆詐称(-1.082±0.3)"
+  },
+  {
+    "id": "lv41|ピアノオルタナティブ(H)|On top of the world",
+    "level": "41",
+    "genre": "ピアノオルタナティブ(H)",
+    "title": "On top of the world",
+    "difficulty": "弱(-0.975±0.3)"
+  },
+  {
+    "id": "lv41|モダンスカ(EX)|夢について TYPE A",
+    "level": "41",
+    "genre": "モダンスカ(EX)",
+    "title": "夢について TYPE A",
+    "difficulty": "弱(-0.934±0.4)"
+  },
+  {
+    "id": "lv41|アンティーク(EX)|時守唄",
+    "level": "41",
+    "genre": "アンティーク(EX)",
+    "title": "時守唄",
+    "difficulty": "弱(-0.910±0.5)"
+  },
+  {
+    "id": "lv41|ヴァルキリーブレイクス(H)|Celsus",
+    "level": "41",
+    "genre": "ヴァルキリーブレイクス(H)",
+    "title": "Celsus",
+    "difficulty": "弱(-0.828±0.5)"
+  },
+  {
+    "id": "lv41|ハイパージャパネスク(UPPER)(H)|夢幻ノ光",
+    "level": "41",
+    "genre": "ハイパージャパネスク(UPPER)(H)",
+    "title": "夢幻ノ光",
+    "difficulty": "弱(-0.804±0.7)"
+  },
+  {
+    "id": "lv41|スロープカーニバル(EX)|滑り台のマーチ",
+    "level": "41",
+    "genre": "スロープカーニバル(EX)",
+    "title": "滑り台のマーチ",
+    "difficulty": "弱(-0.801±0.5)"
+  },
+  {
+    "id": "lv41|デンキマツリ(EX)|ポップン電気CMソング",
+    "level": "41",
+    "genre": "デンキマツリ(EX)",
+    "title": "ポップン電気CMソング",
+    "difficulty": "弱(-0.782±0.5)"
+  },
+  {
+    "id": "lv41|幻想水滸伝V(EX)|女王騎士",
+    "level": "41",
+    "genre": "幻想水滸伝V(EX)",
+    "title": "女王騎士",
+    "difficulty": "弱(-0.772±0.4)"
+  },
+  {
+    "id": "lv41|おしゃまポップ(EX)|少女と時計と恋泥棒",
+    "level": "41",
+    "genre": "おしゃまポップ(EX)",
+    "title": "少女と時計と恋泥棒",
+    "difficulty": "弱(-0.769±0.4)"
+  },
+  {
+    "id": "lv41|ルミナスアートコア(H)|La Lumiere",
+    "level": "41",
+    "genre": "ルミナスアートコア(H)",
+    "title": "La Lumiere",
+    "difficulty": "弱(-0.758±0.5)"
+  },
+  {
+    "id": "lv41|プライド(EX)|掌(てのひら)の革命",
+    "level": "41",
+    "genre": "プライド(EX)",
+    "title": "掌(てのひら)の革命",
+    "difficulty": "弱(-0.748±0.5)"
+  },
+  {
+    "id": "lv41|エレガントワルツ(EX)|麗しきエトワールアンジュ",
+    "level": "41",
+    "genre": "エレガントワルツ(EX)",
+    "title": "麗しきエトワールアンジュ",
+    "difficulty": "弱(-0.745±0.6)"
+  },
+  {
+    "id": "lv41|天空ワルツ(EX)|わたぐものおなか",
+    "level": "41",
+    "genre": "天空ワルツ(EX)",
+    "title": "わたぐものおなか",
+    "difficulty": "弱(-0.743±0.5)"
+  },
+  {
+    "id": "lv41|チックタックモンド(EX)|Rat-Ta-Tat-Tart",
+    "level": "41",
+    "genre": "チックタックモンド(EX)",
+    "title": "Rat-Ta-Tat-Tart",
+    "difficulty": "弱(-0.738±0.4)"
+  },
+  {
+    "id": "lv41|フェアリージグ(EX)|魔法の木の実",
+    "level": "41",
+    "genre": "フェアリージグ(EX)",
+    "title": "魔法の木の実",
+    "difficulty": "弱(-0.737±0.7)"
+  },
+  {
+    "id": "lv41|ハッピーハードコア(EX)|LOVE D RIVE",
+    "level": "41",
+    "genre": "ハッピーハードコア(EX)",
+    "title": "LOVE D RIVE",
+    "difficulty": "弱(-0.727±0.6)"
+  },
+  {
+    "id": "lv41|ブレス(H)|TRUTH behind U",
+    "level": "41",
+    "genre": "ブレス(H)",
+    "title": "TRUTH behind U",
+    "difficulty": "弱(-0.696±0.3)"
+  },
+  {
+    "id": "lv41|ヒップロックREMIX(H)|大見解の新見解",
+    "level": "41",
+    "genre": "ヒップロックREMIX(H)",
+    "title": "大見解の新見解",
+    "difficulty": "弱(-0.685±0.5)"
+  },
+  {
+    "id": "lv41|High Gravity(H)|High Gravity",
+    "level": "41",
+    "genre": "High Gravity(H)",
+    "title": "High Gravity",
+    "difficulty": "弱(-0.677±0.4)"
+  },
+  {
+    "id": "lv41|Secret Answer(EX)|Secret Answer",
+    "level": "41",
+    "genre": "Secret Answer(EX)",
+    "title": "Secret Answer",
+    "difficulty": "弱(-0.676±0.7)"
+  },
+  {
+    "id": "lv41|デジクロック(H)|ACCELERATION",
+    "level": "41",
+    "genre": "デジクロック(H)",
+    "title": "ACCELERATION",
+    "difficulty": "弱(-0.665±0.4)"
+  },
+  {
+    "id": "lv41|ラブリー(EX)|8月のサヨナラ",
+    "level": "41",
+    "genre": "ラブリー(EX)",
+    "title": "8月のサヨナラ",
+    "difficulty": "弱(-0.661±0.6)"
+  },
+  {
+    "id": "lv41|ロキ(EX)|ロキ",
+    "level": "41",
+    "genre": "ロキ(EX)",
+    "title": "ロキ",
+    "difficulty": "弱(-0.647±0.6)"
+  },
+  {
+    "id": "lv41|グラムロック(EX)|スペースキッス",
+    "level": "41",
+    "genre": "グラムロック(EX)",
+    "title": "スペースキッス",
+    "difficulty": "弱(-0.645±0.6)"
+  },
+  {
+    "id": "lv41|フェージングポップ(EX)|Intersection",
+    "level": "41",
+    "genre": "フェージングポップ(EX)",
+    "title": "Intersection",
+    "difficulty": "弱(-0.645±0.4)"
+  },
+  {
+    "id": "lv41|花は折りたし梢は高し(EX)|花は折りたし梢は高し",
+    "level": "41",
+    "genre": "花は折りたし梢は高し(EX)",
+    "title": "花は折りたし梢は高し",
+    "difficulty": "弱(-0.625±0.4)"
+  },
+  {
+    "id": "lv41|アキバ(EX)|E.C.M.",
+    "level": "41",
+    "genre": "アキバ(EX)",
+    "title": "E.C.M.",
+    "difficulty": "弱(-0.601±0.6)"
+  },
+  {
+    "id": "lv41|ニルヴァナユーロ(H)|LOTUS",
+    "level": "41",
+    "genre": "ニルヴァナユーロ(H)",
+    "title": "LOTUS",
+    "difficulty": "弱(-0.564±0.6)"
+  },
+  {
+    "id": "lv41|ハート(EX)|Pink Rose",
+    "level": "41",
+    "genre": "ハート(EX)",
+    "title": "Pink Rose",
+    "difficulty": "弱(-0.564±0.5)"
+  },
+  {
+    "id": "lv41|アンセムトランスREMIX(H)|Votum stellarum -forest #25 RMX-",
+    "level": "41",
+    "genre": "アンセムトランスREMIX(H)",
+    "title": "Votum stellarum -forest #25 RMX-",
+    "difficulty": "弱(-0.556±0.6)"
+  },
+  {
+    "id": "lv41|チップンディスコ(EX)|Norinori Coupon",
+    "level": "41",
+    "genre": "チップンディスコ(EX)",
+    "title": "Norinori Coupon",
+    "difficulty": "弱(-0.556±0.4)"
+  },
+  {
+    "id": "lv41|一閃(H)|彼女は快刀乱麻",
+    "level": "41",
+    "genre": "一閃(H)",
+    "title": "彼女は快刀乱麻",
+    "difficulty": "弱(-0.531±0.5)"
+  },
+  {
+    "id": "lv41|カレッジポップ(EX)|ペパーミントは私の敵",
+    "level": "41",
+    "genre": "カレッジポップ(EX)",
+    "title": "ペパーミントは私の敵",
+    "difficulty": "弱(-0.530±0.4)"
+  },
+  {
+    "id": "lv41|Dracophobia(H)|Dracophobia",
+    "level": "41",
+    "genre": "Dracophobia(H)",
+    "title": "Dracophobia",
+    "difficulty": "弱(-0.5)"
+  },
+  {
+    "id": "lv41|エモクトロ(UPPER)(H)|少年リップルズ",
+    "level": "41",
+    "genre": "エモクトロ(UPPER)(H)",
+    "title": "少年リップルズ",
+    "difficulty": "弱(-0.5)"
+  },
+  {
+    "id": "lv41|超中華流行歌曲(UPPER)(H)|桃花恋情",
+    "level": "41",
+    "genre": "超中華流行歌曲(UPPER)(H)",
+    "title": "桃花恋情",
+    "difficulty": "弱(-0.5)"
+  },
+  {
+    "id": "lv41|表裏一体！？怪盗いいんちょの悩み♥(H)|表裏一体！？怪盗いいんちょの悩み♥",
+    "level": "41",
+    "genre": "表裏一体！？怪盗いいんちょの悩み♥(H)",
+    "title": "表裏一体！？怪盗いいんちょの悩み♥",
+    "difficulty": "弱(-0.5)"
+  },
+  {
+    "id": "lv41|神っぽいな(EX)|神っぽいな",
+    "level": "41",
+    "genre": "神っぽいな(EX)",
+    "title": "神っぽいな",
+    "difficulty": "弱(-0.5)"
+  },
+  {
+    "id": "lv41|ANEMONE(EX)|ANEMONE",
+    "level": "41",
+    "genre": "ANEMONE(EX)",
+    "title": "ANEMONE",
+    "difficulty": "弱(-0.5)"
+  },
+  {
+    "id": "lv41|Flower-Band ver.-(H)|Flower-Band ver.-",
+    "level": "41",
+    "genre": "Flower-Band ver.-(H)",
+    "title": "Flower-Band ver.-",
+    "difficulty": "弱(-0.5)"
+  },
+  {
+    "id": "lv41|Hypernova(EX)|Hypernova",
+    "level": "41",
+    "genre": "Hypernova(EX)",
+    "title": "Hypernova",
+    "difficulty": "弱(-0.5)"
+  },
+  {
+    "id": "lv41|モード(EX)|お天気とチョコレート",
+    "level": "41",
+    "genre": "モード(EX)",
+    "title": "お天気とチョコレート",
+    "difficulty": "弱(-0.5)"
+  },
+  {
+    "id": "lv41|ネバーデッド(EX)|Pharaoh★Love",
+    "level": "41",
+    "genre": "ネバーデッド(EX)",
+    "title": "Pharaoh★Love",
+    "difficulty": "弱(-0.5)"
+  },
+  {
+    "id": "lv41|シーソーファンタジー(EX)|She saw a miracle",
+    "level": "41",
+    "genre": "シーソーファンタジー(EX)",
+    "title": "She saw a miracle",
+    "difficulty": "弱(-0.489±0.6)"
+  },
+  {
+    "id": "lv41|文学少女ディストピア(H)|銃弾は解を撃ち抜いて",
+    "level": "41",
+    "genre": "文学少女ディストピア(H)",
+    "title": "銃弾は解を撃ち抜いて",
+    "difficulty": "弱(-0.462±0.5)"
+  },
+  {
+    "id": "lv41|オカルテイションヴィジュアル(H)|造花の貌",
+    "level": "41",
+    "genre": "オカルテイションヴィジュアル(H)",
+    "title": "造花の貌",
+    "difficulty": "弱(-0.431±0.5)"
+  },
+  {
+    "id": "lv41|Festum Duodecimum!(H)|Festum Duodecimum!",
+    "level": "41",
+    "genre": "Festum Duodecimum!(H)",
+    "title": "Festum Duodecimum!",
+    "difficulty": "弱(-0.417±0.6)"
+  },
+  {
+    "id": "lv41|さよならのうた(EX)|さよならのうた",
+    "level": "41",
+    "genre": "さよならのうた(EX)",
+    "title": "さよならのうた",
+    "difficulty": "弱(-0.403±0.5)"
+  },
+  {
+    "id": "lv41|ちびっこアイドル2(EX)|じゃんぴょん☆まじっく",
+    "level": "41",
+    "genre": "ちびっこアイドル2(EX)",
+    "title": "じゃんぴょん☆まじっく",
+    "difficulty": "中(-0.396±0.5)"
+  },
+  {
+    "id": "lv41|ネイチャー(EX)|forest song",
+    "level": "41",
+    "genre": "ネイチャー(EX)",
+    "title": "forest song",
+    "difficulty": "中(-0.395±0.5)"
+  },
+  {
+    "id": "lv41|ボルテックスクロスオーバー(H)|XROSS INFECTION",
+    "level": "41",
+    "genre": "ボルテックスクロスオーバー(H)",
+    "title": "XROSS INFECTION",
+    "difficulty": "中(-0.392±0.5)"
+  },
+  {
+    "id": "lv41|ヒーリングフォルクローレ(EX)|Geocentrism",
+    "level": "41",
+    "genre": "ヒーリングフォルクローレ(EX)",
+    "title": "Geocentrism",
+    "difficulty": "中(-0.338±0.5)"
+  },
+  {
+    "id": "lv41|ヘヴン(EX)|ヴォイス",
+    "level": "41",
+    "genre": "ヘヴン(EX)",
+    "title": "ヴォイス",
+    "difficulty": "中(-0.327±0.6)"
+  },
+  {
+    "id": "lv41|アジアン(EX)|Beyond the Ocean",
+    "level": "41",
+    "genre": "アジアン(EX)",
+    "title": "Beyond the Ocean",
+    "difficulty": "中(-0.325±0.8)"
+  },
+  {
+    "id": "lv41|ハイスピードラブソング(EX)|High School Love",
+    "level": "41",
+    "genre": "ハイスピードラブソング(EX)",
+    "title": "High School Love",
+    "difficulty": "中(-0.312±0.5)"
+  },
+  {
+    "id": "lv41|ヒッチコック(EX)|ヒッチコック",
+    "level": "41",
+    "genre": "ヒッチコック(EX)",
+    "title": "ヒッチコック",
+    "difficulty": "中(-0.296±0.5)"
+  },
+  {
+    "id": "lv41|トライバル(EX)|AFRONOVA PRIMEVAL",
+    "level": "41",
+    "genre": "トライバル(EX)",
+    "title": "AFRONOVA PRIMEVAL",
+    "difficulty": "中(-0.277±0.6)"
+  },
+  {
+    "id": "lv41|追憶のアリア(EX)|追憶のアリア",
+    "level": "41",
+    "genre": "追憶のアリア(EX)",
+    "title": "追憶のアリア",
+    "difficulty": "弱(-0.262±0.7)"
+  },
+  {
+    "id": "lv41|バリトランス(EX)|Denpasar",
+    "level": "41",
+    "genre": "バリトランス(EX)",
+    "title": "Denpasar",
+    "difficulty": "中(-0.261±0.7)"
+  },
+  {
+    "id": "lv41|バブリーディスコ(EX)|Bubbly Time",
+    "level": "41",
+    "genre": "バブリーディスコ(EX)",
+    "title": "Bubbly Time",
+    "difficulty": "中(-0.260±0.4)"
+  },
+  {
+    "id": "lv41|スペシャルエンディング2(H)|Ending theme of pop'n music6",
+    "level": "41",
+    "genre": "スペシャルエンディング2(H)",
+    "title": "Ending theme of pop'n music6",
+    "difficulty": "中(-0.239±0.5)"
+  },
+  {
+    "id": "lv41|アドベンチャー(EX)|ポップン大冒険メドレー",
+    "level": "41",
+    "genre": "アドベンチャー(EX)",
+    "title": "ポップン大冒険メドレー",
+    "difficulty": "中(-0.239±0.6)"
+  },
+  {
+    "id": "lv41|ロストワンの号哭(EX)|ロストワンの号哭",
+    "level": "41",
+    "genre": "ロストワンの号哭(EX)",
+    "title": "ロストワンの号哭",
+    "difficulty": "中(-0.219±0.5)"
+  },
+  {
+    "id": "lv41|スウィートロニカ(EX)|晴天Bon Voyage",
+    "level": "41",
+    "genre": "スウィートロニカ(EX)",
+    "title": "晴天Bon Voyage",
+    "difficulty": "中(-0.211±0.5)"
+  },
+  {
+    "id": "lv41|ニューポストリュード(EX)|Anelis",
+    "level": "41",
+    "genre": "ニューポストリュード(EX)",
+    "title": "Anelis",
+    "difficulty": "中(-0.193±0.6)"
+  },
+  {
+    "id": "lv41|ラウドミクスチャー＆ラガ(H)|Soul On Fire",
+    "level": "41",
+    "genre": "ラウドミクスチャー＆ラガ(H)",
+    "title": "Soul On Fire",
+    "difficulty": "中(-0.177±0.4)"
+  },
+  {
+    "id": "lv41|狂水一華(H)|狂水一華",
+    "level": "41",
+    "genre": "狂水一華(H)",
+    "title": "狂水一華",
+    "difficulty": "中(-0.168±0.6)"
+  },
+  {
+    "id": "lv41|ジャズワルツ(EX)|CLOUD",
+    "level": "41",
+    "genre": "ジャズワルツ(EX)",
+    "title": "CLOUD",
+    "difficulty": "中(-0.164±0.4)"
+  },
+  {
+    "id": "lv41|都ほっぷ(EX)|はんなり京小町",
+    "level": "41",
+    "genre": "都ほっぷ(EX)",
+    "title": "はんなり京小町",
+    "difficulty": "中(-0.158±0.6)"
+  },
+  {
+    "id": "lv41|ポータブルポップ(H)|Ensamble Forecast 3/28",
+    "level": "41",
+    "genre": "ポータブルポップ(H)",
+    "title": "Ensamble Forecast 3/28",
+    "difficulty": "中(-0.152±0.5)"
+  },
+  {
+    "id": "lv41|Invisible Farewell(H)|Invisible Farewell",
+    "level": "41",
+    "genre": "Invisible Farewell(H)",
+    "title": "Invisible Farewell",
+    "difficulty": "中(-0.129±0.4)"
+  },
+  {
+    "id": "lv41|サイバーメタル(H)|断罪プラズマ",
+    "level": "41",
+    "genre": "サイバーメタル(H)",
+    "title": "断罪プラズマ",
+    "difficulty": "中(-0.125±0.5)"
+  },
+  {
+    "id": "lv41|桃ヴィジュアル2(EX)|魂ノ華",
+    "level": "41",
+    "genre": "桃ヴィジュアル2(EX)",
+    "title": "魂ノ華",
+    "difficulty": "中(-0.125±0.4)"
+  },
+  {
+    "id": "lv41|ヨーロピアンブレイクコア(H)|Les Vague",
+    "level": "41",
+    "genre": "ヨーロピアンブレイクコア(H)",
+    "title": "Les Vague",
+    "difficulty": "中(-0.125±0.6)"
+  },
+  {
+    "id": "lv41|黒き螺旋のクレイドル(H)|黒き螺旋のクレイドル",
+    "level": "41",
+    "genre": "黒き螺旋のクレイドル(H)",
+    "title": "黒き螺旋のクレイドル",
+    "difficulty": "中(-0.125±0.5)"
+  },
+  {
+    "id": "lv41|コンテンポラリーネイション7(H)|The last of world music",
+    "level": "41",
+    "genre": "コンテンポラリーネイション7(H)",
+    "title": "The last of world music",
+    "difficulty": "中(-0.124±0.6)"
+  },
+  {
+    "id": "lv41|パニックコア(H)|Hatcha Metcha Party",
+    "level": "41",
+    "genre": "パニックコア(H)",
+    "title": "Hatcha Metcha Party",
+    "difficulty": "中(-0.115±0.6)"
+  },
+  {
+    "id": "lv41|エンドレスサマー(EX)|Good bye, Summer～さよならは言わない～",
+    "level": "41",
+    "genre": "エンドレスサマー(EX)",
+    "title": "Good bye, Summer～さよならは言わない～",
+    "difficulty": "中(-0.115±0.6)"
+  },
+  {
+    "id": "lv41|保健ラップ(EX)|DOLLAR DOLLAR",
+    "level": "41",
+    "genre": "保健ラップ(EX)",
+    "title": "DOLLAR DOLLAR",
+    "difficulty": "中(-0.092±0.6)"
+  },
+  {
+    "id": "lv41|翠雨の祷(H)|翠雨の祷",
+    "level": "41",
+    "genre": "翠雨の祷(H)",
+    "title": "翠雨の祷",
+    "difficulty": "中(-0.069±0.4)"
+  },
+  {
+    "id": "lv41|ハンズアップ(H)|Second Heaven",
+    "level": "41",
+    "genre": "ハンズアップ(H)",
+    "title": "Second Heaven",
+    "difficulty": "中(-0.058)"
+  },
+  {
+    "id": "lv41|ロービットサンプリング(H)|HEAT-BIT-HIT-BEAT",
+    "level": "41",
+    "genre": "ロービットサンプリング(H)",
+    "title": "HEAT-BIT-HIT-BEAT",
+    "difficulty": "中(-0.057±0.6)"
+  },
+  {
+    "id": "lv41|ハッピーJヴォーグ(EX)|Spring Comes Around",
+    "level": "41",
+    "genre": "ハッピーJヴォーグ(EX)",
+    "title": "Spring Comes Around",
+    "difficulty": "中(-0.052±0.6)"
+  },
+  {
+    "id": "lv41|クラシック(H)|Chaos Age",
+    "level": "41",
+    "genre": "クラシック(H)",
+    "title": "Chaos Age",
+    "difficulty": "中(-0.014±0.7)"
+  },
+  {
+    "id": "lv41|俺ポップ(EX)|垂直OK!",
+    "level": "41",
+    "genre": "俺ポップ(EX)",
+    "title": "垂直OK!",
+    "difficulty": ""
+  },
+  {
+    "id": "lv41|青春Dreamers ～Tomorrow is another day～(EX)|青春Dreamers ～Tomorrow is another day～",
+    "level": "41",
+    "genre": "青春Dreamers ～Tomorrow is another day～(EX)",
+    "title": "青春Dreamers ～Tomorrow is another day～",
+    "difficulty": "中(0.0)"
+  },
+  {
+    "id": "lv41|天和無双(H)|天和無双",
+    "level": "41",
+    "genre": "天和無双(H)",
+    "title": "天和無双",
+    "difficulty": ""
+  },
+  {
+    "id": "lv41|嘆きの樹 (BEMANI SYMPHONY Arr.)(H)|嘆きの樹 (BEMANI SYMPHONY Arr.)",
+    "level": "41",
+    "genre": "嘆きの樹 (BEMANI SYMPHONY Arr.)(H)",
+    "title": "嘆きの樹 (BEMANI SYMPHONY Arr.)",
+    "difficulty": "中(0.0)"
+  },
+  {
+    "id": "lv41|ミサコの告白(みーつけたっ♥)(H)|ミサコの告白(みーつけたっ♥)",
+    "level": "41",
+    "genre": "ミサコの告白(みーつけたっ♥)(H)",
+    "title": "ミサコの告白(みーつけたっ♥)",
+    "difficulty": "中(0.0)"
+  },
+  {
+    "id": "lv41|Danza Pantera(H)|Danza Pantera",
+    "level": "41",
+    "genre": "Danza Pantera(H)",
+    "title": "Danza Pantera",
+    "difficulty": ""
+  },
+  {
+    "id": "lv41|Slime Molds(H)|Slime Molds",
+    "level": "41",
+    "genre": "Slime Molds(H)",
+    "title": "Slime Molds",
+    "difficulty": "中(0.0)"
+  },
+  {
+    "id": "lv41|Symphonic Tear(H)|Symphonic Tear",
+    "level": "41",
+    "genre": "Symphonic Tear(H)",
+    "title": "Symphonic Tear",
+    "difficulty": "中(0.0)"
+  },
+  {
+    "id": "lv41|サムライスラッシュ(UPPER)(H)|キリステゴメン",
+    "level": "41",
+    "genre": "サムライスラッシュ(UPPER)(H)",
+    "title": "キリステゴメン",
+    "difficulty": ""
+  },
+  {
+    "id": "lv41|ただ、それだけの理由で(H)|ただ、それだけの理由で",
+    "level": "41",
+    "genre": "ただ、それだけの理由で(H)",
+    "title": "ただ、それだけの理由で",
+    "difficulty": ""
+  },
+  {
+    "id": "lv41|遊戯大熊猫(H)|遊戯大熊猫",
+    "level": "41",
+    "genre": "遊戯大熊猫(H)",
+    "title": "遊戯大熊猫",
+    "difficulty": ""
+  },
+  {
+    "id": "lv41|弾幕信仰(H)|弾幕信仰",
+    "level": "41",
+    "genre": "弾幕信仰(H)",
+    "title": "弾幕信仰",
+    "difficulty": ""
+  },
+  {
+    "id": "lv41|ノープラン・デイズ(H)|ノープラン・デイズ",
+    "level": "41",
+    "genre": "ノープラン・デイズ(H)",
+    "title": "ノープラン・デイズ",
+    "difficulty": ""
+  },
+  {
+    "id": "lv41|ミックスナッツ(EX)|ミックスナッツ",
+    "level": "41",
+    "genre": "ミックスナッツ(EX)",
+    "title": "ミックスナッツ",
+    "difficulty": "中(0.0)"
+  },
+  {
+    "id": "lv41|斑咲花(H)|斑咲花",
+    "level": "41",
+    "genre": "斑咲花(H)",
+    "title": "斑咲花",
+    "difficulty": ""
+  },
+  {
+    "id": "lv41|めうめうぺったんたん！！ (ZAQUVA Remix)(H)|めうめうぺったんたん！！ (ZAQUVA Remix)",
+    "level": "41",
+    "genre": "めうめうぺったんたん！！ (ZAQUVA Remix)(H)",
+    "title": "めうめうぺったんたん！！ (ZAQUVA Remix)",
+    "difficulty": ""
+  },
+  {
+    "id": "lv41|萌えおこしストラテジー(UPPER)(H)|地方創生☆チクワクティクス",
+    "level": "41",
+    "genre": "萌えおこしストラテジー(UPPER)(H)",
+    "title": "地方創生☆チクワクティクス",
+    "difficulty": ""
+  },
+  {
+    "id": "lv41|ユメブキ(H)|ユメブキ",
+    "level": "41",
+    "genre": "ユメブキ(H)",
+    "title": "ユメブキ",
+    "difficulty": ""
+  },
+  {
+    "id": "lv41|輪廻の鴉(H)|輪廻の鴉",
+    "level": "41",
+    "genre": "輪廻の鴉(H)",
+    "title": "輪廻の鴉",
+    "difficulty": ""
+  },
+  {
+    "id": "lv41|Dragon Blade -The Arrange-(H)|Dragon Blade -The Arrange-",
+    "level": "41",
+    "genre": "Dragon Blade -The Arrange-(H)",
+    "title": "Dragon Blade -The Arrange-",
+    "difficulty": ""
+  },
+  {
+    "id": "lv41|Empty Backdoor(H)|Empty Backdoor",
+    "level": "41",
+    "genre": "Empty Backdoor(H)",
+    "title": "Empty Backdoor",
+    "difficulty": "中(0.0)"
+  },
+  {
+    "id": "lv41|encounter(H)|encounter",
+    "level": "41",
+    "genre": "encounter(H)",
+    "title": "encounter",
+    "difficulty": ""
+  },
+  {
+    "id": "lv41|Knockin' on Red Button(H)|Knockin' on Red Button",
+    "level": "41",
+    "genre": "Knockin' on Red Button(H)",
+    "title": "Knockin' on Red Button",
+    "difficulty": ""
+  },
+  {
+    "id": "lv41|REFLEXES MANIPULATION(H)|REFLEXES MANIPULATION",
+    "level": "41",
+    "genre": "REFLEXES MANIPULATION(H)",
+    "title": "REFLEXES MANIPULATION",
+    "difficulty": ""
+  },
+  {
+    "id": "lv41|Shout It Out(H)|Shout It Out",
+    "level": "41",
+    "genre": "Shout It Out(H)",
+    "title": "Shout It Out",
+    "difficulty": ""
+  },
+  {
+    "id": "lv41|Τέλος(H)|Τέλος",
+    "level": "41",
+    "genre": "Τέλος(H)",
+    "title": "Τέλος",
+    "difficulty": ""
+  },
+  {
+    "id": "lv41|TYPHØN(H)|TYPHØN",
+    "level": "41",
+    "genre": "TYPHØN(H)",
+    "title": "TYPHØN",
+    "difficulty": ""
+  },
+  {
+    "id": "lv41|unisonote(H)|unisonote",
+    "level": "41",
+    "genre": "unisonote(H)",
+    "title": "unisonote",
+    "difficulty": ""
+  },
+  {
+    "id": "lv41|UROBOROS OVERDIVE(H)|UROBOROS OVERDIVE",
+    "level": "41",
+    "genre": "UROBOROS OVERDIVE(H)",
+    "title": "UROBOROS OVERDIVE",
+    "difficulty": ""
+  },
+  {
+    "id": "lv41|黒紅掬い(EX)|黒紅掬い",
+    "level": "41",
+    "genre": "黒紅掬い(EX)",
+    "title": "黒紅掬い",
+    "difficulty": "中(0.0)"
+  },
+  {
+    "id": "lv41|ハイパンク(UPPER)(H)|cobalt",
+    "level": "41",
+    "genre": "ハイパンク(UPPER)(H)",
+    "title": "cobalt",
+    "difficulty": "中(0.0)"
+  },
+  {
+    "id": "lv41|Amazing Bomberman(H)|Amazing Bomberman",
+    "level": "41",
+    "genre": "Amazing Bomberman(H)",
+    "title": "Amazing Bomberman",
+    "difficulty": "中(0.0)"
+  },
+  {
+    "id": "lv41|インフェルノ(EX)|インフェルノ",
+    "level": "41",
+    "genre": "インフェルノ(EX)",
+    "title": "インフェルノ",
+    "difficulty": ""
+  },
+  {
+    "id": "lv41|ウインドシャッフル(H)|ÜBER BLANKENESE",
+    "level": "41",
+    "genre": "ウインドシャッフル(H)",
+    "title": "ÜBER BLANKENESE",
+    "difficulty": ""
+  },
+  {
+    "id": "lv41|エピックノヴァ(H)|Vi∀",
+    "level": "41",
+    "genre": "エピックノヴァ(H)",
+    "title": "Vi∀",
+    "difficulty": ""
+  },
+  {
+    "id": "lv41|かわいいだけじゃだめですか？(EX)|かわいいだけじゃだめですか？",
+    "level": "41",
+    "genre": "かわいいだけじゃだめですか？(EX)",
+    "title": "かわいいだけじゃだめですか？",
+    "difficulty": ""
+  },
+  {
+    "id": "lv41|可愛くてごめん(EX)|可愛くてごめん",
+    "level": "41",
+    "genre": "可愛くてごめん(EX)",
+    "title": "可愛くてごめん",
+    "difficulty": ""
+  },
+  {
+    "id": "lv41|丼ベース(H)|Deep tenDon Reflex",
+    "level": "41",
+    "genre": "丼ベース(H)",
+    "title": "Deep tenDon Reflex",
+    "difficulty": ""
+  },
+  {
+    "id": "lv41|ビビデバ(EX)|ビビデバ",
+    "level": "41",
+    "genre": "ビビデバ(EX)",
+    "title": "ビビデバ",
+    "difficulty": ""
+  },
+  {
+    "id": "lv41|プロジェクトジルコン(EX)|Signs and Wonders",
+    "level": "41",
+    "genre": "プロジェクトジルコン(EX)",
+    "title": "Signs and Wonders",
+    "difficulty": ""
+  },
+  {
+    "id": "lv41|ユーロビート(H)|Daisuke",
+    "level": "41",
+    "genre": "ユーロビート(H)",
+    "title": "Daisuke",
+    "difficulty": ""
+  },
+  {
+    "id": "lv41|ラストアーツ(H)|刃図羅",
+    "level": "41",
+    "genre": "ラストアーツ(H)",
+    "title": "刃図羅",
+    "difficulty": ""
+  },
+  {
+    "id": "lv41|BOW AND ARROW(EX)|BOW AND ARROW",
+    "level": "41",
+    "genre": "BOW AND ARROW(EX)",
+    "title": "BOW AND ARROW",
+    "difficulty": ""
+  },
+  {
+    "id": "lv41|BRIGHTEST STARS!!(EX)|BRIGHTEST STARS!!",
+    "level": "41",
+    "genre": "BRIGHTEST STARS!!(EX)",
+    "title": "BRIGHTEST STARS!!",
+    "difficulty": ""
+  },
+  {
+    "id": "lv41|FUSIONIC STARS!!(EX)|FUSIONIC STARS!!",
+    "level": "41",
+    "genre": "FUSIONIC STARS!!(EX)",
+    "title": "FUSIONIC STARS!!",
+    "difficulty": ""
+  },
+  {
+    "id": "lv41|テクノ(H)|GOLDEN CROSS",
+    "level": "41",
+    "genre": "テクノ(H)",
+    "title": "GOLDEN CROSS",
+    "difficulty": "中(+0.010±0.2)"
+  },
+  {
+    "id": "lv41|Amabie(H)|Amabie",
+    "level": "41",
+    "genre": "Amabie(H)",
+    "title": "Amabie",
+    "difficulty": "中(+0.021±0.4)"
+  },
+  {
+    "id": "lv41|ファンシースキップ(EX)|よりみち♥みすてりあっ",
+    "level": "41",
+    "genre": "ファンシースキップ(EX)",
+    "title": "よりみち♥みすてりあっ",
+    "difficulty": "中(+0.033±0.7)"
+  },
+  {
+    "id": "lv41|アッパーポップ(EX)|How Low",
+    "level": "41",
+    "genre": "アッパーポップ(EX)",
+    "title": "How Low",
+    "difficulty": "中(+0.068±0.4)"
+  },
+  {
+    "id": "lv41|Into My Hell～魔界へようこそ♡～(EX)|Into My Hell～魔界へようこそ♡～",
+    "level": "41",
+    "genre": "Into My Hell～魔界へようこそ♡～(EX)",
+    "title": "Into My Hell～魔界へようこそ♡～",
+    "difficulty": "中(+0.068±0.7)"
+  },
+  {
+    "id": "lv41|コンテンポラリーネイション2(H)|サヨナラ・ヘヴン",
+    "level": "41",
+    "genre": "コンテンポラリーネイション2(H)",
+    "title": "サヨナラ・ヘヴン",
+    "difficulty": "中(+0.068±0.5)"
+  },
+  {
+    "id": "lv41|サイコビリー(H)|辞世テンプレート",
+    "level": "41",
+    "genre": "サイコビリー(H)",
+    "title": "辞世テンプレート",
+    "difficulty": "中(+0.072±0.6)"
+  },
+  {
+    "id": "lv41|SDVX REMIX SELECTION for pop'n music vol.01(H)|SDVX REMIX SELECTION for pop'n music vol.01",
+    "level": "41",
+    "genre": "SDVX REMIX SELECTION for pop'n music vol.01(H)",
+    "title": "SDVX REMIX SELECTION for pop'n music vol.01",
+    "difficulty": "中(+0.076±0.3)"
+  },
+  {
+    "id": "lv41|昭和怪奇譚(EX)|鹿鳴館の怪人",
+    "level": "41",
+    "genre": "昭和怪奇譚(EX)",
+    "title": "鹿鳴館の怪人",
+    "difficulty": "中(+0.086±0.5)"
+  },
+  {
+    "id": "lv41|モダン'80(EX)|翔べない天使",
+    "level": "41",
+    "genre": "モダン'80(EX)",
+    "title": "翔べない天使",
+    "difficulty": "中(+0.106±0.7)"
+  },
+  {
+    "id": "lv41|UKヒットチャート(H)|MY GIFTS",
+    "level": "41",
+    "genre": "UKヒットチャート(H)",
+    "title": "MY GIFTS",
+    "difficulty": "中(+0.112±0.5)"
+  },
+  {
+    "id": "lv41|Mirage Age(H)|Mirage Age",
+    "level": "41",
+    "genre": "Mirage Age(H)",
+    "title": "Mirage Age",
+    "difficulty": "中(+0.112±0.4)"
+  },
+  {
+    "id": "lv41|cucumis melo(H)|cucumis melo",
+    "level": "41",
+    "genre": "cucumis melo(H)",
+    "title": "cucumis melo",
+    "difficulty": "中(+0.119±0.4)"
+  },
+  {
+    "id": "lv41|ルナティックリール(H)|moon dance",
+    "level": "41",
+    "genre": "ルナティックリール(H)",
+    "title": "moon dance",
+    "difficulty": "中(+0.120)"
+  },
+  {
+    "id": "lv41|カレッジポップ2(EX)|ベルガモット組曲",
+    "level": "41",
+    "genre": "カレッジポップ2(EX)",
+    "title": "ベルガモット組曲",
+    "difficulty": "中(+0.126±0.5)"
+  },
+  {
+    "id": "lv41|ベースボールヒロイン(H)|轟け！恋のビーンボール！！",
+    "level": "41",
+    "genre": "ベースボールヒロイン(H)",
+    "title": "轟け！恋のビーンボール！！",
+    "difficulty": "中(+0.135±0.5)"
+  },
+  {
+    "id": "lv41|ソーサリープログレッシヴ(H)|Shining Wizard",
+    "level": "41",
+    "genre": "ソーサリープログレッシヴ(H)",
+    "title": "Shining Wizard",
+    "difficulty": "中(+0.184±0.6)"
+  },
+  {
+    "id": "lv41|フォレストハウル(H)|Habits",
+    "level": "41",
+    "genre": "フォレストハウル(H)",
+    "title": "Habits",
+    "difficulty": "中(+0.196)"
+  },
+  {
+    "id": "lv41|エレディスコ(EX)|電気ダンス",
+    "level": "41",
+    "genre": "エレディスコ(EX)",
+    "title": "電気ダンス",
+    "difficulty": "中(+0.208±0.5)"
+  },
+  {
+    "id": "lv41|超進化系原始的伝統音楽(H)|現代のヘイヨエ祭り",
+    "level": "41",
+    "genre": "超進化系原始的伝統音楽(H)",
+    "title": "現代のヘイヨエ祭り",
+    "difficulty": "中(+0.212±0.4)"
+  },
+  {
+    "id": "lv41|ハッピーエモ(H)|asteer",
+    "level": "41",
+    "genre": "ハッピーエモ(H)",
+    "title": "asteer",
+    "difficulty": "中(+0.212±0.6)"
+  },
+  {
+    "id": "lv41|ダンスホールレゲエ(EX)|BOOM BOOM PIRATES",
+    "level": "41",
+    "genre": "ダンスホールレゲエ(EX)",
+    "title": "BOOM BOOM PIRATES",
+    "difficulty": "中(+0.213±0.5)"
+  },
+  {
+    "id": "lv41|チップポップ(EX)|EFFECT",
+    "level": "41",
+    "genre": "チップポップ(EX)",
+    "title": "EFFECT",
+    "difficulty": "中(+0.227±0.4)"
+  },
+  {
+    "id": "lv41|コンテンポラリーネイション(H)|BEYOND THE EARTH",
+    "level": "41",
+    "genre": "コンテンポラリーネイション(H)",
+    "title": "BEYOND THE EARTH",
+    "difficulty": "中(+0.239±0.6)"
+  },
+  {
+    "id": "lv41|IDM(H)|ZETA～素数の世界と超越者～",
+    "level": "41",
+    "genre": "IDM(H)",
+    "title": "ZETA～素数の世界と超越者～",
+    "difficulty": "中(+0.242±0.4)"
+  },
+  {
+    "id": "lv41|テクノ'80(EX)|Water Melon Woman",
+    "level": "41",
+    "genre": "テクノ'80(EX)",
+    "title": "Water Melon Woman",
+    "difficulty": "中(+0.242±0.5)"
+  },
+  {
+    "id": "lv41|ビジュアル(H)|月光蝶",
+    "level": "41",
+    "genre": "ビジュアル(H)",
+    "title": "月光蝶",
+    "difficulty": "中(+0.242±0.4)"
+  },
+  {
+    "id": "lv41|Floccinaucinihilipilification(H)|Floccinaucinihilipilification",
+    "level": "41",
+    "genre": "Floccinaucinihilipilification(H)",
+    "title": "Floccinaucinihilipilification",
+    "difficulty": "中(+0.247)"
+  },
+  {
+    "id": "lv41|エレジィ2(H)|この子の七つのお祝いに",
+    "level": "41",
+    "genre": "エレジィ2(H)",
+    "title": "この子の七つのお祝いに",
+    "difficulty": "中(+0.259±0.5)"
+  },
+  {
+    "id": "lv41|ビジュアル艶歌(EX)|月影華(TSUKI-KAGE-BANA)",
+    "level": "41",
+    "genre": "ビジュアル艶歌(EX)",
+    "title": "月影華(TSUKI-KAGE-BANA)",
+    "difficulty": "中(+0.259±0.7)"
+  },
+  {
+    "id": "lv41|J-スピードメタル(H)|バンブーソード・ガール",
+    "level": "41",
+    "genre": "J-スピードメタル(H)",
+    "title": "バンブーソード・ガール",
+    "difficulty": "中(+0.264±0.5)"
+  },
+  {
+    "id": "lv41|アシッドギャル(EX)|完全無欠の無重力ダイブ",
+    "level": "41",
+    "genre": "アシッドギャル(EX)",
+    "title": "完全無欠の無重力ダイブ",
+    "difficulty": "中(+0.264±0.5)"
+  },
+  {
+    "id": "lv41|ふること(UPPER)(H)|序",
+    "level": "41",
+    "genre": "ふること(UPPER)(H)",
+    "title": "序",
+    "difficulty": "中(+0.264±0.4)"
+  },
+  {
+    "id": "lv41|エピックテクノ(H)|龍と少女とデコヒーレンス",
+    "level": "41",
+    "genre": "エピックテクノ(H)",
+    "title": "龍と少女とデコヒーレンス",
+    "difficulty": "中(+0.280±0.4)"
+  },
+  {
+    "id": "lv41|ビート4ディービー(EX)|無限軌道ゲームミックス",
+    "level": "41",
+    "genre": "ビート4ディービー(EX)",
+    "title": "無限軌道ゲームミックス",
+    "difficulty": "中(+0.281±0.4)"
+  },
+  {
+    "id": "lv41|カリビアンビーツ(EX)|SUMMER TIME",
+    "level": "41",
+    "genre": "カリビアンビーツ(EX)",
+    "title": "SUMMER TIME",
+    "difficulty": "中(+0.282±0.8)"
+  },
+  {
+    "id": "lv41|クリスタルポップ(EX)|illumina",
+    "level": "41",
+    "genre": "クリスタルポップ(EX)",
+    "title": "illumina",
+    "difficulty": "中(+0.302±0.6)"
+  },
+  {
+    "id": "lv41|ウソツキ横丁は雨模様(H)|ウソツキ横丁は雨模様",
+    "level": "41",
+    "genre": "ウソツキ横丁は雨模様(H)",
+    "title": "ウソツキ横丁は雨模様",
+    "difficulty": "中(+0.304±0.4)"
+  },
+  {
+    "id": "lv41|レイジャズ(EX)|NIGHT FEVER",
+    "level": "41",
+    "genre": "レイジャズ(EX)",
+    "title": "NIGHT FEVER",
+    "difficulty": "中(+0.312)"
+  },
+  {
+    "id": "lv41|エピックプログレ(H)|量子の海のリントヴルム",
+    "level": "41",
+    "genre": "エピックプログレ(H)",
+    "title": "量子の海のリントヴルム",
+    "difficulty": "中(+0.314±0.5)"
+  },
+  {
+    "id": "lv41|スウィングワルツ(EX)|CHOCOLATE PHILOSOPHY",
+    "level": "41",
+    "genre": "スウィングワルツ(EX)",
+    "title": "CHOCOLATE PHILOSOPHY",
+    "difficulty": "中(+0.315±0.4)"
+  },
+  {
+    "id": "lv41|ジャズホリック(H)|NINE PIECE",
+    "level": "41",
+    "genre": "ジャズホリック(H)",
+    "title": "NINE PIECE",
+    "difficulty": "中(+0.322±0.4)"
+  },
+  {
+    "id": "lv41|ガバ(H)|disable dA STACK",
+    "level": "41",
+    "genre": "ガバ(H)",
+    "title": "disable dA STACK",
+    "difficulty": "中(+0.329±0.6)"
+  },
+  {
+    "id": "lv41|ネガメロック(H)|繚乱ヒットチャート",
+    "level": "41",
+    "genre": "ネガメロック(H)",
+    "title": "繚乱ヒットチャート",
+    "difficulty": "中(+0.329±0.6)"
+  },
+  {
+    "id": "lv41|マジックパス(EX)|ひみつの言葉",
+    "level": "41",
+    "genre": "マジックパス(EX)",
+    "title": "ひみつの言葉",
+    "difficulty": "中(+0.335±0.4)"
+  },
+  {
+    "id": "lv41|インディゴ(H)|哀彩",
+    "level": "41",
+    "genre": "インディゴ(H)",
+    "title": "哀彩",
+    "difficulty": "中(+0.347±0.4)"
+  },
+  {
+    "id": "lv41|春を告げる(EX)|春を告げる",
+    "level": "41",
+    "genre": "春を告げる(EX)",
+    "title": "春を告げる",
+    "difficulty": "中(+0.358±0.4)"
+  },
+  {
+    "id": "lv41|ハイパーJポップ3(H)|1/6 billionth",
+    "level": "41",
+    "genre": "ハイパーJポップ3(H)",
+    "title": "1/6 billionth",
+    "difficulty": "中(+0.358±0.4)"
+  },
+  {
+    "id": "lv41|グロッソラリア(H)|万物快楽理論",
+    "level": "41",
+    "genre": "グロッソラリア(H)",
+    "title": "万物快楽理論",
+    "difficulty": "中(+0.359)"
+  },
+  {
+    "id": "lv41|PSGブレイクコア(H)|CHIP'N RIDDIM",
+    "level": "41",
+    "genre": "PSGブレイクコア(H)",
+    "title": "CHIP'N RIDDIM",
+    "difficulty": "中(+0.369±0.6)"
+  },
+  {
+    "id": "lv41|流星RAVE REMIX(H)|流星☆ハニー Perforation Mix",
+    "level": "41",
+    "genre": "流星RAVE REMIX(H)",
+    "title": "流星☆ハニー Perforation Mix",
+    "difficulty": "中(+0.369)"
+  },
+  {
+    "id": "lv41|エレジィ(H)|幸せを謳う詩",
+    "level": "41",
+    "genre": "エレジィ(H)",
+    "title": "幸せを謳う詩",
+    "difficulty": "中(+0.384±0.5)"
+  },
+  {
+    "id": "lv41|ブルガリアンリズム(H)|Deep Magenta",
+    "level": "41",
+    "genre": "ブルガリアンリズム(H)",
+    "title": "Deep Magenta",
+    "difficulty": "中(+0.384±0.4)"
+  },
+  {
+    "id": "lv41|ハッピーノエル(H)|good night , mommy",
+    "level": "41",
+    "genre": "ハッピーノエル(H)",
+    "title": "good night , mommy",
+    "difficulty": "中(+0.389±0.4)"
+  },
+  {
+    "id": "lv41|ガールミーツガール(EX)|ミライプリズム(collaboration ver.)",
+    "level": "41",
+    "genre": "ガールミーツガール(EX)",
+    "title": "ミライプリズム(collaboration ver.)",
+    "difficulty": "中(+0.393±0.7)"
+  },
+  {
+    "id": "lv41|リズミンコア(H)|LEAD Gravity(M)",
+    "level": "41",
+    "genre": "リズミンコア(H)",
+    "title": "LEAD Gravity(M)",
+    "difficulty": "強(+0.414±0.5)"
+  },
+  {
+    "id": "lv41|ガールズロック(H)|☆shining☆",
+    "level": "41",
+    "genre": "ガールズロック(H)",
+    "title": "☆shining☆",
+    "difficulty": "強(+0.415±0.4)"
+  },
+  {
+    "id": "lv41|マッシュルームナイト(H)|マッシュルームナイト",
+    "level": "41",
+    "genre": "マッシュルームナイト(H)",
+    "title": "マッシュルームナイト",
+    "difficulty": "強(+0.435)"
+  },
+  {
+    "id": "lv41|ポップンポップ(EX)|Like a pop'n music",
+    "level": "41",
+    "genre": "ポップンポップ(EX)",
+    "title": "Like a pop'n music",
+    "difficulty": "強(+0.438±0.6)"
+  },
+  {
+    "id": "lv41|バガボンド(H)|流離",
+    "level": "41",
+    "genre": "バガボンド(H)",
+    "title": "流離",
+    "difficulty": "強(+0.440±0.5)"
+  },
+  {
+    "id": "lv41|ショウワカヨウREMIX(H)|林檎と蜂蜜(美味しさ倍増MIX)",
+    "level": "41",
+    "genre": "ショウワカヨウREMIX(H)",
+    "title": "林檎と蜂蜜(美味しさ倍増MIX)",
+    "difficulty": "強(+0.442±0.6)"
+  },
+  {
+    "id": "lv41|ヴィジュアル2(EX)|Cry Out",
+    "level": "41",
+    "genre": "ヴィジュアル2(EX)",
+    "title": "Cry Out",
+    "difficulty": "強(+0.443±0.5)"
+  },
+  {
+    "id": "lv41|デスボサ(H)|SUN/光線",
+    "level": "41",
+    "genre": "デスボサ(H)",
+    "title": "SUN/光線",
+    "difficulty": "強(+0.449±0.5)"
+  },
+  {
+    "id": "lv41|ラボテクノ(H)|左脳スパーク",
+    "level": "41",
+    "genre": "ラボテクノ(H)",
+    "title": "左脳スパーク",
+    "difficulty": "強(+0.452±0.6)"
+  },
+  {
+    "id": "lv41|コアグルーヴ(EX)|THE PLACE TO BE",
+    "level": "41",
+    "genre": "コアグルーヴ(EX)",
+    "title": "THE PLACE TO BE",
+    "difficulty": "強(+0.463±0.4)"
+  },
+  {
+    "id": "lv41|流星RAVE(H)|流星☆ハニー",
+    "level": "41",
+    "genre": "流星RAVE(H)",
+    "title": "流星☆ハニー",
+    "difficulty": "強(+0.478±0.5)"
+  },
+  {
+    "id": "lv41|K-クラシック(EX)|AKUMAJO DRACULA MEDLEY",
+    "level": "41",
+    "genre": "K-クラシック(EX)",
+    "title": "AKUMAJO DRACULA MEDLEY",
+    "difficulty": "強(+0.493±0.6)"
+  },
+  {
+    "id": "lv41|Gray clouds(H)|Gray clouds",
+    "level": "41",
+    "genre": "Gray clouds(H)",
+    "title": "Gray clouds",
+    "difficulty": "強(+0.497±0.5)"
+  },
+  {
+    "id": "lv41|天ぷらイントロドン！！(H)|天ぷらイントロドン！！",
+    "level": "41",
+    "genre": "天ぷらイントロドン！！(H)",
+    "title": "天ぷらイントロドン！！",
+    "difficulty": "強(+0.5)"
+  },
+  {
+    "id": "lv41|Aftermath(H)|Aftermath",
+    "level": "41",
+    "genre": "Aftermath(H)",
+    "title": "Aftermath",
+    "difficulty": "強(+0.5)"
+  },
+  {
+    "id": "lv41|Bossa Gabba(H)|Bossa Gabba",
+    "level": "41",
+    "genre": "Bossa Gabba(H)",
+    "title": "Bossa Gabba",
+    "difficulty": "強(+0.5)"
+  },
+  {
+    "id": "lv41|LIKE A VAMPIRE(H)|LIKE A VAMPIRE",
+    "level": "41",
+    "genre": "LIKE A VAMPIRE(H)",
+    "title": "LIKE A VAMPIRE",
+    "difficulty": "強(+0.5)"
+  },
+  {
+    "id": "lv41|おくすり飲んで寝よう(EX)|おくすり飲んで寝よう",
+    "level": "41",
+    "genre": "おくすり飲んで寝よう(EX)",
+    "title": "おくすり飲んで寝よう",
+    "difficulty": "強(+0.5)"
+  },
+  {
+    "id": "lv41|ロマンシングエスケープ(EX)|ロマンシングエスケープ",
+    "level": "41",
+    "genre": "ロマンシングエスケープ(EX)",
+    "title": "ロマンシングエスケープ",
+    "difficulty": "強(+0.5)"
+  },
+  {
+    "id": "lv41|DOKIDOKI☆シューティングスター(H)|DOKIDOKI☆シューティングスター",
+    "level": "41",
+    "genre": "DOKIDOKI☆シューティングスター(H)",
+    "title": "DOKIDOKI☆シューティングスター",
+    "difficulty": "強(+0.5)"
+  },
+  {
+    "id": "lv41|High & Low(H)|High & Low",
+    "level": "41",
+    "genre": "High & Low(H)",
+    "title": "High & Low",
+    "difficulty": "強(+0.5)"
+  },
+  {
+    "id": "lv41|Yuni's Nocturnal Days(H)|Yuni's Nocturnal Days",
+    "level": "41",
+    "genre": "Yuni's Nocturnal Days(H)",
+    "title": "Yuni's Nocturnal Days",
+    "difficulty": "強(+0.5)"
+  },
+  {
+    "id": "lv41|ナニワヒーロー(H)|でんがな マンガナ",
+    "level": "41",
+    "genre": "ナニワヒーロー(H)",
+    "title": "でんがな マンガナ",
+    "difficulty": "強(+0.502)"
+  },
+  {
+    "id": "lv41|太極拳(H)|個胃Ｘ光",
+    "level": "41",
+    "genre": "太極拳(H)",
+    "title": "個胃Ｘ光",
+    "difficulty": "強(+0.509±0.4)"
+  },
+  {
+    "id": "lv41|くりむ童話(EX)|いきもの失格",
+    "level": "41",
+    "genre": "くりむ童話(EX)",
+    "title": "いきもの失格",
+    "difficulty": "強(+0.525±0.7)"
+  },
+  {
+    "id": "lv41|文学少女ロック(EX)|虚空と光明のディスクール",
+    "level": "41",
+    "genre": "文学少女ロック(EX)",
+    "title": "虚空と光明のディスクール",
+    "difficulty": "強(+0.525±0.5)"
+  },
+  {
+    "id": "lv41|ブチアゲレイヴ(H)|HADROS GALE",
+    "level": "41",
+    "genre": "ブチアゲレイヴ(H)",
+    "title": "HADROS GALE",
+    "difficulty": "強(+0.532±0.4)"
+  },
+  {
+    "id": "lv41|タービュランス(H)|Dimension Gale",
+    "level": "41",
+    "genre": "タービュランス(H)",
+    "title": "Dimension Gale",
+    "difficulty": "強(+0.556)"
+  },
+  {
+    "id": "lv41|Afterimage d'automne(H)|Afterimage d'automne",
+    "level": "41",
+    "genre": "Afterimage d'automne(H)",
+    "title": "Afterimage d'automne",
+    "difficulty": "強(+0.557±0.5)"
+  },
+  {
+    "id": "lv41|千本桜(EX)|千本桜",
+    "level": "41",
+    "genre": "千本桜(EX)",
+    "title": "千本桜",
+    "difficulty": "強(+0.566±0.7)"
+  },
+  {
+    "id": "lv41|アニマルミニマル(H)|The Zoo Zone",
+    "level": "41",
+    "genre": "アニマルミニマル(H)",
+    "title": "The Zoo Zone",
+    "difficulty": "強(+0.571±0.4)"
+  },
+  {
+    "id": "lv41|ハイパードラマティック(H)|薔薇は永遠に美しく",
+    "level": "41",
+    "genre": "ハイパードラマティック(H)",
+    "title": "薔薇は永遠に美しく",
+    "difficulty": "強(+0.584±0.4)"
+  },
+  {
+    "id": "lv41|ポップデスコ(H)|popdod",
+    "level": "41",
+    "genre": "ポップデスコ(H)",
+    "title": "popdod",
+    "difficulty": "強(+0.590±0.5)"
+  },
+  {
+    "id": "lv41|オーバーソニック(EX)|ダイブドライブ",
+    "level": "41",
+    "genre": "オーバーソニック(EX)",
+    "title": "ダイブドライブ",
+    "difficulty": "強(+0.598±0.4)"
+  },
+  {
+    "id": "lv41|にゃんこジャズ(EX)|にゃんだふる55 marble version",
+    "level": "41",
+    "genre": "にゃんこジャズ(EX)",
+    "title": "にゃんだふる55 marble version",
+    "difficulty": "強(+0.608±0.7)"
+  },
+  {
+    "id": "lv41|GET WILD(EX)|GET WILD",
+    "level": "41",
+    "genre": "GET WILD(EX)",
+    "title": "GET WILD",
+    "difficulty": "強(+0.613±0.4)"
+  },
+  {
+    "id": "lv41|ウィザウチュホーリーナイ(EX)|Thank You Merry Christmas",
+    "level": "41",
+    "genre": "ウィザウチュホーリーナイ(EX)",
+    "title": "Thank You Merry Christmas",
+    "difficulty": "強(+0.619±0.6)"
+  },
+  {
+    "id": "lv41|レッドランターン(H)|ほおずき程度には赤い頭髪",
+    "level": "41",
+    "genre": "レッドランターン(H)",
+    "title": "ほおずき程度には赤い頭髪",
+    "difficulty": "強(+0.645±0.5)"
+  },
+  {
+    "id": "lv41|ロービットサバイバー(H)|virtual killer",
+    "level": "41",
+    "genre": "ロービットサバイバー(H)",
+    "title": "virtual killer",
+    "difficulty": "強(+0.645±0.6)"
+  },
+  {
+    "id": "lv41|シュヴァルツァー(H)|Versa",
+    "level": "41",
+    "genre": "シュヴァルツァー(H)",
+    "title": "Versa",
+    "difficulty": "強(+0.650)"
+  },
+  {
+    "id": "lv41|ネジロック(H)|螺子之人",
+    "level": "41",
+    "genre": "ネジロック(H)",
+    "title": "螺子之人",
+    "difficulty": "強(+0.651±0.4)"
+  },
+  {
+    "id": "lv41|ポップミュージック(H)|うた",
+    "level": "41",
+    "genre": "ポップミュージック(H)",
+    "title": "うた",
+    "difficulty": "強(+0.660±0.5)"
+  },
+  {
+    "id": "lv41|ふること(H)|序",
+    "level": "41",
+    "genre": "ふること(H)",
+    "title": "序",
+    "difficulty": "強(+0.665±0.4)"
+  },
+  {
+    "id": "lv41|スターリートランス(H)|Southern Cross",
+    "level": "41",
+    "genre": "スターリートランス(H)",
+    "title": "Southern Cross",
+    "difficulty": "強(+0.671±0.4)"
+  },
+  {
+    "id": "lv41|アンセムトランス(H)|Votum stellarum",
+    "level": "41",
+    "genre": "アンセムトランス(H)",
+    "title": "Votum stellarum",
+    "difficulty": "強(+0.689±0.6)"
+  },
+  {
+    "id": "lv41|ケンカドラム(H)|BBLLAASSTT!!",
+    "level": "41",
+    "genre": "ケンカドラム(H)",
+    "title": "BBLLAASSTT!!",
+    "difficulty": "強(+0.696±0.4)"
+  },
+  {
+    "id": "lv41|ヴィヴァーチェ(EX)|Citta'del sole",
+    "level": "41",
+    "genre": "ヴィヴァーチェ(EX)",
+    "title": "Citta'del sole",
+    "difficulty": "強(+0.697±0.5)"
+  },
+  {
+    "id": "lv41|じょいふる(EX)|じょいふる",
+    "level": "41",
+    "genre": "じょいふる(EX)",
+    "title": "じょいふる",
+    "difficulty": "強(+0.697±0.4)"
+  },
+  {
+    "id": "lv41|オキナワッシヴ(EX)|西表島琉球曲",
+    "level": "41",
+    "genre": "オキナワッシヴ(EX)",
+    "title": "西表島琉球曲",
+    "difficulty": "強(+0.714±0.5)"
+  },
+  {
+    "id": "lv41|獄ロック(H)|地の記 獄編",
+    "level": "41",
+    "genre": "獄ロック(H)",
+    "title": "地の記 獄編",
+    "difficulty": "強(+0.718±0.5)"
+  },
+  {
+    "id": "lv41|サイファイプログレッシヴ(H)|賢聖シリウスの采配",
+    "level": "41",
+    "genre": "サイファイプログレッシヴ(H)",
+    "title": "賢聖シリウスの采配",
+    "difficulty": "強(+0.737)"
+  },
+  {
+    "id": "lv41|ピアノコンテンポラリー(H)|Macuilxochitl",
+    "level": "41",
+    "genre": "ピアノコンテンポラリー(H)",
+    "title": "Macuilxochitl",
+    "difficulty": "強(+0.747±0.4)"
+  },
+  {
+    "id": "lv41|スティールクロニクル(EX)|Dawn of departure",
+    "level": "41",
+    "genre": "スティールクロニクル(EX)",
+    "title": "Dawn of departure",
+    "difficulty": "強(+0.772±0.4)"
+  },
+  {
+    "id": "lv41|Twin memories W(EX)|Twin memories W",
+    "level": "41",
+    "genre": "Twin memories W(EX)",
+    "title": "Twin memories W",
+    "difficulty": "強(+0.772±0.4)"
+  },
+  {
+    "id": "lv41|クイズマジックアカデミー(EX)|マジックアカデミー組曲",
+    "level": "41",
+    "genre": "クイズマジックアカデミー(EX)",
+    "title": "マジックアカデミー組曲",
+    "difficulty": "強(+0.779±0.4)"
+  },
+  {
+    "id": "lv41|BLAZE∞BREEZE(H)|BLAZE∞BREEZE",
+    "level": "41",
+    "genre": "BLAZE∞BREEZE(H)",
+    "title": "BLAZE∞BREEZE",
+    "difficulty": "強(+0.786±0.5)"
+  },
+  {
+    "id": "lv41|悪魔城ドラキュラSLOT2(H)|緋月の狂想曲",
+    "level": "41",
+    "genre": "悪魔城ドラキュラSLOT2(H)",
+    "title": "緋月の狂想曲",
+    "difficulty": "強(+0.789±0.3)"
+  },
+  {
+    "id": "lv41|バトルダンス(UPPER)(H)|シャムシールの舞",
+    "level": "41",
+    "genre": "バトルダンス(UPPER)(H)",
+    "title": "シャムシールの舞",
+    "difficulty": "強(+0.791±0.6)"
+  },
+  {
+    "id": "lv41|エンシャントユーロ(H)|In The Ruins",
+    "level": "41",
+    "genre": "エンシャントユーロ(H)",
+    "title": "In The Ruins",
+    "difficulty": "強(+0.802±0.3)"
+  },
+  {
+    "id": "lv41|戦乱絵巻(H)|西軍‖∴⊂SEKIGAHARA⊃∴‖東軍",
+    "level": "41",
+    "genre": "戦乱絵巻(H)",
+    "title": "西軍‖∴⊂SEKIGAHARA⊃∴‖東軍",
+    "difficulty": "強(+0.802±0.4)"
+  },
+  {
+    "id": "lv41|ハードシャンソン(EX)|LOVE IS ORANGE",
+    "level": "41",
+    "genre": "ハードシャンソン(EX)",
+    "title": "LOVE IS ORANGE",
+    "difficulty": "強(+0.823±0.3)"
+  },
+  {
+    "id": "lv41|フューチャーベース(H)|Pacify",
+    "level": "41",
+    "genre": "フューチャーベース(H)",
+    "title": "Pacify",
+    "difficulty": "強(+0.825±0.4)"
+  },
+  {
+    "id": "lv41|ディバインプログレッシヴ(H)|デュスノミア",
+    "level": "41",
+    "genre": "ディバインプログレッシヴ(H)",
+    "title": "デュスノミア",
+    "difficulty": "強(+0.849±0.4)"
+  },
+  {
+    "id": "lv41|ナイトメアメタル(H)|背徳と邪悪のエピタフ",
+    "level": "41",
+    "genre": "ナイトメアメタル(H)",
+    "title": "背徳と邪悪のエピタフ",
+    "difficulty": "強(+0.853±0.4)"
+  },
+  {
+    "id": "lv41|ルイナススピリチュアル(H)|Remain",
+    "level": "41",
+    "genre": "ルイナススピリチュアル(H)",
+    "title": "Remain",
+    "difficulty": "強(+0.870±0.4)"
+  },
+  {
+    "id": "lv41|クロノトロニカ(EX)|時空学者とブルーメン",
+    "level": "41",
+    "genre": "クロノトロニカ(EX)",
+    "title": "時空学者とブルーメン",
+    "difficulty": "強(+0.872±0.3)"
+  },
+  {
+    "id": "lv41|バイキング(H)|バイキングマン",
+    "level": "41",
+    "genre": "バイキング(H)",
+    "title": "バイキングマン",
+    "difficulty": "強(+0.883±0.4)"
+  },
+  {
+    "id": "lv41|クリオネテクノ(EX)|CLIO",
+    "level": "41",
+    "genre": "クリオネテクノ(EX)",
+    "title": "CLIO",
+    "difficulty": "強(+0.896±0.4)"
+  },
+  {
+    "id": "lv41|カイゾク(H)|KING of the SEA",
+    "level": "41",
+    "genre": "カイゾク(H)",
+    "title": "KING of the SEA",
+    "difficulty": "強(+0.920±0.4)"
+  },
+  {
+    "id": "lv41|レーシング(H)|violently car",
+    "level": "41",
+    "genre": "レーシング(H)",
+    "title": "violently car",
+    "difficulty": "強(+0.920±0.4)"
+  },
+  {
+    "id": "lv41|カモフラージュプログレ(H)|the Chameleon",
+    "level": "41",
+    "genre": "カモフラージュプログレ(H)",
+    "title": "the Chameleon",
+    "difficulty": "強(+0.950±0.3)"
+  },
+  {
+    "id": "lv41|Jetcoaster Windy(H)|Jetcoaster Windy",
+    "level": "41",
+    "genre": "Jetcoaster Windy(H)",
+    "title": "Jetcoaster Windy",
+    "difficulty": "詐称(+1.0)"
+  },
+  {
+    "id": "lv41|Levitation Minneapolis(H)|Levitation Minneapolis",
+    "level": "41",
+    "genre": "Levitation Minneapolis(H)",
+    "title": "Levitation Minneapolis",
+    "difficulty": "詐称(+1.0)"
+  },
+  {
+    "id": "lv41|storia(H)|storia",
+    "level": "41",
+    "genre": "storia(H)",
+    "title": "storia",
+    "difficulty": "詐称(+1.0)"
+  },
+  {
+    "id": "lv41|サミダレ(H)|霖が哭く",
+    "level": "41",
+    "genre": "サミダレ(H)",
+    "title": "霖が哭く",
+    "difficulty": "詐称(+1.003±0.3)"
+  }
+]

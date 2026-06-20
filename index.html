@@ -411,7 +411,7 @@ document.getElementById("importData").addEventListener("change", event => {
 });
 
 async function loadSongs(){
-  const levels = ["43", "44", "45", "46", "47", "48", "49", "50"];
+  const levels = ["40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50"];
   const results = await Promise.all(
     levels.map(async level => {
       const response = await fetch(`./data/lv${level}.json`);
