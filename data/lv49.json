@@ -1,0 +1,681 @@
+[
+  {
+    "id": "lv49|Last Twilight(EX)|Last Twilight",
+    "level": "49",
+    "genre": "Last Twilight(EX)",
+    "title": "Last Twilight",
+    "difficulty": "弱(-0.962±0.2)"
+  },
+  {
+    "id": "lv49|アクアティックアリア(EX)|SailRen",
+    "level": "49",
+    "genre": "アクアティックアリア(EX)",
+    "title": "SailRen",
+    "difficulty": "弱(-0.800±0.2)"
+  },
+  {
+    "id": "lv49|鎬(EX)|鎬",
+    "level": "49",
+    "genre": "鎬(EX)",
+    "title": "鎬",
+    "difficulty": "弱(-0.783±0.4)"
+  },
+  {
+    "id": "lv49|カモフラージュプログレ(EX)|the Chameleon",
+    "level": "49",
+    "genre": "カモフラージュプログレ(EX)",
+    "title": "the Chameleon",
+    "difficulty": "弱(-0.762±0.4)"
+  },
+  {
+    "id": "lv49|ヴェラム(EX)|Eine Haube 〜聖地の果てにあるもの〜",
+    "level": "49",
+    "genre": "ヴェラム(EX)",
+    "title": "Eine Haube 〜聖地の果てにあるもの〜",
+    "difficulty": "弱(-0.755±0.3)"
+  },
+  {
+    "id": "lv49|Timepiece phase II(EX)|Timepiece phase II",
+    "level": "49",
+    "genre": "Timepiece phase II(EX)",
+    "title": "Timepiece phase II",
+    "difficulty": "弱(-0.731±0.3)"
+  },
+  {
+    "id": "lv49|バッドエンド・シンドローム(EX)|バッドエンド・シンドローム",
+    "level": "49",
+    "genre": "バッドエンド・シンドローム(EX)",
+    "title": "バッドエンド・シンドローム",
+    "difficulty": "弱(-0.715±0.3)"
+  },
+  {
+    "id": "lv49|ブラッドメタル(EX)|IX",
+    "level": "49",
+    "genre": "ブラッドメタル(EX)",
+    "title": "IX",
+    "difficulty": "弱(-0.702±0.3)"
+  },
+  {
+    "id": "lv49|アンセム(EX)|Sky High",
+    "level": "49",
+    "genre": "アンセム(EX)",
+    "title": "Sky High",
+    "difficulty": "弱(-0.662±0.3)"
+  },
+  {
+    "id": "lv49|バトルダンス(UPPER)(EX)|シャムシールの舞",
+    "level": "49",
+    "genre": "バトルダンス(UPPER)(EX)",
+    "title": "シャムシールの舞",
+    "difficulty": "弱(-0.620±0.4)"
+  },
+  {
+    "id": "lv49|シュヴァルツァー(UPPER)(EX)|Versa",
+    "level": "49",
+    "genre": "シュヴァルツァー(UPPER)(EX)",
+    "title": "Versa",
+    "difficulty": "弱(-0.578±0.6)"
+  },
+  {
+    "id": "lv49|明滅の果てに(EX)|明滅の果てに",
+    "level": "49",
+    "genre": "明滅の果てに(EX)",
+    "title": "明滅の果てに",
+    "difficulty": "弱(-0.564±0.4)"
+  },
+  {
+    "id": "lv49|竜を狩る者(EX)|竜を狩る者",
+    "level": "49",
+    "genre": "竜を狩る者(EX)",
+    "title": "竜を狩る者",
+    "difficulty": "弱(-0.542±0.3)"
+  },
+  {
+    "id": "lv49|スクリーン(EX)|GALAXY FOREST 11.6&12",
+    "level": "49",
+    "genre": "スクリーン(EX)",
+    "title": "GALAXY FOREST 11.6&12",
+    "difficulty": "弱(-0.533±0.4)"
+  },
+  {
+    "id": "lv49|エグゾーストクライマックスコア(EX)|Black Emperor",
+    "level": "49",
+    "genre": "エグゾーストクライマックスコア(EX)",
+    "title": "Black Emperor",
+    "difficulty": "弱(-0.514±0.3)"
+  },
+  {
+    "id": "lv49|ポストロック(EX)|moon_child",
+    "level": "49",
+    "genre": "ポストロック(EX)",
+    "title": "moon_child",
+    "difficulty": "弱(-0.447±0.3)"
+  },
+  {
+    "id": "lv49|プレデターコア(EX)|Prey",
+    "level": "49",
+    "genre": "プレデターコア(EX)",
+    "title": "Prey",
+    "difficulty": "弱(-0.440±0.4)"
+  },
+  {
+    "id": "lv49|オイパンク0(EX)|ブタパンチのテーマ",
+    "level": "49",
+    "genre": "オイパンク0(EX)",
+    "title": "ブタパンチのテーマ",
+    "difficulty": "弱(-0.424±0.4)"
+  },
+  {
+    "id": "lv49|ゾディアックパラレル13(EX)|trideca",
+    "level": "49",
+    "genre": "ゾディアックパラレル13(EX)",
+    "title": "trideca",
+    "difficulty": "弱(-0.408±0.4)"
+  },
+  {
+    "id": "lv49|VOLAQUAS(EX)|VOLAQUAS",
+    "level": "49",
+    "genre": "VOLAQUAS(EX)",
+    "title": "VOLAQUAS",
+    "difficulty": "中(-0.379±0.4)"
+  },
+  {
+    "id": "lv49|Satan(EX)|Satan",
+    "level": "49",
+    "genre": "Satan(EX)",
+    "title": "Satan",
+    "difficulty": "中(-0.350±0.5)"
+  },
+  {
+    "id": "lv49|ゾディアックオラクル7(EX)|アストライアの双皿",
+    "level": "49",
+    "genre": "ゾディアックオラクル7(EX)",
+    "title": "アストライアの双皿",
+    "difficulty": "中(-0.323±0.5)"
+  },
+  {
+    "id": "lv49|Lachryma《Re:Queen'M》(EX)|Lachryma《Re:Queen'M》",
+    "level": "49",
+    "genre": "Lachryma《Re:Queen'M》(EX)",
+    "title": "Lachryma《Re:Queen'M》",
+    "difficulty": "中(-0.320±0.4)"
+  },
+  {
+    "id": "lv49|ルイナススピリチュアル(EX)|Remain",
+    "level": "49",
+    "genre": "ルイナススピリチュアル(EX)",
+    "title": "Remain",
+    "difficulty": "中(-0.302±0.4)"
+  },
+  {
+    "id": "lv49|エタニティ(EX)|QuoN",
+    "level": "49",
+    "genre": "エタニティ(EX)",
+    "title": "QuoN",
+    "difficulty": "中(-0.235±0.2)"
+  },
+  {
+    "id": "lv49|zeeros(EX)|zeeros",
+    "level": "49",
+    "genre": "zeeros(EX)",
+    "title": "zeeros",
+    "difficulty": "中(-0.235±0.4)"
+  },
+  {
+    "id": "lv49|ボルテックスクロスオーバー(EX)|XROSS INFECTION",
+    "level": "49",
+    "genre": "ボルテックスクロスオーバー(EX)",
+    "title": "XROSS INFECTION",
+    "difficulty": "中(-0.225±0.3)"
+  },
+  {
+    "id": "lv49|アンセム(EX)|天空の夜明け",
+    "level": "49",
+    "genre": "アンセム(EX)",
+    "title": "天空の夜明け",
+    "difficulty": "中(-0.220±0.3)"
+  },
+  {
+    "id": "lv49|ビーストナイトメア(EX)|CHERNOBOG",
+    "level": "49",
+    "genre": "ビーストナイトメア(EX)",
+    "title": "CHERNOBOG",
+    "difficulty": "中(-0.208±0.4)"
+  },
+  {
+    "id": "lv49|Step forward(EX)|Step forward",
+    "level": "49",
+    "genre": "Step forward(EX)",
+    "title": "Step forward",
+    "difficulty": "中(-0.192±0.4)"
+  },
+  {
+    "id": "lv49|オービタルスチームパンク(EX)|未完成ノ蒸氣驅動乙女",
+    "level": "49",
+    "genre": "オービタルスチームパンク(EX)",
+    "title": "未完成ノ蒸氣驅動乙女",
+    "difficulty": "中(-0.180±0.4)"
+  },
+  {
+    "id": "lv49|Bossa Gabba(EX)|Bossa Gabba",
+    "level": "49",
+    "genre": "Bossa Gabba(EX)",
+    "title": "Bossa Gabba",
+    "difficulty": "中(-0.167±0.5)"
+  },
+  {
+    "id": "lv49|ハイスピードラブ一首(EX)|恋歌疾風！かるたクイーンいろは",
+    "level": "49",
+    "genre": "ハイスピードラブ一首(EX)",
+    "title": "恋歌疾風！かるたクイーンいろは",
+    "difficulty": "中(-0.160±0.3)"
+  },
+  {
+    "id": "lv49|メタリックオペラ(EX)|Geiselhaus",
+    "level": "49",
+    "genre": "メタリックオペラ(EX)",
+    "title": "Geiselhaus",
+    "difficulty": "中(-0.147±0.3)"
+  },
+  {
+    "id": "lv49|C18H27NO3(EX)|C18H27NO3",
+    "level": "49",
+    "genre": "C18H27NO3(EX)",
+    "title": "C18H27NO3",
+    "difficulty": "中(-0.147±0.3)"
+  },
+  {
+    "id": "lv49|MAX KARAI(EX)|MAX KARAI",
+    "level": "49",
+    "genre": "MAX KARAI(EX)",
+    "title": "MAX KARAI",
+    "difficulty": "中(-0.109±0.4)"
+  },
+  {
+    "id": "lv49|粋 -IKI-(EX)|粋 -IKI-",
+    "level": "49",
+    "genre": "粋 -IKI-(EX)",
+    "title": "粋 -IKI-",
+    "difficulty": "中(-0.091±0.3)"
+  },
+  {
+    "id": "lv49|Festum Duodecimum!(EX)|Festum Duodecimum!",
+    "level": "49",
+    "genre": "Festum Duodecimum!(EX)",
+    "title": "Festum Duodecimum!",
+    "difficulty": "中(-0.067±0.4)"
+  },
+  {
+    "id": "lv49|Megalara Garuda(EX)|Megalara Garuda",
+    "level": "49",
+    "genre": "Megalara Garuda(EX)",
+    "title": "Megalara Garuda",
+    "difficulty": "中(-0.049±0.4)"
+  },
+  {
+    "id": "lv49|Vinculum stellarum(EX)|Vinculum stellarum",
+    "level": "49",
+    "genre": "Vinculum stellarum(EX)",
+    "title": "Vinculum stellarum",
+    "difficulty": "中(-0.041±0.3)"
+  },
+  {
+    "id": "lv49|ラメント(UPPER)(EX)|雫",
+    "level": "49",
+    "genre": "ラメント(UPPER)(EX)",
+    "title": "雫",
+    "difficulty": "中(-0.032±0.4)"
+  },
+  {
+    "id": "lv49|ハードルネッサンス(EX)|Elemental Creation",
+    "level": "49",
+    "genre": "ハードルネッサンス(EX)",
+    "title": "Elemental Creation",
+    "difficulty": "中(-0.025±0.4)"
+  },
+  {
+    "id": "lv49|インボルク(EX)|生命の焔纏いて",
+    "level": "49",
+    "genre": "インボルク(EX)",
+    "title": "生命の焔纏いて",
+    "difficulty": "中(-0.016±0.3)"
+  },
+  {
+    "id": "lv49|葬送のエウロパ(EX)|葬送のエウロパ",
+    "level": "49",
+    "genre": "葬送のエウロパ(EX)",
+    "title": "葬送のエウロパ",
+    "difficulty": "中(-0.005±0.3)"
+  },
+  {
+    "id": "lv49|カウボーイ2(EX)|Red Mountain",
+    "level": "49",
+    "genre": "カウボーイ2(EX)",
+    "title": "Red Mountain",
+    "difficulty": ""
+  },
+  {
+    "id": "lv49|セレスタル(EX)|Oort",
+    "level": "49",
+    "genre": "セレスタル(EX)",
+    "title": "Oort",
+    "difficulty": ""
+  },
+  {
+    "id": "lv49|ハードサイスピードコア(EX)|RUINA",
+    "level": "49",
+    "genre": "ハードサイスピードコア(EX)",
+    "title": "RUINA",
+    "difficulty": ""
+  },
+  {
+    "id": "lv49|モノノケプログレッシヴ(EX)|魍魎乱舞",
+    "level": "49",
+    "genre": "モノノケプログレッシヴ(EX)",
+    "title": "魍魎乱舞",
+    "difficulty": ""
+  },
+  {
+    "id": "lv49|レヴェラチューン(UPPER)(EX)|Fate No.23",
+    "level": "49",
+    "genre": "レヴェラチューン(UPPER)(EX)",
+    "title": "Fate No.23",
+    "difficulty": ""
+  },
+  {
+    "id": "lv49|プログレッシブバロック(EX)|Übertreffen",
+    "level": "49",
+    "genre": "プログレッシブバロック(EX)",
+    "title": "Übertreffen",
+    "difficulty": "中(+0.041±0.3)"
+  },
+  {
+    "id": "lv49|virkatoの主題によるperson09風超絶技巧変奏曲(EX)|virkatoの主題によるperson09風超絶技巧変奏曲",
+    "level": "49",
+    "genre": "virkatoの主題によるperson09風超絶技巧変奏曲(EX)",
+    "title": "virkatoの主題によるperson09風超絶技巧変奏曲",
+    "difficulty": "中(+0.053±0.3)"
+  },
+  {
+    "id": "lv49|世界の果てに約束の凱歌を(EX)|世界の果てに約束の凱歌を",
+    "level": "49",
+    "genre": "世界の果てに約束の凱歌を(EX)",
+    "title": "世界の果てに約束の凱歌を",
+    "difficulty": "中(+0.056±0.4)"
+  },
+  {
+    "id": "lv49|カウボーイ(EX)|Blue River",
+    "level": "49",
+    "genre": "カウボーイ(EX)",
+    "title": "Blue River",
+    "difficulty": "中(+0.067±0.3)"
+  },
+  {
+    "id": "lv49|クラシック11(EX)|想い出をありがとう",
+    "level": "49",
+    "genre": "クラシック11(EX)",
+    "title": "想い出をありがとう",
+    "difficulty": "中(+0.068±0.5)"
+  },
+  {
+    "id": "lv49|シンフォニックセイバー(EX)|RINИE",
+    "level": "49",
+    "genre": "シンフォニックセイバー(EX)",
+    "title": "RINИE",
+    "difficulty": "中(+0.075±0.3)"
+  },
+  {
+    "id": "lv49|ジャッジメント(EX)|終末を追う者",
+    "level": "49",
+    "genre": "ジャッジメント(EX)",
+    "title": "終末を追う者",
+    "difficulty": "中(+0.082±0.4)"
+  },
+  {
+    "id": "lv49|エフェメラル(EX)|Innocence",
+    "level": "49",
+    "genre": "エフェメラル(EX)",
+    "title": "Innocence",
+    "difficulty": "中(+0.082±0.3)"
+  },
+  {
+    "id": "lv49|オイパンク(EX)|悲しいね",
+    "level": "49",
+    "genre": "オイパンク(EX)",
+    "title": "悲しいね",
+    "difficulty": "中(+0.085±0.7)"
+  },
+  {
+    "id": "lv49|ma plume(EX)|ma plume",
+    "level": "49",
+    "genre": "ma plume(EX)",
+    "title": "ma plume",
+    "difficulty": "中(+0.101±0.4)"
+  },
+  {
+    "id": "lv49|Unknown Region(EX)|Unknown Region",
+    "level": "49",
+    "genre": "Unknown Region(EX)",
+    "title": "Unknown Region",
+    "difficulty": "中(+0.120±0.4)"
+  },
+  {
+    "id": "lv49|天泣(EX)|天泣",
+    "level": "49",
+    "genre": "天泣(EX)",
+    "title": "天泣",
+    "difficulty": "中(+0.122±0.3)"
+  },
+  {
+    "id": "lv49|ΩVERSOUL(EX)|ΩVERSOUL",
+    "level": "49",
+    "genre": "ΩVERSOUL(EX)",
+    "title": "ΩVERSOUL",
+    "difficulty": "中(+0.147±0.3)"
+  },
+  {
+    "id": "lv49|最小三倍完全数(EX)|最小三倍完全数",
+    "level": "49",
+    "genre": "最小三倍完全数(EX)",
+    "title": "最小三倍完全数",
+    "difficulty": "中(+0.150±0.4)"
+  },
+  {
+    "id": "lv49|限界食堂(EX)|限界食堂",
+    "level": "49",
+    "genre": "限界食堂(EX)",
+    "title": "限界食堂",
+    "difficulty": "中(+0.183±0.3)"
+  },
+  {
+    "id": "lv49|インフィニットブラスター(EX)|INF-B《L-aste-R》",
+    "level": "49",
+    "genre": "インフィニットブラスター(EX)",
+    "title": "INF-B《L-aste-R》",
+    "difficulty": "中(+0.192±0.3)"
+  },
+  {
+    "id": "lv49|ファンタジー(EX)|StrayedCatz",
+    "level": "49",
+    "genre": "ファンタジー(EX)",
+    "title": "StrayedCatz",
+    "difficulty": "中(+0.212±0.4)"
+  },
+  {
+    "id": "lv49|トランセンデンタルエチュード(EX)|DIAVOLO",
+    "level": "49",
+    "genre": "トランセンデンタルエチュード(EX)",
+    "title": "DIAVOLO",
+    "difficulty": "中(+0.232±0.5)"
+  },
+  {
+    "id": "lv49|彼岸花(EX)|彼岸花",
+    "level": "49",
+    "genre": "彼岸花(EX)",
+    "title": "彼岸花",
+    "difficulty": "中(+0.252±0.3)"
+  },
+  {
+    "id": "lv49|アンセムコア(EX)|perditus†paradisus",
+    "level": "49",
+    "genre": "アンセムコア(EX)",
+    "title": "perditus†paradisus",
+    "difficulty": "中(+0.253±0.3)"
+  },
+  {
+    "id": "lv49|リスク+バキューム(EX)|Triple Counter",
+    "level": "49",
+    "genre": "リスク+バキューム(EX)",
+    "title": "Triple Counter",
+    "difficulty": "中(+0.255±0.4)"
+  },
+  {
+    "id": "lv49|Triple Cross(EX)|Triple Cross",
+    "level": "49",
+    "genre": "Triple Cross(EX)",
+    "title": "Triple Cross",
+    "difficulty": "中(+0.272±0.3)"
+  },
+  {
+    "id": "lv49|ホットドッグドカぐいレース!!!!(EX)|ホットドッグドカぐいレース!!!!",
+    "level": "49",
+    "genre": "ホットドッグドカぐいレース!!!!(EX)",
+    "title": "ホットドッグドカぐいレース!!!!",
+    "difficulty": "中(+0.278±0.4)"
+  },
+  {
+    "id": "lv49|No Border(EX)|No Border",
+    "level": "49",
+    "genre": "No Border(EX)",
+    "title": "No Border",
+    "difficulty": "中(+0.315±0.4)"
+  },
+  {
+    "id": "lv49|真夜中のun thé noir(EX)|真夜中のun thé noir",
+    "level": "49",
+    "genre": "真夜中のun thé noir(EX)",
+    "title": "真夜中のun thé noir",
+    "difficulty": "中(+0.345±0.3)"
+  },
+  {
+    "id": "lv49|IDM(UPPER)(EX)|ZETA～素数の世界と超越者～",
+    "level": "49",
+    "genre": "IDM(UPPER)(EX)",
+    "title": "ZETA～素数の世界と超越者～",
+    "difficulty": "中(+0.357±0.5)"
+  },
+  {
+    "id": "lv49|Candy Crime Toe Shoes(EX)|Candy Crime Toe Shoes",
+    "level": "49",
+    "genre": "Candy Crime Toe Shoes(EX)",
+    "title": "Candy Crime Toe Shoes",
+    "difficulty": "中(+0.365±0.4)"
+  },
+  {
+    "id": "lv49|Hades Doll(EX)|Hades Doll",
+    "level": "49",
+    "genre": "Hades Doll(EX)",
+    "title": "Hades Doll",
+    "difficulty": "中(+0.395±0.3)"
+  },
+  {
+    "id": "lv49|カオステイスト(EX)|ジオメトリック∮ティーパーティー",
+    "level": "49",
+    "genre": "カオステイスト(EX)",
+    "title": "ジオメトリック∮ティーパーティー",
+    "difficulty": "強(+0.409±0.2)"
+  },
+  {
+    "id": "lv49|クラシック9(EX)|Hell? or Heaven?",
+    "level": "49",
+    "genre": "クラシック9(EX)",
+    "title": "Hell? or Heaven?",
+    "difficulty": "強(+0.409±0.4)"
+  },
+  {
+    "id": "lv49|スイーツプログレッシヴ(UPPER)(EX)|ちくわパフェだよ☆CKP",
+    "level": "49",
+    "genre": "スイーツプログレッシヴ(UPPER)(EX)",
+    "title": "ちくわパフェだよ☆CKP",
+    "difficulty": "強(+0.496±0.3)"
+  },
+  {
+    "id": "lv49|世界の果てに約束の凱歌を -Advent-(EX)|世界の果てに約束の凱歌を -Advent-",
+    "level": "49",
+    "genre": "世界の果てに約束の凱歌を -Advent-(EX)",
+    "title": "世界の果てに約束の凱歌を -Advent-",
+    "difficulty": "強(+0.518±0.3)"
+  },
+  {
+    "id": "lv49|パワーダンプ(EX)|激走！！ヤング☆ダンプ！",
+    "level": "49",
+    "genre": "パワーダンプ(EX)",
+    "title": "激走！！ヤング☆ダンプ！",
+    "difficulty": "強(+0.519±0.3)"
+  },
+  {
+    "id": "lv49|スペースレクイエム(EX)|Zirkfied",
+    "level": "49",
+    "genre": "スペースレクイエム(EX)",
+    "title": "Zirkfied",
+    "difficulty": "強(+0.575±0.3)"
+  },
+  {
+    "id": "lv49|ニエンテ(EX)|neu",
+    "level": "49",
+    "genre": "ニエンテ(EX)",
+    "title": "neu",
+    "difficulty": "強(+0.587±0.3)"
+  },
+  {
+    "id": "lv49|萌えおこし電波ソング(UPPER)(EX)|めうめうぺったんたん！！",
+    "level": "49",
+    "genre": "萌えおこし電波ソング(UPPER)(EX)",
+    "title": "めうめうぺったんたん！！",
+    "difficulty": "強(+0.623±0.3)"
+  },
+  {
+    "id": "lv49|pump up dA CORE(EX)|pump up dA CORE",
+    "level": "49",
+    "genre": "pump up dA CORE(EX)",
+    "title": "pump up dA CORE",
+    "difficulty": "強(+0.678±0.3)"
+  },
+  {
+    "id": "lv49|スケールアウト(EX)|BabeL 〜Next Story〜",
+    "level": "49",
+    "genre": "スケールアウト(EX)",
+    "title": "BabeL 〜Next Story〜",
+    "difficulty": "強(+0.704±0.2)"
+  },
+  {
+    "id": "lv49|シンフォニックセイバー2(EX)|K∀MUY",
+    "level": "49",
+    "genre": "シンフォニックセイバー2(EX)",
+    "title": "K∀MUY",
+    "difficulty": "強(+0.739±0.2)"
+  },
+  {
+    "id": "lv49|ギャラクティックマーチ(UPPER)(EX)|MADSPEED狂信道",
+    "level": "49",
+    "genre": "ギャラクティックマーチ(UPPER)(EX)",
+    "title": "MADSPEED狂信道",
+    "difficulty": "強(+0.907±0.2)"
+  },
+  {
+    "id": "lv49|ヘビーメタル(EX)|I'm on Fire",
+    "level": "49",
+    "genre": "ヘビーメタル(EX)",
+    "title": "I'm on Fire",
+    "difficulty": "強(+0.936±0.4)"
+  },
+  {
+    "id": "lv49|ピアノ独奏無言歌 \"灰燼\"(EX)|ピアノ独奏無言歌 \"灰燼\"",
+    "level": "49",
+    "genre": "ピアノ独奏無言歌 \"灰燼\"(EX)",
+    "title": "ピアノ独奏無言歌 \"灰燼\"",
+    "difficulty": "強(+0.936±0.3)"
+  },
+  {
+    "id": "lv49|リナシタ(EX)|uən",
+    "level": "49",
+    "genre": "リナシタ(EX)",
+    "title": "uən",
+    "difficulty": "別格(+1.009±0.2)"
+  },
+  {
+    "id": "lv49|西馬込交通曲(EX)|西馬込交通曲",
+    "level": "49",
+    "genre": "西馬込交通曲(EX)",
+    "title": "西馬込交通曲",
+    "difficulty": "別格(+1.026±0.2)"
+  },
+  {
+    "id": "lv49|AVEL(EX)|AVEL",
+    "level": "49",
+    "genre": "AVEL(EX)",
+    "title": "AVEL",
+    "difficulty": "別格(+1.032±0.2)"
+  },
+  {
+    "id": "lv49|アディクティヴショータイム(EX)|24/7 Popperz",
+    "level": "49",
+    "genre": "アディクティヴショータイム(EX)",
+    "title": "24/7 Popperz",
+    "difficulty": "別格(+1.067±0.2)"
+  },
+  {
+    "id": "lv49|クラシック8(EX)|Line Times",
+    "level": "49",
+    "genre": "クラシック8(EX)",
+    "title": "Line Times",
+    "difficulty": "別格(+1.073±0.3)"
+  },
+  {
+    "id": "lv49|嵐の唄(EX)|嵐の唄",
+    "level": "49",
+    "genre": "嵐の唄(EX)",
+    "title": "嵐の唄",
+    "difficulty": "別格(+1.114±0.2)"
+  }
+]

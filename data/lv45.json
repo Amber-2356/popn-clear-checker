@@ -1,0 +1,1654 @@
+[
+  {
+    "id": "lv45|Airplane(EX)|Airplane",
+    "level": "45",
+    "genre": "Airplane(EX)",
+    "title": "Airplane",
+    "difficulty": "弱(-0.957±0.3)"
+  },
+  {
+    "id": "lv45|Everlasting Last(EX)|Everlasting Last",
+    "level": "45",
+    "genre": "Everlasting Last(EX)",
+    "title": "Everlasting Last",
+    "difficulty": "弱(-0.883±0.3)"
+  },
+  {
+    "id": "lv45|MOVE! (We Keep It Movin')(EX)|MOVE! (We Keep It Movin')",
+    "level": "45",
+    "genre": "MOVE! (We Keep It Movin')(EX)",
+    "title": "MOVE! (We Keep It Movin')",
+    "difficulty": "弱(-0.882±0.4)"
+  },
+  {
+    "id": "lv45|Timepiece phase II(H)|Timepiece phase II",
+    "level": "45",
+    "genre": "Timepiece phase II(H)",
+    "title": "Timepiece phase II",
+    "difficulty": "弱(-0.869±0.3)"
+  },
+  {
+    "id": "lv45|ファンキーコタ(EX)|AKATSUKI",
+    "level": "45",
+    "genre": "ファンキーコタ(EX)",
+    "title": "AKATSUKI",
+    "difficulty": "弱(-0.865±0.3)"
+  },
+  {
+    "id": "lv45|ハッピー琉球コア(EX)|FUNKY SUMMER BEACH",
+    "level": "45",
+    "genre": "ハッピー琉球コア(EX)",
+    "title": "FUNKY SUMMER BEACH",
+    "difficulty": "弱(-0.865±0.4)"
+  },
+  {
+    "id": "lv45|トップギアポップ(EX)|90G Race",
+    "level": "45",
+    "genre": "トップギアポップ(EX)",
+    "title": "90G Race",
+    "difficulty": "弱(-0.795±0.5)"
+  },
+  {
+    "id": "lv45|カドルコア(UPPER)(EX)|murmur twins (guitar pop ver.)",
+    "level": "45",
+    "genre": "カドルコア(UPPER)(EX)",
+    "title": "murmur twins (guitar pop ver.)",
+    "difficulty": "弱(-0.770±0.6)"
+  },
+  {
+    "id": "lv45|オレアの竪琴(EX)|オレアの竪琴",
+    "level": "45",
+    "genre": "オレアの竪琴(EX)",
+    "title": "オレアの竪琴",
+    "difficulty": "弱(-0.748±0.5)"
+  },
+  {
+    "id": "lv45|ウィンターポップ(EX)|White Lovers",
+    "level": "45",
+    "genre": "ウィンターポップ(EX)",
+    "title": "White Lovers",
+    "difficulty": "弱(-0.722±0.6)"
+  },
+  {
+    "id": "lv45|Keep the Faith(EX)|Keep the Faith",
+    "level": "45",
+    "genre": "Keep the Faith(EX)",
+    "title": "Keep the Faith",
+    "difficulty": "弱(-0.675±0.4)"
+  },
+  {
+    "id": "lv45|スコティッシュ(EX)|Bubble Bagpipe Hour",
+    "level": "45",
+    "genre": "スコティッシュ(EX)",
+    "title": "Bubble Bagpipe Hour",
+    "difficulty": "弱(-0.658±0.7)"
+  },
+  {
+    "id": "lv45|ヴィジュアル3(EX)|Late Riser",
+    "level": "45",
+    "genre": "ヴィジュアル3(EX)",
+    "title": "Late Riser",
+    "difficulty": "弱(-0.656±0.6)"
+  },
+  {
+    "id": "lv45|フォーエバーフレンズ(UPPER)(EX)|走れメロンパン",
+    "level": "45",
+    "genre": "フォーエバーフレンズ(UPPER)(EX)",
+    "title": "走れメロンパン",
+    "difficulty": "弱(-0.606±0.4)"
+  },
+  {
+    "id": "lv45|murmur twins -CIVILIAN SKUNK mix-(EX)|murmur twins -CIVILIAN SKUNK mix-",
+    "level": "45",
+    "genre": "murmur twins -CIVILIAN SKUNK mix-(EX)",
+    "title": "murmur twins -CIVILIAN SKUNK mix-",
+    "difficulty": "弱(-0.589±0.4)"
+  },
+  {
+    "id": "lv45|爆裂再生！フィーバー戦士ポップン14(EX)|爆裂再生！フィーバー戦士ポップン14",
+    "level": "45",
+    "genre": "爆裂再生！フィーバー戦士ポップン14(EX)",
+    "title": "爆裂再生！フィーバー戦士ポップン14",
+    "difficulty": "弱(-0.569±0.5)"
+  },
+  {
+    "id": "lv45|幻島アトランティス-4elements-(EX)|幻島アトランティス-4elements-",
+    "level": "45",
+    "genre": "幻島アトランティス-4elements-(EX)",
+    "title": "幻島アトランティス-4elements-",
+    "difficulty": "弱(-0.530±0.7)"
+  },
+  {
+    "id": "lv45|エレメンタルジグ(EX)|The Sealer～ア・ミリアとミリアの民～",
+    "level": "45",
+    "genre": "エレメンタルジグ(EX)",
+    "title": "The Sealer～ア・ミリアとミリアの民～",
+    "difficulty": "弱(-0.495±0.5)"
+  },
+  {
+    "id": "lv45|ベビーステップ(EX)|ベビーステップ",
+    "level": "45",
+    "genre": "ベビーステップ(EX)",
+    "title": "ベビーステップ",
+    "difficulty": "弱(-0.468±0.5)"
+  },
+  {
+    "id": "lv45|Awakening Wings(EX)|Awakening Wings",
+    "level": "45",
+    "genre": "Awakening Wings(EX)",
+    "title": "Awakening Wings",
+    "difficulty": "弱(-0.463±0.5)"
+  },
+  {
+    "id": "lv45|ラフロック(EX)|LOL!",
+    "level": "45",
+    "genre": "ラフロック(EX)",
+    "title": "LOL!",
+    "difficulty": "弱(-0.454±0.5)"
+  },
+  {
+    "id": "lv45|ご当地ヒーロー(EX)|爆臨！！イナカイザー！！",
+    "level": "45",
+    "genre": "ご当地ヒーロー(EX)",
+    "title": "爆臨！！イナカイザー！！",
+    "difficulty": "弱(-0.444±0.5)"
+  },
+  {
+    "id": "lv45|シトラステクノ(EX)|リモーネ・ディ・マッキーナ",
+    "level": "45",
+    "genre": "シトラステクノ(EX)",
+    "title": "リモーネ・ディ・マッキーナ",
+    "difficulty": "弱(-0.444±0.6)"
+  },
+  {
+    "id": "lv45|メズマライザー(EX)|メズマライザー",
+    "level": "45",
+    "genre": "メズマライザー(EX)",
+    "title": "メズマライザー",
+    "difficulty": "弱(-0.441±0.6)"
+  },
+  {
+    "id": "lv45|UKヒットチャート(EX)|MY GIFTS",
+    "level": "45",
+    "genre": "UKヒットチャート(EX)",
+    "title": "MY GIFTS",
+    "difficulty": "弱(-0.418±0.5)"
+  },
+  {
+    "id": "lv45|Sputnik(EX)|Sputnik",
+    "level": "45",
+    "genre": "Sputnik(EX)",
+    "title": "Sputnik",
+    "difficulty": "弱(-0.418±0.5)"
+  },
+  {
+    "id": "lv45|琴フュージョン(EX)|琴古都",
+    "level": "45",
+    "genre": "琴フュージョン(EX)",
+    "title": "琴古都",
+    "difficulty": "中(-0.392±0.7)"
+  },
+  {
+    "id": "lv45|Mystery at the bar(EX)|Mystery at the bar",
+    "level": "45",
+    "genre": "Mystery at the bar(EX)",
+    "title": "Mystery at the bar",
+    "difficulty": "中(-0.362±0.5)"
+  },
+  {
+    "id": "lv45|Dive to the Sky(EX)|Dive to the Sky",
+    "level": "45",
+    "genre": "Dive to the Sky(EX)",
+    "title": "Dive to the Sky",
+    "difficulty": "中(-0.360±0.5)"
+  },
+  {
+    "id": "lv45|すろぉもぉしょん(EX)|すろぉもぉしょん",
+    "level": "45",
+    "genre": "すろぉもぉしょん(EX)",
+    "title": "すろぉもぉしょん",
+    "difficulty": "中(-0.352±0.6)"
+  },
+  {
+    "id": "lv45|enigma(EX)|enigma",
+    "level": "45",
+    "genre": "enigma(EX)",
+    "title": "enigma",
+    "difficulty": "中(-0.348±0.4)"
+  },
+  {
+    "id": "lv45|ピアノ独奏無言歌 \"灰燼\"(H)|ピアノ独奏無言歌 \"灰燼\"",
+    "level": "45",
+    "genre": "ピアノ独奏無言歌 \"灰燼\"(H)",
+    "title": "ピアノ独奏無言歌 \"灰燼\"",
+    "difficulty": "中(-0.327±0.8)"
+  },
+  {
+    "id": "lv45|カレッジポップ(UPPER)(EX)|ペパーミントは私の敵",
+    "level": "45",
+    "genre": "カレッジポップ(UPPER)(EX)",
+    "title": "ペパーミントは私の敵",
+    "difficulty": "中(-0.324±0.5)"
+  },
+  {
+    "id": "lv45|魔理沙は大変なものを盗んでいきました(EX)|魔理沙は大変なものを盗んでいきました",
+    "level": "45",
+    "genre": "魔理沙は大変なものを盗んでいきました(EX)",
+    "title": "魔理沙は大変なものを盗んでいきました",
+    "difficulty": "中(-0.314±0.7)"
+  },
+  {
+    "id": "lv45|ドラムンワルツ(EX)|妖隠し -あやかしかくし-",
+    "level": "45",
+    "genre": "ドラムンワルツ(EX)",
+    "title": "妖隠し -あやかしかくし-",
+    "difficulty": "中(-0.291±0.8)"
+  },
+  {
+    "id": "lv45|チアフルチューン(EX)|Sing a Song Sign",
+    "level": "45",
+    "genre": "チアフルチューン(EX)",
+    "title": "Sing a Song Sign",
+    "difficulty": "中(-0.284±0.7)"
+  },
+  {
+    "id": "lv45|ブザービート(EX)|On Your Mark",
+    "level": "45",
+    "genre": "ブザービート(EX)",
+    "title": "On Your Mark",
+    "difficulty": "中(-0.282±0.6)"
+  },
+  {
+    "id": "lv45|toy boxer(EX)|toy boxer",
+    "level": "45",
+    "genre": "toy boxer(EX)",
+    "title": "toy boxer",
+    "difficulty": "中(-0.281±0.6)"
+  },
+  {
+    "id": "lv45|プログレッシブゴスペル(EX)|KHAMEN BREAK",
+    "level": "45",
+    "genre": "プログレッシブゴスペル(EX)",
+    "title": "KHAMEN BREAK",
+    "difficulty": "中(-0.259±0.6)"
+  },
+  {
+    "id": "lv45|螺旋(EX)|螺旋",
+    "level": "45",
+    "genre": "螺旋(EX)",
+    "title": "螺旋",
+    "difficulty": "中(-0.259±0.4)"
+  },
+  {
+    "id": "lv45|ロシア2(EX)|レトロ男爵の嘆き",
+    "level": "45",
+    "genre": "ロシア2(EX)",
+    "title": "レトロ男爵の嘆き",
+    "difficulty": "中(-0.257±0.6)"
+  },
+  {
+    "id": "lv45|スプリングドライブ(EX)|春風ブローインウィンド",
+    "level": "45",
+    "genre": "スプリングドライブ(EX)",
+    "title": "春風ブローインウィンド",
+    "difficulty": "中(-0.254±0.6)"
+  },
+  {
+    "id": "lv45|J-ポップ(EX)|Destiny lovers",
+    "level": "45",
+    "genre": "J-ポップ(EX)",
+    "title": "Destiny lovers",
+    "difficulty": "中(-0.252±0.5)"
+  },
+  {
+    "id": "lv45|摩天楼ファンク(EX)|Rejoin",
+    "level": "45",
+    "genre": "摩天楼ファンク(EX)",
+    "title": "Rejoin",
+    "difficulty": "中(-0.247±0.7)"
+  },
+  {
+    "id": "lv45|Redemption Tears(EX)|Redemption Tears",
+    "level": "45",
+    "genre": "Redemption Tears(EX)",
+    "title": "Redemption Tears",
+    "difficulty": "中(-0.242±0.5)"
+  },
+  {
+    "id": "lv45|what I wish(EX)|what I wish",
+    "level": "45",
+    "genre": "what I wish(EX)",
+    "title": "what I wish",
+    "difficulty": "中(-0.242±0.6)"
+  },
+  {
+    "id": "lv45|フラワーポップREMIX(EX)|Marigold (Jazzy Hip-Hop Remix)",
+    "level": "45",
+    "genre": "フラワーポップREMIX(EX)",
+    "title": "Marigold (Jazzy Hip-Hop Remix)",
+    "difficulty": "中(-0.240±0.5)"
+  },
+  {
+    "id": "lv45|雪夜の森のプリャースカ(EX)|雪夜の森のプリャースカ",
+    "level": "45",
+    "genre": "雪夜の森のプリャースカ(EX)",
+    "title": "雪夜の森のプリャースカ",
+    "difficulty": "中(-0.238±0.7)"
+  },
+  {
+    "id": "lv45|悪夢♡ショコラティエ(EX)|悪夢♡ショコラティエ",
+    "level": "45",
+    "genre": "悪夢♡ショコラティエ(EX)",
+    "title": "悪夢♡ショコラティエ",
+    "difficulty": "中(-0.235±0.5)"
+  },
+  {
+    "id": "lv45|ラブリーパンキッシュ(EX)|Shock Me",
+    "level": "45",
+    "genre": "ラブリーパンキッシュ(EX)",
+    "title": "Shock Me",
+    "difficulty": "中(-0.234±0.5)"
+  },
+  {
+    "id": "lv45|エレフラッドウェイヴ(EX)|Aqua",
+    "level": "45",
+    "genre": "エレフラッドウェイヴ(EX)",
+    "title": "Aqua",
+    "difficulty": "中(-0.232±0.6)"
+  },
+  {
+    "id": "lv45|スイーツプログレッシヴ(UPPER)(H)|ちくわパフェだよ☆CKP",
+    "level": "45",
+    "genre": "スイーツプログレッシヴ(UPPER)(H)",
+    "title": "ちくわパフェだよ☆CKP",
+    "difficulty": "中(-0.232±0.5)"
+  },
+  {
+    "id": "lv45|トザン(EX)|登山者たち",
+    "level": "45",
+    "genre": "トザン(EX)",
+    "title": "登山者たち",
+    "difficulty": "中(-0.203±0.5)"
+  },
+  {
+    "id": "lv45|大正吸血鬼奇譚(EX)|大正吸血鬼奇譚",
+    "level": "45",
+    "genre": "大正吸血鬼奇譚(EX)",
+    "title": "大正吸血鬼奇譚",
+    "difficulty": "中(-0.191±0.5)"
+  },
+  {
+    "id": "lv45|ヒートアップ(EX)|Ignited Night",
+    "level": "45",
+    "genre": "ヒートアップ(EX)",
+    "title": "Ignited Night",
+    "difficulty": "中(-0.189±0.6)"
+  },
+  {
+    "id": "lv45|謎情の雫 ft. Kanae Asaba(EX)|謎情の雫 ft. Kanae Asaba",
+    "level": "45",
+    "genre": "謎情の雫 ft. Kanae Asaba(EX)",
+    "title": "謎情の雫 ft. Kanae Asaba",
+    "difficulty": "中(-0.189±0.4)"
+  },
+  {
+    "id": "lv45|エンジェリックスマイル(EX)|滅亡天使 † にこきゅっぴん",
+    "level": "45",
+    "genre": "エンジェリックスマイル(EX)",
+    "title": "滅亡天使 † にこきゅっぴん",
+    "difficulty": "中(-0.172±0.7)"
+  },
+  {
+    "id": "lv45|The Lost Empire(EX)|The Lost Empire",
+    "level": "45",
+    "genre": "The Lost Empire(EX)",
+    "title": "The Lost Empire",
+    "difficulty": "中(-0.152±0.5)"
+  },
+  {
+    "id": "lv45|Watchdog The Sleeper(EX)|Watchdog The Sleeper",
+    "level": "45",
+    "genre": "Watchdog The Sleeper(EX)",
+    "title": "Watchdog The Sleeper",
+    "difficulty": "中(-0.152±0.5)"
+  },
+  {
+    "id": "lv45|ジュブナイルロック(EX)|偽りのアルカディア",
+    "level": "45",
+    "genre": "ジュブナイルロック(EX)",
+    "title": "偽りのアルカディア",
+    "difficulty": "中(-0.148±0.5)"
+  },
+  {
+    "id": "lv45|デスボサ(EX)|SUN/光線",
+    "level": "45",
+    "genre": "デスボサ(EX)",
+    "title": "SUN/光線",
+    "difficulty": "中(-0.142±0.4)"
+  },
+  {
+    "id": "lv45|ガールズロックエクストリーム(EX)|チカラ",
+    "level": "45",
+    "genre": "ガールズロックエクストリーム(EX)",
+    "title": "チカラ",
+    "difficulty": "中(-0.135±0.6)"
+  },
+  {
+    "id": "lv45|ヒップロック(EX)|大見解",
+    "level": "45",
+    "genre": "ヒップロック(EX)",
+    "title": "大見解",
+    "difficulty": "中(-0.127±0.6)"
+  },
+  {
+    "id": "lv45|ハイテンションギャルロック(EX)|イブの時代っ！",
+    "level": "45",
+    "genre": "ハイテンションギャルロック(EX)",
+    "title": "イブの時代っ！",
+    "difficulty": "中(-0.124±0.6)"
+  },
+  {
+    "id": "lv45|コンビニサーガ(EX)|24時間のヒーロー",
+    "level": "45",
+    "genre": "コンビニサーガ(EX)",
+    "title": "24時間のヒーロー",
+    "difficulty": "中(-0.120±0.6)"
+  },
+  {
+    "id": "lv45|The Escape(EX)|The Escape",
+    "level": "45",
+    "genre": "The Escape(EX)",
+    "title": "The Escape",
+    "difficulty": "中(-0.116±0.5)"
+  },
+  {
+    "id": "lv45|50th Memorial Songs -二人の時～under the cherry blossoms～-(EX)|50th Memorial Songs -二人の時～under the cherry blossoms～-",
+    "level": "45",
+    "genre": "50th Memorial Songs -二人の時～under the cherry blossoms～-(EX)",
+    "title": "50th Memorial Songs -二人の時～under the cherry blossoms～-",
+    "difficulty": "中(-0.086±0.3)"
+  },
+  {
+    "id": "lv45|BLAZE∞BREEZE - WHITE LIE Version -(EX)|BLAZE∞BREEZE - WHITE LIE Version -",
+    "level": "45",
+    "genre": "BLAZE∞BREEZE - WHITE LIE Version -(EX)",
+    "title": "BLAZE∞BREEZE - WHITE LIE Version -",
+    "difficulty": "中(-0.078±0.5)"
+  },
+  {
+    "id": "lv45|鋳鉄の檻(EX)|鋳鉄の檻",
+    "level": "45",
+    "genre": "鋳鉄の檻(EX)",
+    "title": "鋳鉄の檻",
+    "difficulty": "中(-0.070±0.6)"
+  },
+  {
+    "id": "lv45|Caldwell 99(EX)|Caldwell 99",
+    "level": "45",
+    "genre": "Caldwell 99(EX)",
+    "title": "Caldwell 99",
+    "difficulty": "中(-0.063±0.5)"
+  },
+  {
+    "id": "lv45|コンテンポラリーネイション4(EX)|Tree in Lake ～消えたチチカカの木～",
+    "level": "45",
+    "genre": "コンテンポラリーネイション4(EX)",
+    "title": "Tree in Lake ～消えたチチカカの木～",
+    "difficulty": "中(-0.044±0.6)"
+  },
+  {
+    "id": "lv45|Sulk(EX)|Sulk",
+    "level": "45",
+    "genre": "Sulk(EX)",
+    "title": "Sulk",
+    "difficulty": "中(-0.043±0.5)"
+  },
+  {
+    "id": "lv45|Jailbreaker(EX)|Jailbreaker",
+    "level": "45",
+    "genre": "Jailbreaker(EX)",
+    "title": "Jailbreaker",
+    "difficulty": "中(-0.035±0.6)"
+  },
+  {
+    "id": "lv45|交響的物語(EX)|駕篭の鳥",
+    "level": "45",
+    "genre": "交響的物語(EX)",
+    "title": "駕篭の鳥",
+    "difficulty": "中(-0.030±0.5)"
+  },
+  {
+    "id": "lv45|オータムビート(EX)|アキネイション",
+    "level": "45",
+    "genre": "オータムビート(EX)",
+    "title": "アキネイション",
+    "difficulty": "中(-0.013±0.4)"
+  },
+  {
+    "id": "lv45|波と凪の挟間で(EX)|波と凪の挟間で",
+    "level": "45",
+    "genre": "波と凪の挟間で(EX)",
+    "title": "波と凪の挟間で",
+    "difficulty": "中(+0.000±0.6)"
+  },
+  {
+    "id": "lv45|いますぐ輪廻(EX)|いますぐ輪廻",
+    "level": "45",
+    "genre": "いますぐ輪廻(EX)",
+    "title": "いますぐ輪廻",
+    "difficulty": ""
+  },
+  {
+    "id": "lv45|ウミユリ海底譚(EX)|ウミユリ海底譚",
+    "level": "45",
+    "genre": "ウミユリ海底譚(EX)",
+    "title": "ウミユリ海底譚",
+    "difficulty": ""
+  },
+  {
+    "id": "lv45|オーバーライド(EX)|オーバーライド",
+    "level": "45",
+    "genre": "オーバーライド(EX)",
+    "title": "オーバーライド",
+    "difficulty": ""
+  },
+  {
+    "id": "lv45|オービタリック K-スタイル(EX)|HYPER LUV",
+    "level": "45",
+    "genre": "オービタリック K-スタイル(EX)",
+    "title": "HYPER LUV",
+    "difficulty": ""
+  },
+  {
+    "id": "lv45|ガルタナネオ(EX)|BITTER-ENDER",
+    "level": "45",
+    "genre": "ガルタナネオ(EX)",
+    "title": "BITTER-ENDER",
+    "difficulty": ""
+  },
+  {
+    "id": "lv45|スイートウィスパー(EX)|Sugar Holic Candy Magic",
+    "level": "45",
+    "genre": "スイートウィスパー(EX)",
+    "title": "Sugar Holic Candy Magic",
+    "difficulty": ""
+  },
+  {
+    "id": "lv45|スウィートリドルポップ(EX)|なんてシュペール",
+    "level": "45",
+    "genre": "スウィートリドルポップ(EX)",
+    "title": "なんてシュペール",
+    "difficulty": ""
+  },
+  {
+    "id": "lv45|デジタル J-ポップ(EX)|Secret Rouge",
+    "level": "45",
+    "genre": "デジタル J-ポップ(EX)",
+    "title": "Secret Rouge",
+    "difficulty": ""
+  },
+  {
+    "id": "lv45|ときめきハウス(EX)|Take It! Make It!",
+    "level": "45",
+    "genre": "ときめきハウス(EX)",
+    "title": "Take It! Make It!",
+    "difficulty": ""
+  },
+  {
+    "id": "lv45|モダンジャパネスク(EX)|幽世幻夜",
+    "level": "45",
+    "genre": "モダンジャパネスク(EX)",
+    "title": "幽世幻夜",
+    "difficulty": ""
+  },
+  {
+    "id": "lv45|レヴェラチューン(UPPER)(H)|Fate No.23",
+    "level": "45",
+    "genre": "レヴェラチューン(UPPER)(H)",
+    "title": "Fate No.23",
+    "difficulty": ""
+  },
+  {
+    "id": "lv45|ロシアンシンフォニー(EX)|雪のラヴニーナ",
+    "level": "45",
+    "genre": "ロシアンシンフォニー(EX)",
+    "title": "雪のラヴニーナ",
+    "difficulty": ""
+  },
+  {
+    "id": "lv45|charm♡you(EX)|charm♡you",
+    "level": "45",
+    "genre": "charm♡you(EX)",
+    "title": "charm♡you",
+    "difficulty": ""
+  },
+  {
+    "id": "lv45|SNSミクスチャー(EX)|ブロックしよ♡",
+    "level": "45",
+    "genre": "SNSミクスチャー(EX)",
+    "title": "ブロックしよ♡",
+    "difficulty": ""
+  },
+  {
+    "id": "lv45|クラブジャズ(EX)|Betty Boo",
+    "level": "45",
+    "genre": "クラブジャズ(EX)",
+    "title": "Betty Boo",
+    "difficulty": "中(+0.008±0.7)"
+  },
+  {
+    "id": "lv45|プラチナムファンタジア(EX)|Märchen",
+    "level": "45",
+    "genre": "プラチナムファンタジア(EX)",
+    "title": "Märchen",
+    "difficulty": "中(+0.009±0.6)"
+  },
+  {
+    "id": "lv45|ロッテルダムテクノ(EX)|rottel-da-sun",
+    "level": "45",
+    "genre": "ロッテルダムテクノ(EX)",
+    "title": "rottel-da-sun",
+    "difficulty": "中(+0.018±0.6)"
+  },
+  {
+    "id": "lv45|Viden(EX)|Viden",
+    "level": "45",
+    "genre": "Viden(EX)",
+    "title": "Viden",
+    "difficulty": "中(+0.022±0.4)"
+  },
+  {
+    "id": "lv45|アンセムトランス(EX)|Votum stellarum",
+    "level": "45",
+    "genre": "アンセムトランス(EX)",
+    "title": "Votum stellarum",
+    "difficulty": "中(+0.026±0.6)"
+  },
+  {
+    "id": "lv45|サイバーアラビアン(EX)|Arrabbiata",
+    "level": "45",
+    "genre": "サイバーアラビアン(EX)",
+    "title": "Arrabbiata",
+    "difficulty": "中(+0.028±0.6)"
+  },
+  {
+    "id": "lv45|にじいろ☆とらべらぁず(EX)|にじいろ☆とらべらぁず",
+    "level": "45",
+    "genre": "にじいろ☆とらべらぁず(EX)",
+    "title": "にじいろ☆とらべらぁず",
+    "difficulty": "中(+0.029±0.4)"
+  },
+  {
+    "id": "lv45|マスカレードアイドル(EX)|DEVIL's Magic",
+    "level": "45",
+    "genre": "マスカレードアイドル(EX)",
+    "title": "DEVIL's Magic",
+    "difficulty": "中(+0.049±0.6)"
+  },
+  {
+    "id": "lv45|ネオ・サイコ・ロ・イズム(EX)|ネオ・サイコ・ロ・イズム",
+    "level": "45",
+    "genre": "ネオ・サイコ・ロ・イズム(EX)",
+    "title": "ネオ・サイコ・ロ・イズム",
+    "difficulty": "中(+0.054±0.5)"
+  },
+  {
+    "id": "lv45|virkatoの主題によるperson09風超絶技巧変奏曲(H)|virkatoの主題によるperson09風超絶技巧変奏曲",
+    "level": "45",
+    "genre": "virkatoの主題によるperson09風超絶技巧変奏曲(H)",
+    "title": "virkatoの主題によるperson09風超絶技巧変奏曲",
+    "difficulty": "中(+0.057±0.6)"
+  },
+  {
+    "id": "lv45|ミクスチャー(EX)|Jack",
+    "level": "45",
+    "genre": "ミクスチャー(EX)",
+    "title": "Jack",
+    "difficulty": "中(+0.065±0.6)"
+  },
+  {
+    "id": "lv45|アフロパーカッションパーティー(EX)|Earth Beat",
+    "level": "45",
+    "genre": "アフロパーカッションパーティー(EX)",
+    "title": "Earth Beat",
+    "difficulty": "中(+0.067±0.7)"
+  },
+  {
+    "id": "lv45|Medieval Action(EX)|Medieval Action",
+    "level": "45",
+    "genre": "Medieval Action(EX)",
+    "title": "Medieval Action",
+    "difficulty": "中(+0.070±0.6)"
+  },
+  {
+    "id": "lv45|ミッドナイト☆WAR(EX)|ミッドナイト☆WAR",
+    "level": "45",
+    "genre": "ミッドナイト☆WAR(EX)",
+    "title": "ミッドナイト☆WAR",
+    "difficulty": "中(+0.076±0.6)"
+  },
+  {
+    "id": "lv45|エモクトロ(EX)|少年リップルズ",
+    "level": "45",
+    "genre": "エモクトロ(EX)",
+    "title": "少年リップルズ",
+    "difficulty": "中(+0.078±0.6)"
+  },
+  {
+    "id": "lv45|天鈴少女(EX)|天鈴少女",
+    "level": "45",
+    "genre": "天鈴少女(EX)",
+    "title": "天鈴少女",
+    "difficulty": "中(+0.079±0.6)"
+  },
+  {
+    "id": "lv45|インフィニティ(EX)|kaleidoscope",
+    "level": "45",
+    "genre": "インフィニティ(EX)",
+    "title": "kaleidoscope",
+    "difficulty": "中(+0.079±0.5)"
+  },
+  {
+    "id": "lv45|いーあるふぁんくらぶ(UPPER)(EX)|いーあるふぁんくらぶ",
+    "level": "45",
+    "genre": "いーあるふぁんくらぶ(UPPER)(EX)",
+    "title": "いーあるふぁんくらぶ",
+    "difficulty": "中(+0.082±0.6)"
+  },
+  {
+    "id": "lv45|SUPER HEROINE!!(EX)|SUPER HEROINE!!",
+    "level": "45",
+    "genre": "SUPER HEROINE!!(EX)",
+    "title": "SUPER HEROINE!!",
+    "difficulty": "中(+0.085±0.4)"
+  },
+  {
+    "id": "lv45|イデア(H)|L-an!ma",
+    "level": "45",
+    "genre": "イデア(H)",
+    "title": "L-an!ma",
+    "difficulty": "中(+0.090±0.7)"
+  },
+  {
+    "id": "lv45|昭和初期カヨウ(EX)|悪アガキ",
+    "level": "45",
+    "genre": "昭和初期カヨウ(EX)",
+    "title": "悪アガキ",
+    "difficulty": "中(+0.126±0.6)"
+  },
+  {
+    "id": "lv45|ガムラン(EX)|Klungkung 1655",
+    "level": "45",
+    "genre": "ガムラン(EX)",
+    "title": "Klungkung 1655",
+    "difficulty": "中(+0.130±0.6)"
+  },
+  {
+    "id": "lv45|Crazy Shuffle(EX)|Crazy Shuffle",
+    "level": "45",
+    "genre": "Crazy Shuffle(EX)",
+    "title": "Crazy Shuffle",
+    "difficulty": "中(+0.133±0.5)"
+  },
+  {
+    "id": "lv45|熱情のサパデアード(EX)|熱情のサパデアード",
+    "level": "45",
+    "genre": "熱情のサパデアード(EX)",
+    "title": "熱情のサパデアード",
+    "difficulty": "中(+0.138±0.5)"
+  },
+  {
+    "id": "lv45|Que Sera Sera(EX)|Que Sera Sera",
+    "level": "45",
+    "genre": "Que Sera Sera(EX)",
+    "title": "Que Sera Sera",
+    "difficulty": "中(+0.140±0.5)"
+  },
+  {
+    "id": "lv45|マトリョシカ(UPPER)(EX)|マトリョシカ",
+    "level": "45",
+    "genre": "マトリョシカ(UPPER)(EX)",
+    "title": "マトリョシカ",
+    "difficulty": "中(+0.141±0.7)"
+  },
+  {
+    "id": "lv45|乱膳の舞姫(EX)|乱膳の舞姫",
+    "level": "45",
+    "genre": "乱膳の舞姫(EX)",
+    "title": "乱膳の舞姫",
+    "difficulty": "中(+0.141±0.5)"
+  },
+  {
+    "id": "lv45|ハイスピード幻想チューン(EX)|SHION",
+    "level": "45",
+    "genre": "ハイスピード幻想チューン(EX)",
+    "title": "SHION",
+    "difficulty": "中(+0.144±0.5)"
+  },
+  {
+    "id": "lv45|Burning Love(EX)|Burning Love",
+    "level": "45",
+    "genre": "Burning Love(EX)",
+    "title": "Burning Love",
+    "difficulty": "中(+0.155)"
+  },
+  {
+    "id": "lv45|biosphere ～天国の花～(EX)|biosphere ～天国の花～(EX)",
+    "level": "45",
+    "genre": "biosphere ～天国の花～(EX)",
+    "title": "biosphere ～天国の花～(EX)",
+    "difficulty": "中(+0.159±0.5)"
+  },
+  {
+    "id": "lv45|メガネロック(EX)|ポップミュージック論",
+    "level": "45",
+    "genre": "メガネロック(EX)",
+    "title": "ポップミュージック論",
+    "difficulty": "中(+0.165±0.5)"
+  },
+  {
+    "id": "lv45|ムラクモ2(H)|辿る君を超えて",
+    "level": "45",
+    "genre": "ムラクモ2(H)",
+    "title": "辿る君を超えて",
+    "difficulty": "中(+0.169±0.6)"
+  },
+  {
+    "id": "lv45|エピックポエトリー(EX)|Blind Justice ～Torn souls，Hurt Faiths～",
+    "level": "45",
+    "genre": "エピックポエトリー(EX)",
+    "title": "Blind Justice ～Torn souls，Hurt Faiths～",
+    "difficulty": "中(+0.170±0.8)"
+  },
+  {
+    "id": "lv45|恋するMonstro(EX)|恋するMonstro",
+    "level": "45",
+    "genre": "恋するMonstro(EX)",
+    "title": "恋するMonstro",
+    "difficulty": "中(+0.171±0.5)"
+  },
+  {
+    "id": "lv45|アジアンコンチェルト(EX)|鳳凰",
+    "level": "45",
+    "genre": "アジアンコンチェルト(EX)",
+    "title": "鳳凰",
+    "difficulty": "中(+0.174±0.6)"
+  },
+  {
+    "id": "lv45|draw!!!!(EX)|draw!!!!",
+    "level": "45",
+    "genre": "draw!!!!(EX)",
+    "title": "draw!!!!",
+    "difficulty": "中(+0.176±0.7)"
+  },
+  {
+    "id": "lv45|ユーラシアロック(EX)|Infinity Blue",
+    "level": "45",
+    "genre": "ユーラシアロック(EX)",
+    "title": "Infinity Blue",
+    "difficulty": "中(+0.187±0.5)"
+  },
+  {
+    "id": "lv45|ハイパー和風ジャズロック(EX)|乾坤一擲",
+    "level": "45",
+    "genre": "ハイパー和風ジャズロック(EX)",
+    "title": "乾坤一擲",
+    "difficulty": "中(+0.195±0.6)"
+  },
+  {
+    "id": "lv45|桃ヴィジュアル(EX)|紅ノ桃",
+    "level": "45",
+    "genre": "桃ヴィジュアル(EX)",
+    "title": "紅ノ桃",
+    "difficulty": "中(+0.196±0.4)"
+  },
+  {
+    "id": "lv45|プリティ雅(EX)|突確全回転！",
+    "level": "45",
+    "genre": "プリティ雅(EX)",
+    "title": "突確全回転！",
+    "difficulty": "中(+0.202±0.5)"
+  },
+  {
+    "id": "lv45|エタニティ(H)|QuoN",
+    "level": "45",
+    "genre": "エタニティ(H)",
+    "title": "QuoN",
+    "difficulty": "中(+0.217±0.6)"
+  },
+  {
+    "id": "lv45|脳ミソ de 向上(EX)|脳ミソ de 向上",
+    "level": "45",
+    "genre": "脳ミソ de 向上(EX)",
+    "title": "脳ミソ de 向上",
+    "difficulty": "中(+0.222±0.6)"
+  },
+  {
+    "id": "lv45|アイスクリームマジック(EX)|アイスクリームマジック",
+    "level": "45",
+    "genre": "アイスクリームマジック(EX)",
+    "title": "アイスクリームマジック",
+    "difficulty": "中(+0.224±0.6)"
+  },
+  {
+    "id": "lv45|悪魔城ドラキュラ(EX)|悪魔城ドラキュラメドレー ～ハイブリッド・ヴァージョン～",
+    "level": "45",
+    "genre": "悪魔城ドラキュラ(EX)",
+    "title": "悪魔城ドラキュラメドレー ～ハイブリッド・ヴァージョン～",
+    "difficulty": "中(+0.237±0.4)"
+  },
+  {
+    "id": "lv45|バイオテクノ(EX)|彙電子奏叉",
+    "level": "45",
+    "genre": "バイオテクノ(EX)",
+    "title": "彙電子奏叉",
+    "difficulty": "中(+0.237±0.4)"
+  },
+  {
+    "id": "lv45|向日葵サンセット(EX)|向日葵サンセット",
+    "level": "45",
+    "genre": "向日葵サンセット(EX)",
+    "title": "向日葵サンセット",
+    "difficulty": "中(+0.237±0.7)"
+  },
+  {
+    "id": "lv45|おしゃべりくのいち(EX)|シノビシノノメ",
+    "level": "45",
+    "genre": "おしゃべりくのいち(EX)",
+    "title": "シノビシノノメ",
+    "difficulty": "中(+0.241±0.5)"
+  },
+  {
+    "id": "lv45|Time has no money(EX)|Time has no money",
+    "level": "45",
+    "genre": "Time has no money(EX)",
+    "title": "Time has no money",
+    "difficulty": "中(+0.248±0.6)"
+  },
+  {
+    "id": "lv45|試験☆電波(EX)|爆なな☆てすとロイヤー",
+    "level": "45",
+    "genre": "試験☆電波(EX)",
+    "title": "爆なな☆てすとロイヤー",
+    "difficulty": "中(+0.258±0.6)"
+  },
+  {
+    "id": "lv45|ロービットサンプリング(EX)|HEAT-BIT-HIT-BEAT",
+    "level": "45",
+    "genre": "ロービットサンプリング(EX)",
+    "title": "HEAT-BIT-HIT-BEAT",
+    "difficulty": "中(+0.270±0.6)"
+  },
+  {
+    "id": "lv45|フォークトロニカREMIX(EX)|リンゴロジック(green apple rmx)",
+    "level": "45",
+    "genre": "フォークトロニカREMIX(EX)",
+    "title": "リンゴロジック(green apple rmx)",
+    "difficulty": "中(+0.273±0.6)"
+  },
+  {
+    "id": "lv45|BLACK JACKAL(EX)|BLACK JACKAL",
+    "level": "45",
+    "genre": "BLACK JACKAL(EX)",
+    "title": "BLACK JACKAL",
+    "difficulty": "中(+0.279±0.6)"
+  },
+  {
+    "id": "lv45|luck(UPPER)(EX)|luck",
+    "level": "45",
+    "genre": "luck(UPPER)(EX)",
+    "title": "luck",
+    "difficulty": "中(+0.286±0.5)"
+  },
+  {
+    "id": "lv45|エレクトロショック(EX)|attack in the minor key",
+    "level": "45",
+    "genre": "エレクトロショック(EX)",
+    "title": "attack in the minor key",
+    "difficulty": "中(+0.291±0.6)"
+  },
+  {
+    "id": "lv45|フォレストスノウ(EX)|月雪に舞う花のように",
+    "level": "45",
+    "genre": "フォレストスノウ(EX)",
+    "title": "月雪に舞う花のように",
+    "difficulty": "中(+0.291±0.6)"
+  },
+  {
+    "id": "lv45|Symphonic Tear(EX)|Symphonic Tear",
+    "level": "45",
+    "genre": "Symphonic Tear(EX)",
+    "title": "Symphonic Tear",
+    "difficulty": "中(+0.295±0.6)"
+  },
+  {
+    "id": "lv45|ハニートリック！！(EX)|ハニートリック！！",
+    "level": "45",
+    "genre": "ハニートリック！！(EX)",
+    "title": "ハニートリック！！",
+    "difficulty": "中(+0.303±0.6)"
+  },
+  {
+    "id": "lv45|ファッシネイション(EX)|朧",
+    "level": "45",
+    "genre": "ファッシネイション(EX)",
+    "title": "朧",
+    "difficulty": "中(+0.304±0.5)"
+  },
+  {
+    "id": "lv45|ナイト・オブ・ナイツ(EX)|ナイト・オブ・ナイツ",
+    "level": "45",
+    "genre": "ナイト・オブ・ナイツ(EX)",
+    "title": "ナイト・オブ・ナイツ",
+    "difficulty": "中(+0.308±0.6)"
+  },
+  {
+    "id": "lv45|Amazing Bomberman(EX)|Amazing Bomberman",
+    "level": "45",
+    "genre": "Amazing Bomberman(EX)",
+    "title": "Amazing Bomberman",
+    "difficulty": "中(+0.309±0.6)"
+  },
+  {
+    "id": "lv45|エイジロック(EX)|カリスマ(ゲームサイズ)",
+    "level": "45",
+    "genre": "エイジロック(EX)",
+    "title": "カリスマ(ゲームサイズ)",
+    "difficulty": "中(+0.311±0.5)"
+  },
+  {
+    "id": "lv45|Twinkle Wonderland -Sparkle Wonderland-(EX)|Twinkle Wonderland -Sparkle Wonderland-",
+    "level": "45",
+    "genre": "Twinkle Wonderland -Sparkle Wonderland-(EX)",
+    "title": "Twinkle Wonderland -Sparkle Wonderland-",
+    "difficulty": "中(+0.325±0.5)"
+  },
+  {
+    "id": "lv45|ハードロック(EX)|SA－DA－ME",
+    "level": "45",
+    "genre": "ハードロック(EX)",
+    "title": "SA－DA－ME",
+    "difficulty": "中(+0.327±0.5)"
+  },
+  {
+    "id": "lv45|年号ロック(EX)|すわひでおのゴロゴロ年号覚え唄決定版",
+    "level": "45",
+    "genre": "年号ロック(EX)",
+    "title": "すわひでおのゴロゴロ年号覚え唄決定版",
+    "difficulty": "中(+0.338±0.4)"
+  },
+  {
+    "id": "lv45|ダイバージェンス(EX)|ダイバージェンス",
+    "level": "45",
+    "genre": "ダイバージェンス(EX)",
+    "title": "ダイバージェンス",
+    "difficulty": "中(+0.338±0.6)"
+  },
+  {
+    "id": "lv45|レトロフューチャーREMIX(EX)|Passacaglia (J-RAVE MIX)",
+    "level": "45",
+    "genre": "レトロフューチャーREMIX(EX)",
+    "title": "Passacaglia (J-RAVE MIX)",
+    "difficulty": "中(+0.342±0.7)"
+  },
+  {
+    "id": "lv45|フォーリンアパートコア(EX)|Erosion Mark",
+    "level": "45",
+    "genre": "フォーリンアパートコア(EX)",
+    "title": "Erosion Mark",
+    "difficulty": "中(+0.347±0.6)"
+  },
+  {
+    "id": "lv45|ウィザウチュサマー(EX)|MAGICAL SUMMER SMILE",
+    "level": "45",
+    "genre": "ウィザウチュサマー(EX)",
+    "title": "MAGICAL SUMMER SMILE",
+    "difficulty": "中(+0.349±0.4)"
+  },
+  {
+    "id": "lv45|ガールズロック(EX)|☆shining☆",
+    "level": "45",
+    "genre": "ガールズロック(EX)",
+    "title": "☆shining☆",
+    "difficulty": "中(+0.363±0.6)"
+  },
+  {
+    "id": "lv45|ガールズロック(EX)|BRE∀K DOWN!",
+    "level": "45",
+    "genre": "ガールズロック(EX)",
+    "title": "BRE∀K DOWN!",
+    "difficulty": "中(+0.363±0.6)"
+  },
+  {
+    "id": "lv45|热情美味又快乐的歌(EX)|ロンロンへ ライライライ！",
+    "level": "45",
+    "genre": "热情美味又快乐的歌(EX)",
+    "title": "ロンロンへ ライライライ！",
+    "difficulty": "中(+0.370±0.7)"
+  },
+  {
+    "id": "lv45|デパーチャー(EX)|Last Traveller",
+    "level": "45",
+    "genre": "デパーチャー(EX)",
+    "title": "Last Traveller",
+    "difficulty": "中(+0.387±0.5)"
+  },
+  {
+    "id": "lv45|スノーウィーコア(EX)|snow prism",
+    "level": "45",
+    "genre": "スノーウィーコア(EX)",
+    "title": "snow prism",
+    "difficulty": "中(+0.390±0.5)"
+  },
+  {
+    "id": "lv45|アモ(EX)|アモ",
+    "level": "45",
+    "genre": "アモ(EX)",
+    "title": "アモ",
+    "difficulty": "強(+0.400±0.6)"
+  },
+  {
+    "id": "lv45|Sprite Digital(EX)|Sprite Digital",
+    "level": "45",
+    "genre": "Sprite Digital(EX)",
+    "title": "Sprite Digital",
+    "difficulty": "強(+0.406±0.5)"
+  },
+  {
+    "id": "lv45|リトルピアニストOp.3(EX)|君の音とAuftakt",
+    "level": "45",
+    "genre": "リトルピアニストOp.3(EX)",
+    "title": "君の音とAuftakt",
+    "difficulty": "強(+0.416±0.5)"
+  },
+  {
+    "id": "lv45|暗黒サイケデリック(EX)|暗黒サイケデリック",
+    "level": "45",
+    "genre": "暗黒サイケデリック(EX)",
+    "title": "暗黒サイケデリック",
+    "difficulty": "強(+0.418±0.5)"
+  },
+  {
+    "id": "lv45|サイバー中華ステップ(EX)|デュアルメモリ",
+    "level": "45",
+    "genre": "サイバー中華ステップ(EX)",
+    "title": "デュアルメモリ",
+    "difficulty": "強(+0.418±0.6)"
+  },
+  {
+    "id": "lv45|ミステリースウィング(EX)|Who done it?!",
+    "level": "45",
+    "genre": "ミステリースウィング(EX)",
+    "title": "Who done it?!",
+    "difficulty": "強(+0.420±0.5)"
+  },
+  {
+    "id": "lv45|ポップン体操(EX)|ヒデオ体操第一",
+    "level": "45",
+    "genre": "ポップン体操(EX)",
+    "title": "ヒデオ体操第一",
+    "difficulty": "強(+0.428±0.6)"
+  },
+  {
+    "id": "lv45|50th Memorial Songs -Beginning Story-(EX)|50th Memorial Songs -Beginning Story-",
+    "level": "45",
+    "genre": "50th Memorial Songs -Beginning Story-(EX)",
+    "title": "50th Memorial Songs -Beginning Story-",
+    "difficulty": "強(+0.438±0.5)"
+  },
+  {
+    "id": "lv45|ギンギラデスコ(EX)|ギンギンパーレー!!",
+    "level": "45",
+    "genre": "ギンギラデスコ(EX)",
+    "title": "ギンギンパーレー!!",
+    "difficulty": "強(+0.452±0.6)"
+  },
+  {
+    "id": "lv45|メロディックスピード(EX)|TRINITY ARROW",
+    "level": "45",
+    "genre": "メロディックスピード(EX)",
+    "title": "TRINITY ARROW",
+    "difficulty": "強(+0.460±0.5)"
+  },
+  {
+    "id": "lv45|ラブリーチップチューン(EX)|ひまわりと散歩道",
+    "level": "45",
+    "genre": "ラブリーチップチューン(EX)",
+    "title": "ひまわりと散歩道",
+    "difficulty": "強(+0.460±0.5)"
+  },
+  {
+    "id": "lv45|モフポップ ポプコネ(EX)|アルパカ☆Boooing",
+    "level": "45",
+    "genre": "モフポップ ポプコネ(EX)",
+    "title": "アルパカ☆Boooing",
+    "difficulty": "強(+0.462±0.4)"
+  },
+  {
+    "id": "lv45|万葉返歌(EX)|防人想歌",
+    "level": "45",
+    "genre": "万葉返歌(EX)",
+    "title": "防人想歌",
+    "difficulty": "強(+0.462±0.4)"
+  },
+  {
+    "id": "lv45|にゃんのパレードマーチ♪(EX)|にゃんのパレードマーチ♪",
+    "level": "45",
+    "genre": "にゃんのパレードマーチ♪(EX)",
+    "title": "にゃんのパレードマーチ♪",
+    "difficulty": "強(+0.467±0.5)"
+  },
+  {
+    "id": "lv45|マダーロック(EX)|Treasure Hoard",
+    "level": "45",
+    "genre": "マダーロック(EX)",
+    "title": "Treasure Hoard",
+    "difficulty": "強(+0.486±0.5)"
+  },
+  {
+    "id": "lv45|ポップコーンパーティー(EX)|microwave popcorn",
+    "level": "45",
+    "genre": "ポップコーンパーティー(EX)",
+    "title": "microwave popcorn",
+    "difficulty": "強(+0.495±0.5)"
+  },
+  {
+    "id": "lv45|フルーフ(EX)|水面静かに大地の烈日わたらせて",
+    "level": "45",
+    "genre": "フルーフ(EX)",
+    "title": "水面静かに大地の烈日わたらせて",
+    "difficulty": "強(+0.500±0.4)"
+  },
+  {
+    "id": "lv45|浪速っ子ブギ(EX)|こなもん屋人情歌",
+    "level": "45",
+    "genre": "浪速っ子ブギ(EX)",
+    "title": "こなもん屋人情歌",
+    "difficulty": "強(+0.503±0.5)"
+  },
+  {
+    "id": "lv45|home.(kors k Remix)(EX)|home.(kors k Remix)",
+    "level": "45",
+    "genre": "home.(kors k Remix)(EX)",
+    "title": "home.(kors k Remix)",
+    "difficulty": "強(+0.519±0.6)"
+  },
+  {
+    "id": "lv45|ケルティックブリーズ(EX)|Beyond the prairie",
+    "level": "45",
+    "genre": "ケルティックブリーズ(EX)",
+    "title": "Beyond the prairie",
+    "difficulty": "強(+0.524±0.5)"
+  },
+  {
+    "id": "lv45|太極拳(EX)|個胃X光",
+    "level": "45",
+    "genre": "太極拳(EX)",
+    "title": "個胃X光",
+    "difficulty": "強(+0.530±0.5)"
+  },
+  {
+    "id": "lv45|トゥイーポップ(EX)|777",
+    "level": "45",
+    "genre": "トゥイーポップ(EX)",
+    "title": "777",
+    "difficulty": "強(+0.536±0.4)"
+  },
+  {
+    "id": "lv45|哀愁スカ(EX)|流",
+    "level": "45",
+    "genre": "哀愁スカ(EX)",
+    "title": "流",
+    "difficulty": "強(+0.541±0.4)"
+  },
+  {
+    "id": "lv45|シュピーゲル(EX)|水鏡",
+    "level": "45",
+    "genre": "シュピーゲル(EX)",
+    "title": "水鏡",
+    "difficulty": "強(+0.541±0.4)"
+  },
+  {
+    "id": "lv45|VERSUS!!(EX)|VERSUS!!",
+    "level": "45",
+    "genre": "VERSUS!!(EX)",
+    "title": "VERSUS!!",
+    "difficulty": "強(+0.544±0.4)"
+  },
+  {
+    "id": "lv45|スカーレット(EX)|紅焔",
+    "level": "45",
+    "genre": "スカーレット(EX)",
+    "title": "紅焔",
+    "difficulty": "強(+0.559±0.5)"
+  },
+  {
+    "id": "lv45|エレクトロスウィング(EX)|Broadway Diva",
+    "level": "45",
+    "genre": "エレクトロスウィング(EX)",
+    "title": "Broadway Diva",
+    "difficulty": "強(+0.564±0.5)"
+  },
+  {
+    "id": "lv45|オービタリックテクノ(EX)|Flow",
+    "level": "45",
+    "genre": "オービタリックテクノ(EX)",
+    "title": "Flow",
+    "difficulty": "強(+0.567±0.5)"
+  },
+  {
+    "id": "lv45|ガムラントランス(EX)|Gamelan de Couple",
+    "level": "45",
+    "genre": "ガムラントランス(EX)",
+    "title": "Gamelan de Couple",
+    "difficulty": "強(+0.573±0.5)"
+  },
+  {
+    "id": "lv45|ドラムンフライ(H)|テンプラ揚三",
+    "level": "45",
+    "genre": "ドラムンフライ(H)",
+    "title": "テンプラ揚三",
+    "difficulty": "強(+0.574±0.6)"
+  },
+  {
+    "id": "lv45|エナジーロック(EX)|夢と現実",
+    "level": "45",
+    "genre": "エナジーロック(EX)",
+    "title": "夢と現実",
+    "difficulty": "強(+0.580±0.5)"
+  },
+  {
+    "id": "lv45|ウラ・ヒップロック2(EX)|男々道",
+    "level": "45",
+    "genre": "ウラ・ヒップロック2(EX)",
+    "title": "男々道",
+    "difficulty": "強(+0.582±0.5)"
+  },
+  {
+    "id": "lv45|グラディウス(EX)|GRADIUS -FULL SPEED-",
+    "level": "45",
+    "genre": "グラディウス(EX)",
+    "title": "GRADIUS -FULL SPEED-",
+    "difficulty": "強(+0.585±0.4)"
+  },
+  {
+    "id": "lv45|オーバー(EX)|オーバー",
+    "level": "45",
+    "genre": "オーバー(EX)",
+    "title": "オーバー",
+    "difficulty": "強(+0.595±0.4)"
+  },
+  {
+    "id": "lv45|ネオンスウィング(EX)|Spangles",
+    "level": "45",
+    "genre": "ネオンスウィング(EX)",
+    "title": "Spangles",
+    "difficulty": "強(+0.622±0.6)"
+  },
+  {
+    "id": "lv45|BROADWAY QUEENS(EX)|BROADWAY QUEENS",
+    "level": "45",
+    "genre": "BROADWAY QUEENS(EX)",
+    "title": "BROADWAY QUEENS",
+    "difficulty": "強(+0.667±0.4)"
+  },
+  {
+    "id": "lv45|スペースワルツ(EX)|flutter",
+    "level": "45",
+    "genre": "スペースワルツ(EX)",
+    "title": "flutter",
+    "difficulty": "強(+0.675±0.5)"
+  },
+  {
+    "id": "lv45|トランス(EX)|Sephirot",
+    "level": "45",
+    "genre": "トランス(EX)",
+    "title": "Sephirot",
+    "difficulty": "強(+0.677±0.8)"
+  },
+  {
+    "id": "lv45|パペットアンサンブル(EX)|セレクトショップに横たわるネコ",
+    "level": "45",
+    "genre": "パペットアンサンブル(EX)",
+    "title": "セレクトショップに横たわるネコ",
+    "difficulty": "強(+0.693±0.4)"
+  },
+  {
+    "id": "lv45|ラブリーくのいちポップ(EX)|くさびかたびら☆下克上！～暗躍の樹海MIX",
+    "level": "45",
+    "genre": "ラブリーくのいちポップ(EX)",
+    "title": "くさびかたびら☆下克上！～暗躍の樹海MIX",
+    "difficulty": "強(+0.694±0.3)"
+  },
+  {
+    "id": "lv45|クリスマスプレゼント(EX)|Pop'n Xmas 2004 ～電子ノウタゴエ～",
+    "level": "45",
+    "genre": "クリスマスプレゼント(EX)",
+    "title": "Pop'n Xmas 2004 ～電子ノウタゴエ～",
+    "difficulty": "強(+0.709±0.4)"
+  },
+  {
+    "id": "lv45|メッセージソング(EX)|MY",
+    "level": "45",
+    "genre": "メッセージソング(EX)",
+    "title": "MY",
+    "difficulty": "強(+0.714±0.3)"
+  },
+  {
+    "id": "lv45|テクノポップ(EX)|321 STARS",
+    "level": "45",
+    "genre": "テクノポップ(EX)",
+    "title": "321 STARS",
+    "difficulty": "強(+0.730±0.3)"
+  },
+  {
+    "id": "lv45|トイコンテンポラリー(H)|シュレーディンガーの猫",
+    "level": "45",
+    "genre": "トイコンテンポラリー(H)",
+    "title": "シュレーディンガーの猫",
+    "difficulty": "強(+0.733±0.4)"
+  },
+  {
+    "id": "lv45|Hibiki(EX)|Hibiki",
+    "level": "45",
+    "genre": "Hibiki(EX)",
+    "title": "Hibiki",
+    "difficulty": "強(+0.733±0.4)"
+  },
+  {
+    "id": "lv45|マッシュルームナイト(EX)|マッシュルームナイト",
+    "level": "45",
+    "genre": "マッシュルームナイト(EX)",
+    "title": "マッシュルームナイト",
+    "difficulty": "強(+0.738±0.4)"
+  },
+  {
+    "id": "lv45|デジタルスラッシュパンク(EX)|Be a Hero!",
+    "level": "45",
+    "genre": "デジタルスラッシュパンク(EX)",
+    "title": "Be a Hero!",
+    "difficulty": "強(+0.740±0.5)"
+  },
+  {
+    "id": "lv45|F/S(H)|F/S",
+    "level": "45",
+    "genre": "F/S(H)",
+    "title": "F/S",
+    "difficulty": "強(+0.745±0.4)"
+  },
+  {
+    "id": "lv45|フロンティア(EX)|探検ノート",
+    "level": "45",
+    "genre": "フロンティア(EX)",
+    "title": "探検ノート",
+    "difficulty": "強(+0.747±0.4)"
+  },
+  {
+    "id": "lv45|オリエンタルフォークロア(EX)|旗",
+    "level": "45",
+    "genre": "オリエンタルフォークロア(EX)",
+    "title": "旗",
+    "difficulty": "強(+0.751±0.4)"
+  },
+  {
+    "id": "lv45|Popperz Chronicle(H)|Popperz Chronicle",
+    "level": "45",
+    "genre": "Popperz Chronicle(H)",
+    "title": "Popperz Chronicle",
+    "difficulty": "強(+0.762±0.5)"
+  },
+  {
+    "id": "lv45|Lost wing at.0(EX)|Lost wing at.0",
+    "level": "45",
+    "genre": "Lost wing at.0(EX)",
+    "title": "Lost wing at.0",
+    "difficulty": "強(+0.782±0.5)"
+  },
+  {
+    "id": "lv45|ハッピーキュートコア(EX)|starmine (pop’n mixxx)",
+    "level": "45",
+    "genre": "ハッピーキュートコア(EX)",
+    "title": "starmine (pop’n mixxx)",
+    "difficulty": "強(+0.787±0.4)"
+  },
+  {
+    "id": "lv45|ファンタジアフュージョン(EX)|プロキオンの騎士団",
+    "level": "45",
+    "genre": "ファンタジアフュージョン(EX)",
+    "title": "プロキオンの騎士団",
+    "difficulty": "強(+0.795±0.4)"
+  },
+  {
+    "id": "lv45|オルガヌム(H)|НУМЛ",
+    "level": "45",
+    "genre": "オルガヌム(H)",
+    "title": "НУМЛ",
+    "difficulty": "強(+0.802±0.4)"
+  },
+  {
+    "id": "lv45|零の位相(EX)|零の位相",
+    "level": "45",
+    "genre": "零の位相(EX)",
+    "title": "零の位相",
+    "difficulty": "強(+0.812±0.4)"
+  },
+  {
+    "id": "lv45|なごりさえ(EX)|なごりさえ",
+    "level": "45",
+    "genre": "なごりさえ(EX)",
+    "title": "なごりさえ",
+    "difficulty": "強(+0.818±0.6)"
+  },
+  {
+    "id": "lv45|サムライスラッシュ(EX)|キリステゴメン",
+    "level": "45",
+    "genre": "サムライスラッシュ(EX)",
+    "title": "キリステゴメン",
+    "difficulty": "強(+0.823±0.4)"
+  },
+  {
+    "id": "lv45|メタリックサーガ(EX)|OVER THE LIMIT!",
+    "level": "45",
+    "genre": "メタリックサーガ(EX)",
+    "title": "OVER THE LIMIT!",
+    "difficulty": "強(+0.835±0.3)"
+  },
+  {
+    "id": "lv45|エレクトリックマヌーシュスウィング(EX)|デッドボヲル de ホームラン",
+    "level": "45",
+    "genre": "エレクトリックマヌーシュスウィング(EX)",
+    "title": "デッドボヲル de ホームラン",
+    "difficulty": "強(+0.836±0.4)"
+  },
+  {
+    "id": "lv45|ビートニク(EX)|UPBEAT",
+    "level": "45",
+    "genre": "ビートニク(EX)",
+    "title": "UPBEAT",
+    "difficulty": "強(+0.837±0.3)"
+  },
+  {
+    "id": "lv45|バディーポップ(EX)|badass girl",
+    "level": "45",
+    "genre": "バディーポップ(EX)",
+    "title": "badass girl",
+    "difficulty": "強(+0.846±0.4)"
+  },
+  {
+    "id": "lv45|ハンズアップ(EX)|Second Heaven",
+    "level": "45",
+    "genre": "ハンズアップ(EX)",
+    "title": "Second Heaven",
+    "difficulty": "強(+0.852±0.4)"
+  },
+  {
+    "id": "lv45|ハイパーファンタジア(EX)|Fantasia",
+    "level": "45",
+    "genre": "ハイパーファンタジア(EX)",
+    "title": "Fantasia",
+    "difficulty": "強(+0.853±0.4)"
+  },
+  {
+    "id": "lv45|文学少女オルタナティブ(EX)|フラッター現象の顛末と単一指向性の感情論",
+    "level": "45",
+    "genre": "文学少女オルタナティブ(EX)",
+    "title": "フラッター現象の顛末と単一指向性の感情論",
+    "difficulty": "強(+0.855±0.4)"
+  },
+  {
+    "id": "lv45|アラビアンダンス(EX)|歌劇 月夜のアラビア",
+    "level": "45",
+    "genre": "アラビアンダンス(EX)",
+    "title": "歌劇 月夜のアラビア",
+    "difficulty": "強(+0.864±0.3)"
+  },
+  {
+    "id": "lv45|スペースオペラ(EX)|Stardust Wanderers",
+    "level": "45",
+    "genre": "スペースオペラ(EX)",
+    "title": "Stardust Wanderers",
+    "difficulty": "強(+0.878±0.4)"
+  },
+  {
+    "id": "lv45|pastel@sweets labo(*'v'*)(EX)|pastel@sweets labo(*'v'*)",
+    "level": "45",
+    "genre": "pastel@sweets labo(*'v'*)(EX)",
+    "title": "pastel@sweets labo(*'v'*)",
+    "difficulty": "強(+0.937±0.3)"
+  },
+  {
+    "id": "lv45|ドラムステップ(EX)|Empathetic",
+    "level": "45",
+    "genre": "ドラムステップ(EX)",
+    "title": "Empathetic",
+    "difficulty": "強(+0.959±0.3)"
+  },
+  {
+    "id": "lv45|アンセムコア(H)|perditus†paradisus",
+    "level": "45",
+    "genre": "アンセムコア(H)",
+    "title": "perditus†paradisus",
+    "difficulty": "強(+0.961±0.4)"
+  },
+  {
+    "id": "lv45|マジカルポップ(EX)|おいかけっこワールド",
+    "level": "45",
+    "genre": "マジカルポップ(EX)",
+    "title": "おいかけっこワールド",
+    "difficulty": "強(+0.966±0.6)"
+  },
+  {
+    "id": "lv45|J-ロックφ(EX)|Looking for…",
+    "level": "45",
+    "genre": "J-ロックφ(EX)",
+    "title": "Looking for…",
+    "difficulty": "強(+0.975±0.3)"
+  },
+  {
+    "id": "lv45|クラシック9(H)|Hell? or Heaven?",
+    "level": "45",
+    "genre": "クラシック9(H)",
+    "title": "Hell? or Heaven?",
+    "difficulty": "強(+0.979±0.4)"
+  }
+]
