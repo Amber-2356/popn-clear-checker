@@ -104,6 +104,7 @@ table{
 <table>
 <thead>
 <tr>
+  <th>★</th>
   <th>譜面</th>
   <th>ジャンル</th>
   <th>タイトル</th>
@@ -168,7 +169,7 @@ let currentLevel = "43";
 let currentUser = null;
 let docRef = null;
 let unsubscribeSnapshot = null;
-let userData = { lamps: {}, clears: {}, memos: {} };
+let userData = { lamps: {}, clears: {}, memos: {}, favorites: {} };
 let saveTimer = null;
 let isApplyingRemote = false;
 
@@ -244,6 +245,26 @@ function renderSongs(){
   getLevelSongs().forEach(song => {
     const tr = document.createElement("tr");
 
+    const favoriteTd = document.createElement("td");
+    favoriteTd.className = "favorite-cell";
+
+    const favoriteButton = document.createElement("button");
+    favoriteButton.type = "button";
+    favoriteButton.className = "favorite-button";
+
+    const key = songKey(song);
+    favoriteButton.textContent = userData.favorites?.[key] ? "★" : "☆";
+    favoriteButton.disabled = !currentUser;
+
+    favoriteButton.addEventListener("click", () => {
+    userData.favorites[key] = !userData.favorites[key];
+    favoriteButton.textContent = userData.favorites[key] ? "★" : "☆";
+
+    saveData();
+    applyFilter();
+  });
+
+favoriteTd.appendChild(favoriteButton);
     const chartTd = document.createElement("td");
 
     const chartType = getChartType(song.genre);
@@ -312,7 +333,7 @@ function renderSongs(){
     memoTd.appendChild(memo);
 
     setLampRowClass(tr, savedLamp);
-    tr.append(chartTd, genreTd, titleTd, difficultyTd, clearTd, memoTd);
+    tr.append(favoriteTd, chartTd, genreTd, titleTd, difficultyTd, clearTd, memoTd);
     songBody.appendChild(tr);
   });
 }
