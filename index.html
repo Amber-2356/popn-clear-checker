@@ -10,6 +10,8 @@ table{border-collapse:collapse;width:100%}
 th,td{border:1px solid #ccc;padding:8px}
 th{position:sticky;top:0;background:#f5f5f5}
 .progress{font-size:20px;margin-bottom:15px;font-weight:bold}
+.progress-bar-wrap{width:100%;background:#e0e0e0;border-radius:4px;overflow:hidden}
+.progress-bar{height:20px;background:#4caf50;text-align:center;line-height:20px;color:white;font-weight:bold}
 .controls{display:flex;gap:12px;align-items:center;margin:12px 0 18px;flex-wrap:wrap}
 button{padding:6px 10px;cursor:pointer}
 #searchText{padding:6px;min-width:220px}
@@ -63,6 +65,32 @@ table{
   min-width:900px;
 }
 
+.progress-bar-wrap{
+  width:100%;
+  max-width:700px;
+  height:28px;
+  background:#e5e5e5;
+  border-radius:999px;
+  overflow:hidden;
+  margin:8px 0 16px;
+}
+
+.progress-bar{
+  height:100%;
+  width:0%;
+  background:#4caf50;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:white;
+  font-weight:bold;
+  transition:width .3s ease;
+}
+
+#progressPercent{
+  white-space:nowrap;
+}
+
 @media (max-width: 700px){
   body{padding:10px}
   table{font-size:13px}
@@ -82,6 +110,11 @@ table{
 
 <div class="level-tabs" id="levelTabs"></div>
 <div class="progress" id="progress"></div>
+<div class="progress-bar-wrap">
+  <div id="progressBar" class="progress-bar">
+    <span id="progressPercent">0%</span>
+  </div>
+</div>
 <div id="syncStatus" style="margin-bottom:10px;color:#555;">ログイン待ち...</div>
 <div id="loginNotice">未ログイン時はまっさらな表を表示します。編集するにはGoogleログインしてください。</div>
 
@@ -362,8 +395,16 @@ function updateProgress(){
     const lamp = userData.lamps?.[key] || (userData.clears?.[key] ? "C" : "");
     return isClearedLamp(lamp);
   }).length;
+  const percent = total ? (clear / total * 100) : 0;
+
   document.getElementById("progress").textContent =
-    `Lv${currentLevel} クリア率: ${clear}/${total} (${total ? (clear / total * 100).toFixed(1) : "0.0"}%)`;
+    `Lv${currentLevel} クリア率: ${clear}/${total}`;
+
+  document.getElementById("progressBar").style.width =
+    percent + "%";
+
+  document.getElementById("progressPercent").textContent =
+    percent.toFixed(1) + "%";
 }
 
 function applyFilter(){
