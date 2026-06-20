@@ -344,7 +344,7 @@ function setInputsEnabled(enabled){
 }
 
 function resetVisibleData(){
-  userData = { lamps: {}, clears: {}, memos: {} };
+  userData = { lamps: {}, clears: {}, memos: {}, favorites: {} };
   renderSongs();
   updateProgress();
   applyFilter();
@@ -393,12 +393,13 @@ function applyFilter(){
 }
 
 function collectData(){
-  return {
-    lamps: userData.lamps || {},
-    clears: userData.clears || {},
-    memos: userData.memos || {},
-    updatedAt: serverTimestamp()
-  };
+return {
+   lamps: userData.lamps || {},
+   clears: userData.clears || {},
+   memos: userData.memos || {},
+   favorites: userData.favorites || {},
+   updatedAt: serverTimestamp()
+};
 }
 
 function applyData(data){
@@ -406,7 +407,8 @@ function applyData(data){
   userData = {
     lamps: data?.lamps || {},
     clears: data?.clears || {},
-    memos: data?.memos || {}
+    memos: data?.memos || {},
+    favorites: data?.favorites || {}
   };
   renderSongs();
   updateProgress();
@@ -468,7 +470,8 @@ document.getElementById("exportData").addEventListener("click", () => {
     exportedAt: new Date().toISOString(),
     lamps: userData.lamps || {},
     clears: userData.clears || {},
-    memos: userData.memos || {}
+    memos: userData.memos || {},
+    favorites: userData.favorites || {} 
   };
   const blob = new Blob([JSON.stringify(data, null, 2)], {type:"application/json"});
   const url = URL.createObjectURL(blob);
