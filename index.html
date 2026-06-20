@@ -27,7 +27,12 @@ tr.cleared{background:#f0fff4}
 <body>
 <h1>ポップン Lv43 クリア管理</h1>
 <div class="progress" id="progress"></div>
-<div id="syncStatus" style="margin-bottom:10px;color:#555;">同期準備中...</div>
+<div id="authArea" style="margin:10px 0 14px;">
+  <button id="loginButton">Googleでログイン</button>
+  <button id="logoutButton" style="display:none;">ログアウト</button>
+  <span id="userInfo" style="margin-left:10px;color:#555;"></span>
+</div>
+<div id="syncStatus" style="margin-bottom:10px;color:#555;">ログイン待ち...</div>
 <div class="controls">
   <label><input type="checkbox" id="hideCleared"> 未クリアのみ表示</label>
   <button id="exportData">データを書き出し</button>
@@ -44,8 +49,18 @@ tr.cleared{background:#f0fff4}
 
 
 
+
+
+
 <script type="module">
 import { initializeApp } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-app.js";
+import {
+  getAuth,
+  GoogleAuthProvider,
+  signInWithPopup,
+  signOut,
+  onAuthStateChanged
+} from "https://www.gstatic.com/firebasejs/12.0.0/firebase-auth.js";
 import {
   getFirestore,
   doc,
@@ -65,17 +80,21 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
 const db = getFirestore(app);
-
-// いったん個人用として default に保存。
-// 認証を付ける場合は、ここをユーザーIDに変える。
-const docRef = doc(db, "popnLv43ClearData", "default");
+const provider = new GoogleAuthProvider();
 
 const checks = document.querySelectorAll('input[type=checkbox][data-id]');
 const memos = document.querySelectorAll('textarea.memo');
 const hideCleared = document.getElementById('hideCleared');
 const syncStatus = document.getElementById('syncStatus');
+const loginButton = document.getElementById('loginButton');
+const logoutButton = document.getElementById('logoutButton');
+const userInfo = document.getElementById('userInfo');
 
+let currentUser = null;
+let docRef = null;
+let unsubscribeSnapshot = null;
 let isApplyingRemote = false;
 let saveTimer = null;
 
@@ -83,6 +102,11 @@ function rowOf(el){ return el.closest('tr'); }
 
 function setStatus(text){
   syncStatus.textContent = text;
+}
+
+function setInputsEnabled(enabled){
+  checks.forEach(cb => cb.disabled = !enabled);
+  memos.forEach(memo => memo.disabled = !enabled);
 }
 
 function updateProgress(){
@@ -148,7 +172,7 @@ function applyLocalData(){
 }
 
 async function saveData(){
-  if(isApplyingRemote) return;
+  if(isApplyingRemote || !currentUser || !docRef) return;
   clearTimeout(saveTimer);
   setStatus("保存中...");
 
@@ -158,10 +182,23 @@ async function saveData(){
       setStatus("同期済み");
     } catch (e) {
       console.error(e);
-      setStatus("同期失敗：ネットワークまたはFirestoreルールを確認");
+      setStatus("同期失敗：Firestoreルールを確認");
     }
   }, 350);
 }
+
+loginButton.addEventListener('click', async () => {
+  try {
+    await signInWithPopup(auth, provider);
+  } catch(e) {
+    console.error(e);
+    alert("ログインに失敗しました。FirebaseのAuthorized domainsやGoogleプロバイダ設定を確認してください。");
+  }
+});
+
+logoutButton.addEventListener('click', async () => {
+  await signOut(auth);
+});
 
 checks.forEach(cb => {
   cb.addEventListener('change', () => {
@@ -215,8 +252,8 @@ document.getElementById('importData').addEventListener('change', event => {
     try {
       const data = JSON.parse(reader.result);
       applyData(data);
-      await setDoc(docRef, collectData(), { merge: true });
-      alert('読み込み完了・Firebaseへ同期しました');
+      await saveData();
+      alert('読み込み完了');
     } catch(e) {
       console.error(e);
       alert('読み込みに失敗しました');
@@ -226,34 +263,61 @@ document.getElementById('importData').addEventListener('change', event => {
 });
 
 applyLocalData();
+setInputsEnabled(false);
 
-try {
-  setStatus("Firebase接続中...");
-  const snap = await getDoc(docRef);
-
-  if(snap.exists()){
-    applyData(snap.data());
-    setStatus("同期済み");
-  } else {
-    // 初回は現在のローカル状態をFirebaseへ作成
-    await setDoc(docRef, collectData(), { merge: true });
-    setStatus("初期データを作成しました");
+onAuthStateChanged(auth, async user => {
+  if(unsubscribeSnapshot){
+    unsubscribeSnapshot();
+    unsubscribeSnapshot = null;
   }
 
-  onSnapshot(docRef, snapshot => {
-    if(snapshot.exists()){
-      applyData(snapshot.data());
-      setStatus("同期済み");
-    }
-  }, error => {
-    console.error(error);
-    setStatus("同期監視エラー：Firestoreルールを確認");
-  });
+  currentUser = user;
 
-} catch(e) {
-  console.error(e);
-  setStatus("Firebase接続失敗：ローカル保存で動作中");
-}
+  if(!user){
+    loginButton.style.display = "";
+    logoutButton.style.display = "none";
+    userInfo.textContent = "未ログイン";
+    setStatus("Googleログインしてください");
+    setInputsEnabled(false);
+    docRef = null;
+    return;
+  }
+
+  loginButton.style.display = "none";
+  logoutButton.style.display = "";
+  userInfo.textContent = `${user.displayName || "ログイン中"} (${user.email || ""})`;
+  setInputsEnabled(true);
+
+  // ユーザーごとの保存先
+  docRef = doc(db, "users", user.uid, "popnClearData", "lv43");
+
+  try {
+    setStatus("Firebase接続中...");
+    const snap = await getDoc(docRef);
+
+    if(snap.exists()){
+      applyData(snap.data());
+      setStatus("同期済み");
+    } else {
+      await setDoc(docRef, collectData(), { merge: true });
+      setStatus("初期データを作成しました");
+    }
+
+    unsubscribeSnapshot = onSnapshot(docRef, snapshot => {
+      if(snapshot.exists()){
+        applyData(snapshot.data());
+        setStatus("同期済み");
+      }
+    }, error => {
+      console.error(error);
+      setStatus("同期監視エラー：Firestoreルールを確認");
+    });
+
+  } catch(e) {
+    console.error(e);
+    setStatus("Firebase接続失敗：Firestoreルールを確認");
+  }
+});
 </script>
 
 </body>
