@@ -87,17 +87,21 @@ table{
 
 <div class="controls">
   <label>検索: <input id="searchText" type="search" placeholder="ジャンル・曲名で検索"></label>
+</div>
+
+<div class="controls">
   <span>譜面:</span>
   <label><input type="checkbox" class="chartFilter" value="EX" checked> EX</label>
   <label><input type="checkbox" class="chartFilter" value="H" checked> H</label>
   <label><input type="checkbox" class="chartFilter" value="N" checked> N</label>
+</div>
+
+<div class="controls">
+  <span>表示:</span>
   <label><input type="radio" name="clearFilter" value="all" checked>すべて</label>
   <label><input type="radio" name="clearFilter" value="uncleared">未クリアのみ</label>
-
-<label>
-  <input type="radio" name="clearFilter" value="cleared">
-  クリア済みのみ
-</label>
+  <label><input type="radio" name="clearFilter" value="cleared">クリア済みのみ</label>
+  <label><input type="radio" name="clearFilter" value="favorite">お気に入りのみ</label>
 </div>
 
 <div class="table-wrapper">
@@ -377,6 +381,9 @@ function applyFilter(){
     const cleared =
       isClearedLamp(sel.value);
 
+    const favoriteButton = tr.querySelector(".favorite-button");
+    const favorite = favoriteButton?.textContent === "★";
+
     let visible = true;
 
     if(filter === "uncleared"){
@@ -385,6 +392,10 @@ function applyFilter(){
 
     if(filter === "cleared"){
       visible = cleared;
+    }
+
+    if(filter === "favorite"){
+      visible = favorite;
     }
 
     tr.style.display = visible ? "" : "none";
