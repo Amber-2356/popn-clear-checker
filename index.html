@@ -16,6 +16,7 @@ button{padding:6px 10px;cursor:pointer}
 textarea.memo{width:220px;min-height:38px;resize:vertical;font-family:inherit}
 input[type="checkbox"]{transform:scale(1.3)}
 tr.cleared{background:#f0fff4}
+body.logged-out table, body.logged-out .controls{display:none}
 @media (max-width: 700px){
   body{padding:10px}
   table{font-size:13px}
@@ -24,7 +25,7 @@ tr.cleared{background:#f0fff4}
 }
 </style>
 </head>
-<body>
+<body class="logged-out">
 <h1>ポップン Lv43 クリア管理</h1>
 <div class="progress" id="progress"></div>
 <div id="authArea" style="margin:10px 0 14px;">
@@ -274,6 +275,7 @@ onAuthStateChanged(auth, async user => {
   currentUser = user;
 
   if(!user){
+    document.body.classList.add("logged-out");
     loginButton.style.display = "";
     logoutButton.style.display = "none";
     userInfo.textContent = "未ログイン";
@@ -283,6 +285,7 @@ onAuthStateChanged(auth, async user => {
     return;
   }
 
+  document.body.classList.remove("logged-out");
   loginButton.style.display = "none";
   logoutButton.style.display = "";
   userInfo.textContent = `${user.displayName || "ログイン中"} (${user.email || ""})`;
