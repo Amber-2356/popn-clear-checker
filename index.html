@@ -303,8 +303,14 @@
       background: transparent;
       font: inherit;
       font-weight: bold;
-      cursor: pointer;
       padding: 0;
+      pointer-events: none;
+      cursor: default;
+    }
+
+    .simple-view .header-toggle-button {
+      pointer-events: auto;
+      cursor: pointer;
     }
 
     .header-toggle-button::after {
@@ -325,7 +331,7 @@
       padding-top: 8px;
       padding-bottom: 8px;
       border-bottom: 1px solid #ddd;
-      box-shadow: 0 2px 6px rgba(0,0,0,.1);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
     }
 
     @media (max-width:700px) {
@@ -731,6 +737,7 @@
       applyFilter();
       isApplyingRemote = false;
     }
+
     function getSimpleNameColumn() {
       return localStorage.getItem("simpleNameColumn") || "genre";
     }
@@ -738,23 +745,13 @@
     function applySimpleNameColumn() {
       const column = getSimpleNameColumn();
 
-      document.body.classList.remove(
-        "simple-name-genre",
-        "simple-name-title"
-      );
+      document.body.classList.remove("simple-name-genre", "simple-name-title");
+      document.body.classList.add("simple-name-" + column);
 
-      document.body.classList.add(
-        "simple-name-" + column
-      );
-
-      const button =
-        document.getElementById("simpleNameToggleButton");
+      const button = document.getElementById("simpleNameToggleButton");
 
       if (button) {
-        button.textContent =
-          column === "genre"
-            ? "ジャンル"
-            : "タイトル";
+        button.textContent = column === "genre" ? "ジャンル" : "タイトル";
       }
     }
 
@@ -820,19 +817,14 @@
     });
 
     document.getElementById("simpleNameToggleButton").addEventListener("click", () => {
+      if (!document.body.classList.contains("simple-view")) {
+        return;
+      }
 
       const current = getSimpleNameColumn();
+      const next = current === "genre" ? "title" : "genre";
 
-      const next =
-        current === "genre"
-          ? "title"
-          : "genre";
-
-      localStorage.setItem(
-        "simpleNameColumn",
-        next
-      );
-
+      localStorage.setItem("simpleNameColumn", next);
       applySimpleNameColumn();
     });
 
