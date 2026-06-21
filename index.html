@@ -91,11 +91,50 @@ table{
   white-space:nowrap;
 }
 
-@media (max-width: 700px){
-  body{padding:10px}
-  table{font-size:13px}
-  th,td{padding:6px}
-  textarea.memo{width:150px}
+.simple-view th:nth-child(2),
+.simple-view td:nth-child(2),
+.simple-view th:nth-child(4),
+.simple-view td:nth-child(4),
+.simple-view th:nth-child(5),
+.simple-view td:nth-child(5),
+.simple-view th:nth-child(7),
+.simple-view td:nth-child(7){
+  display:none;
+}
+
+.simple-view table{
+  min-width:0;
+}
+
+@media (max-width:700px){
+
+  /* 譜面 */
+  th:nth-child(2),
+  td:nth-child(2){
+    display:none;
+  }
+
+  /* タイトル */
+  th:nth-child(4),
+  td:nth-child(4){
+    display:none;
+  }
+
+  /* 難易度 */
+  th:nth-child(5),
+  td:nth-child(5){
+    display:none;
+  }
+
+  /* メモ */
+  th:nth-child(7),
+  td:nth-child(7){
+    display:none;
+  }
+
+  table{
+    min-width:0;
+  }
 }
 </style>
 </head>
@@ -135,6 +174,12 @@ table{
   <label><input type="radio" name="clearFilter" value="uncleared">未クリアのみ</label>
   <label><input type="radio" name="clearFilter" value="cleared">クリア済みのみ</label>
   <label><input type="radio" name="clearFilter" value="favorite">お気に入りのみ</label>
+</div>
+
+<div class="controls">
+  <span>表示列:</span>
+  <button type="button" id="normalViewButton">通常表示</button>
+  <button type="button" id="simpleViewButton">簡易表示</button>
 </div>
 
 <div class="table-wrapper">
@@ -517,6 +562,16 @@ document.querySelectorAll(".chartFilter").forEach(cb => {
   });
 });
 
+document.getElementById("normalViewButton").addEventListener("click", () => {
+  document.body.classList.remove("simple-view");
+  localStorage.setItem("viewMode", "normal");
+});
+
+document.getElementById("simpleViewButton").addEventListener("click", () => {
+  document.body.classList.add("simple-view");
+  localStorage.setItem("viewMode", "simple");
+});
+
 document.getElementById("exportData").addEventListener("click", () => {
   const data = {
     exportedAt: new Date().toISOString(),
@@ -627,6 +682,12 @@ onAuthStateChanged(auth, async user => {
     setStatus("Firebase接続失敗：Firestoreルールを確認");
   }
 });
+
+const savedViewMode = localStorage.getItem("viewMode");
+
+if(savedViewMode === "simple"){
+  document.body.classList.add("simple-view");
+}
 
 loadSongs();
 </script>
