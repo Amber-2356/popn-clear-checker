@@ -195,6 +195,14 @@
       border: 1px solid #8a6d00
     }
 
+    /* メダルの色 */
+    select.medal {
+      padding: 6px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 6px;
+    }
+
     /* 行の色。譜面列だけは塗りつぶさない */
     tr.lamp-F td:not(.chart-cell) {
       background: #ffdddd
@@ -280,7 +288,9 @@
     .simple-view th:nth-child(5),
     .simple-view td:nth-child(5),
     .simple-view th:nth-child(7),
-    .simple-view td:nth-child(7) {
+    .simple-view td:nth-child(7),
+    .simple-view th:nth-child(8),
+    .simple-view td:nth-child(8) {
       display: none;
     }
 
@@ -417,6 +427,7 @@
           <th>タイトル</th>
           <th>難易度</th>
           <th>ランプ</th>
+          <th>メダル</th>
           <th>メモ</th>
         </tr>
       </thead>
@@ -476,7 +487,7 @@
     let currentUser = null;
     let docRef = null;
     let unsubscribeSnapshot = null;
-    let userData = { lamps: {}, clears: {}, memos: {}, favorites: {} };
+    let userData = { lamps: {}, clears: {}, memos: {}, favorites: {}, medals: {} };
     let saveTimer = null;
     let isApplyingRemote = false;
 
@@ -499,6 +510,37 @@
 
     function isClearedLamp(lamp) {
       return ["C", "FC", "PF"].includes(lamp);
+    }
+
+    function canEditMedal(lamp) {
+      return ["F", "C", "FC"].includes(lamp);
+    }
+
+    function getDisplayMedal(key, lamp) {
+      if (lamp === "PF") {
+        return "★";
+      }
+
+      if (canEditMedal(lamp)) {
+        return userData.medals?.[key] || "";
+      }
+
+      return "";
+    }
+
+    function updateMedalSelect(medalSelect, key, lamp) {
+      const medal = getDisplayMedal(key, lamp);
+
+      medalSelect.value = medal;
+      medalSelect.disabled = !currentUser || !canEditMedal(lamp);
+
+      if (lamp === "PF") {
+        userData.medals[key] = "★";
+      }
+
+      if (!canEditMedal(lamp) && lamp !== "PF") {
+        userData.medals[key] = "";
+      }
     }
 
     function setLampRowClass(row, lamp) {
@@ -616,8 +658,13 @@
         lampSelect.disabled = !currentUser;
 
         lampSelect.addEventListener("change", () => {
-          userData.lamps[songKey(song)] = lampSelect.value;
-          userData.clears[songKey(song)] = isClearedLamp(lampSelect.value);
+          const key = songKey(song);
+
+          userData.lamps[key] = lampSelect.value;
+          userData.clears[key] = isClearedLamp(lampSelect.value);
+
+          updateMedalSelect(medalSelect, key, lampSelect.value);
+
           setLampRowClass(tr, lampSelect.value);
           updateProgress();
           applyFilter();
@@ -625,6 +672,34 @@
         });
 
         clearTd.appendChild(lampSelect);
+
+        const medalTd = document.createElement("td");
+        const medalSelect = document.createElement("select");
+        medalSelect.className = "medal";
+        medalSelect.dataset.id = songKey(song);
+
+        const medalOptions = [
+          ["", "未設定"],
+          ["●", "●"],
+          ["◆", "◆"],
+          ["★", "★"]
+        ];
+
+        medalOptions.forEach(([value, label]) => {
+          const option = document.createElement("option");
+          option.value = value;
+          option.textContent = label;
+          medalSelect.appendChild(option);
+        });
+
+        updateMedalSelect(medalSelect, songKey(song), savedLamp);
+
+        medalSelect.addEventListener("change", () => {
+          userData.medals[songKey(song)] = medalSelect.value;
+          saveData();
+        });
+
+        medalTd.appendChild(medalSelect);
 
         const memoTd = document.createElement("td");
         const memo = document.createElement("textarea");
@@ -640,18 +715,30 @@
         memoTd.appendChild(memo);
 
         setLampRowClass(tr, savedLamp);
-        tr.append(favoriteTd, chartTd, genreTd, titleTd, difficultyTd, clearTd, memoTd);
+        tr.append(favoriteTd, chartTd, genreTd, titleTd, difficultyTd, clearTd, medalTd, memoTd);
         songBody.appendChild(tr);
       });
     }
 
     function setInputsEnabled(enabled) {
-      document.querySelectorAll('select.lamp[data-id]').forEach(sel => sel.disabled = !enabled);
-      document.querySelectorAll('textarea.memo').forEach(memo => memo.disabled = !enabled);
+      document.querySelectorAll('select.lamp[data-id]').forEach(sel => {
+        sel.disabled = !enabled;
+      });
+
+      document.querySelectorAll('select.medal[data-id]').forEach(sel => {
+        const key = sel.dataset.id;
+        const lamp = userData.lamps?.[key] || "";
+
+        sel.disabled = !enabled || !canEditMedal(lamp);
+      });
+
+      document.querySelectorAll('textarea.memo').forEach(memo => {
+        memo.disabled = !enabled;
+      });
     }
 
     function resetVisibleData() {
-      userData = { lamps: {}, clears: {}, memos: {}, favorites: {} };
+      userData = { lamps: {}, clears: {}, memos: {}, favorites: {}, medals: {} };
       renderSongs();
       updateProgress();
       applyFilter();
@@ -720,6 +807,7 @@
         clears: userData.clears || {},
         memos: userData.memos || {},
         favorites: userData.favorites || {},
+        medals: userData.medals || {},
         updatedAt: serverTimestamp()
       };
     }
@@ -730,7 +818,8 @@
         lamps: data?.lamps || {},
         clears: data?.clears || {},
         memos: data?.memos || {},
-        favorites: data?.favorites || {}
+        favorites: data?.favorites || {},
+        medals: data?.medals || {}
       };
       renderSongs();
       updateProgress();
@@ -839,7 +928,8 @@
         lamps: userData.lamps || {},
         clears: userData.clears || {},
         memos: userData.memos || {},
-        favorites: userData.favorites || {}
+        favorites: userData.favorites || {},
+        medals: userData.medals || {}
       };
       const blob = new Blob([JSON.stringify(data, null, 2)], { type: "application/json" });
       const url = URL.createObjectURL(blob);
