@@ -1,683 +1,962 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ポップン クリア管理</title>
-<style>
-body{font-family:sans-serif;max-width:1200px;margin:auto;padding:20px}
-table{border-collapse:collapse;width:100%}
-th,td{border:1px solid #ccc;padding:8px}
-th{position:sticky;top:0;background:#f5f5f5}
-.progress{font-size:20px;margin-bottom:15px;font-weight:bold}
-.progress-bar-wrap{width:100%;background:#e0e0e0;border-radius:4px;overflow:hidden}
-.progress-bar{height:20px;background:#4caf50;text-align:center;line-height:20px;color:white;font-weight:bold}
-.controls{display:flex;gap:12px;align-items:center;margin:12px 0 18px;flex-wrap:wrap}
-button{padding:6px 10px;cursor:pointer}
-#searchText{padding:6px;min-width:220px}
-textarea.memo{width:220px;min-height:38px;resize:vertical;font-family:inherit}
-input[type="checkbox"]{transform:scale(1.3)}
-tr.cleared{background:#f0fff4}
-select.lamp{padding:6px;font-size:14px}
-tr.lamp-F{background:#fff5f5}
-tr.lamp-A{background:#fff8f0}
-tr.lamp-E{background:#f7fbff}
-tr.lamp-C{background:#f0fff4}
-tr.lamp-FC{background:#fffbea}
-tr.lamp-PF{background:#f8f0ff}
-.data-management{margin-top:28px;padding:12px;border-top:1px solid #ddd;color:#666;font-size:14px}
-.data-management summary{cursor:pointer;color:#555}
-.data-management button{margin-right:8px}
-.level-tabs{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
-.level-tabs button.active{font-weight:bold;border:2px solid #333}
-#loginNotice{color:#555;margin-bottom:10px}
-
-/* ランプ色 */
-select.lamp{padding:6px;font-size:14px;font-weight:bold;border-radius:6px}
-select.lamp-F{background:#ffdddd;color:#b00020;border:1px solid #b00020}
-select.lamp-A{background:#ffe6c7;color:#b85c00;border:1px solid #b85c00}
-select.lamp-E{background:#ddffdd;color:#157a1f;border:1px solid #157a1f}
-select.lamp-C{background:#ead7c0;color:#6b3f1d;border:1px solid #6b3f1d}
-select.lamp-FC{background:#eeeeee;color:#555;border:1px solid #777}
-select.lamp-PF{background:#fff1a8;color:#8a6d00;border:1px solid #8a6d00}
-
-/* 行の色。譜面列だけは塗りつぶさない */
-tr.lamp-F td:not(.chart-cell){background:#ffdddd}
-tr.lamp-A td:not(.chart-cell){background:#ffe6c7}
-tr.lamp-E td:not(.chart-cell){background:#ddffdd}
-tr.lamp-C td:not(.chart-cell){background:#ead7c0}
-tr.lamp-FC td:not(.chart-cell){background:#eeeeee}
-tr.lamp-PF td:not(.chart-cell){background:#fff1a8}
-
-/* 譜面列 */
-.chart-cell{font-weight:bold;text-align:center;background:#fff !important}
-.chart-EX{color:#ff4fa3}
-.chart-H{color:#d4a800}
-.chart-N{color:#1fa64a}
-
-.table-wrapper{
-  width:100%;
-  overflow-x:auto;
-  -webkit-overflow-scrolling:touch;
-}
-
-table{
-  min-width:900px;
-}
-
-.progress-bar-wrap{
-  width:100%;
-  max-width:700px;
-  height:28px;
-  background:#e5e5e5;
-  border-radius:999px;
-  overflow:hidden;
-  margin:8px 0 16px;
-}
-
-.progress-bar{
-  height:100%;
-  width:0%;
-  background:#4caf50;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  color:white;
-  font-weight:bold;
-  transition:width .3s ease;
-}
-
-#progressPercent{
-  white-space:nowrap;
-}
-
-.simple-view th:nth-child(2),
-.simple-view td:nth-child(2),
-.simple-view th:nth-child(4),
-.simple-view td:nth-child(4),
-.simple-view th:nth-child(5),
-.simple-view td:nth-child(5),
-.simple-view th:nth-child(7),
-.simple-view td:nth-child(7){
-  display:none;
-}
-
-.simple-view table{
-  min-width:0;
-}
-
-@media (max-width:700px){
-  body{
-    padding:10px;
-  }
-
-  table{
-    font-size:13px;
-  }
-
-  th,td{
-    padding:6px;
-  }
-
-  textarea.memo{
-    width:150px;
-  }
-}
-
-</style>
-</head>
-<body>
-<h1>ポップン クリア管理</h1>
-
-<div id="authArea" style="margin:10px 0 14px;">
-  <button id="loginButton">Googleでログイン</button>
-  <button id="logoutButton" style="display:none;">ログアウト</button>
-  <span id="userInfo" style="margin-left:10px;color:#555;"></span>
-</div>
-
-<div class="level-tabs" id="levelTabs"></div>
-<div class="progress" id="progress"></div>
-<div class="progress-bar-wrap">
-  <div id="progressBar" class="progress-bar">
-    <span id="progressPercent">0%</span>
-  </div>
-</div>
-<div id="syncStatus" style="margin-bottom:10px;color:#555;">ログイン待ち...</div>
-<div id="loginNotice">未ログイン時はまっさらな表を表示します。編集するにはGoogleログインしてください。</div>
-
-<div class="controls">
-  <label>検索: <input id="searchText" type="search" placeholder="ジャンル・曲名で検索"></label>
-</div>
-
-<div class="controls">
-  <span>譜面:</span>
-  <label><input type="checkbox" class="chartFilter" value="EX" checked> EX</label>
-  <label><input type="checkbox" class="chartFilter" value="H" checked> H</label>
-  <label><input type="checkbox" class="chartFilter" value="N" checked> N</label>
-</div>
-
-<div class="controls">
-  <span>表示:</span>
-  <label><input type="radio" name="clearFilter" value="all" checked>すべて</label>
-  <label><input type="radio" name="clearFilter" value="uncleared">未クリアのみ</label>
-  <label><input type="radio" name="clearFilter" value="cleared">クリア済みのみ</label>
-  <label><input type="radio" name="clearFilter" value="favorite">お気に入りのみ</label>
-</div>
-
-<div class="controls">
-  <span>表示列:</span>
-  <button type="button" id="normalViewButton">通常表示</button>
-  <button type="button" id="simpleViewButton">簡易表示</button>
-</div>
-
-<div class="table-wrapper">
-<table>
-<thead>
-<tr>
-  <th>★</th>
-  <th>譜面</th>
-  <th>ジャンル</th>
-  <th>タイトル</th>
-  <th>難易度</th>
-  <th>ランプ</th>
-  <th>メモ</th>
-</tr>
-</thead>
-<tbody id="songBody"></tbody>
-</table>
-</div>
-
-<details id="dataManagement" class="data-management">
-  <summary>データ管理</summary>
-  <p>通常は使わなくてOKです。バックアップや移行時に使います。</p>
-  <button id="exportData">データを書き出し</button>
-  <input type="file" id="importData" accept="application/json" style="display:none">
-  <button type="button" id="importButton">データを読み込み</button>
-</details>
-
-<script type="module">
-import { initializeApp } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-app.js";
-import {
-  getAuth,
-  GoogleAuthProvider,
-  signInWithPopup,
-  signOut,
-  onAuthStateChanged
-} from "https://www.gstatic.com/firebasejs/12.0.0/firebase-auth.js";
-import {
-  getFirestore,
-  doc,
-  getDoc,
-  setDoc,
-  onSnapshot,
-  serverTimestamp
-} from "https://www.gstatic.com/firebasejs/12.0.0/firebase-firestore.js";
-
-const firebaseConfig = {
-  apiKey: "AIzaSyBTvLwUxFKoxtozcdFouC4fOdHIKbCdHQw",
-  authDomain: "popnclearchecker-f0721.firebaseapp.com",
-  projectId: "popnclearchecker-f0721",
-  storageBucket: "popnclearchecker-f0721.firebasestorage.app",
-  messagingSenderId: "54393525001",
-  appId: "1:54393525001:web:d4eec512a57c1af6ebf9d8"
-};
-
-const app = initializeApp(firebaseConfig);
-const auth = getAuth(app);
-const db = getFirestore(app);
-const provider = new GoogleAuthProvider();
-
-const songBody = document.getElementById("songBody");
-const levelTabs = document.getElementById("levelTabs");
-const syncStatus = document.getElementById("syncStatus");
-const loginButton = document.getElementById("loginButton");
-const logoutButton = document.getElementById("logoutButton");
-const userInfo = document.getElementById("userInfo");
-
-let songs = [];
-let currentLevel = "43";
-let currentUser = null;
-let docRef = null;
-let unsubscribeSnapshot = null;
-let userData = { lamps: {}, clears: {}, memos: {}, favorites: {} };
-let saveTimer = null;
-let isApplyingRemote = false;
-
-function setStatus(text){ syncStatus.textContent = text; }
-function songKey(song){ return song.id; }
-function rowOf(el){ return el.closest("tr"); }
-
-function getChartType(genre){
-  const match = genre.match(/\((EX|H|N)\)$/);
-  return match ? match[1] : "";
-}
-
-function getGenreName(genre){
-  return genre.replace(/\((EX|H|N)\)$/, "");
-}
-
-function getSelectedChartTypes(){
-  return [...document.querySelectorAll(".chartFilter:checked")].map(cb => cb.value);
-}
-
-function isClearedLamp(lamp){
-  return ["C", "FC", "PF"].includes(lamp);
-}
-
-function setLampRowClass(row, lamp){
-  row.classList.remove("lamp-F", "lamp-A", "lamp-E", "lamp-C", "lamp-FC", "lamp-PF", "cleared");
-  if(lamp){
-    row.classList.add("lamp-" + lamp);
-  }
-  row.classList.toggle("cleared", isClearedLamp(lamp));
-}
-
-function getLevelSongs(){
-  const searchText = (document.getElementById("searchText")?.value || "").trim().toLowerCase();
-  const selectedTypes = getSelectedChartTypes();
-
-  return songs.filter(song => {
-    if(song.level !== currentLevel) return false;
-
-    const chartType = getChartType(song.genre);
-    if(selectedTypes.length > 0 && !selectedTypes.includes(chartType)) return false;
-
-    if(searchText){
-      const text = `${song.genre} ${song.title} ${song.difficulty || ""}`.toLowerCase();
-      if(!text.includes(searchText)) return false;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ポップン クリア管理</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px
     }
 
-    return true;
-  });
-}
+    table {
+      border-collapse: collapse;
+      width: 100%
+    }
 
-function renderLevelTabs(){
-  const levels = [...new Set(songs.map(song => song.level))].sort((a,b) => Number(a) - Number(b));
-  levelTabs.innerHTML = "";
-  levels.forEach(level => {
-    const button = document.createElement("button");
-    button.textContent = `Lv${level}`;
-    button.className = level === currentLevel ? "active" : "";
-    button.addEventListener("click", () => {
-      currentLevel = level;
-      renderLevelTabs();
+    th,
+    td {
+      border: 1px solid #ccc;
+      padding: 8px
+    }
+
+    th {
+      background: #f5f5f5;
+    }
+
+    .progress {
+      font-size: 20px;
+      margin-bottom: 15px;
+      font-weight: bold
+    }
+
+    .progress-bar-wrap {
+      width: 100%;
+      background: #e0e0e0;
+      border-radius: 4px;
+      overflow: hidden
+    }
+
+    .progress-bar {
+      height: 20px;
+      background: #4caf50;
+      text-align: center;
+      line-height: 20px;
+      color: white;
+      font-weight: bold
+    }
+
+    .controls {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      margin: 12px 0 18px;
+      flex-wrap: wrap
+    }
+
+    button {
+      padding: 6px 10px;
+      cursor: pointer
+    }
+
+    #searchText {
+      padding: 6px;
+      min-width: 220px
+    }
+
+    textarea.memo {
+      width: 220px;
+      min-height: 38px;
+      resize: vertical;
+      font-family: inherit
+    }
+
+    input[type="checkbox"] {
+      transform: scale(1.3)
+    }
+
+    tr.cleared {
+      background: #f0fff4
+    }
+
+    select.lamp {
+      padding: 6px;
+      font-size: 14px
+    }
+
+    tr.lamp-F {
+      background: #fff5f5
+    }
+
+    tr.lamp-A {
+      background: #fff8f0
+    }
+
+    tr.lamp-E {
+      background: #f7fbff
+    }
+
+    tr.lamp-C {
+      background: #f0fff4
+    }
+
+    tr.lamp-FC {
+      background: #fffbea
+    }
+
+    tr.lamp-PF {
+      background: #f8f0ff
+    }
+
+    .data-management {
+      margin-top: 28px;
+      padding: 12px;
+      border-top: 1px solid #ddd;
+      color: #666;
+      font-size: 14px
+    }
+
+    .data-management summary {
+      cursor: pointer;
+      color: #555
+    }
+
+    .data-management button {
+      margin-right: 8px
+    }
+
+    .level-tabs {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      flex-wrap: nowrap;
+      padding-bottom: 6px;
+    }
+
+    .level-tabs button {
+      flex: 0 0 auto;
+    }
+
+    .level-tabs button.active {
+      font-weight: bold;
+      border: 2px solid #333
+    }
+
+    #loginNotice {
+      color: #555;
+      margin-bottom: 10px
+    }
+
+    /* ランプ色 */
+    select.lamp {
+      padding: 6px;
+      font-size: 14px;
+      font-weight: bold;
+      border-radius: 6px
+    }
+
+    select.lamp-F {
+      background: #ffdddd;
+      color: #b00020;
+      border: 1px solid #b00020
+    }
+
+    select.lamp-A {
+      background: #ffe6c7;
+      color: #b85c00;
+      border: 1px solid #b85c00
+    }
+
+    select.lamp-E {
+      background: #ddffdd;
+      color: #157a1f;
+      border: 1px solid #157a1f
+    }
+
+    select.lamp-C {
+      background: #ead7c0;
+      color: #6b3f1d;
+      border: 1px solid #6b3f1d
+    }
+
+    select.lamp-FC {
+      background: #eeeeee;
+      color: #555;
+      border: 1px solid #777
+    }
+
+    select.lamp-PF {
+      background: #fff1a8;
+      color: #8a6d00;
+      border: 1px solid #8a6d00
+    }
+
+    /* 行の色。譜面列だけは塗りつぶさない */
+    tr.lamp-F td:not(.chart-cell) {
+      background: #ffdddd
+    }
+
+    tr.lamp-A td:not(.chart-cell) {
+      background: #ffe6c7
+    }
+
+    tr.lamp-E td:not(.chart-cell) {
+      background: #ddffdd
+    }
+
+    tr.lamp-C td:not(.chart-cell) {
+      background: #ead7c0
+    }
+
+    tr.lamp-FC td:not(.chart-cell) {
+      background: #eeeeee
+    }
+
+    tr.lamp-PF td:not(.chart-cell) {
+      background: #fff1a8
+    }
+
+    /* 譜面列 */
+    .chart-cell {
+      font-weight: bold;
+      text-align: center;
+      background: #fff !important
+    }
+
+    .chart-EX {
+      color: #ff4fa3
+    }
+
+    .chart-H {
+      color: #d4a800
+    }
+
+    .chart-N {
+      color: #1fa64a
+    }
+
+    .table-wrapper {
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    table {
+      min-width: 900px;
+    }
+
+    .progress-bar-wrap {
+      width: 100%;
+      max-width: 700px;
+      height: 28px;
+      background: #e5e5e5;
+      border-radius: 999px;
+      overflow: hidden;
+      margin: 8px 0 16px;
+    }
+
+    .progress-bar {
+      height: 100%;
+      width: 0%;
+      background: #4caf50;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+      transition: width .3s ease;
+    }
+
+    #progressPercent {
+      white-space: nowrap;
+    }
+
+    .simple-view th:nth-child(2),
+    .simple-view td:nth-child(2),
+    .simple-view th:nth-child(5),
+    .simple-view td:nth-child(5),
+    .simple-view th:nth-child(7),
+    .simple-view td:nth-child(7) {
+      display: none;
+    }
+
+    .simple-view.simple-name-genre th:nth-child(4),
+    .simple-view.simple-name-genre td:nth-child(4) {
+      display: none;
+    }
+
+    .simple-view.simple-name-title th:nth-child(3),
+    .simple-view.simple-name-title td:nth-child(3) {
+      display: none;
+    }
+
+    .simple-view table {
+      min-width: 0;
+    }
+
+    .header-toggle-button {
+      border: none;
+      background: transparent;
+      font: inherit;
+      font-weight: bold;
+      cursor: pointer;
+      padding: 0;
+    }
+
+    .header-toggle-button::after {
+      content: " ⇄";
+      font-size: 12px;
+      color: #777;
+    }
+
+    body:not(.simple-view) .header-toggle-button::after {
+      content: "";
+    }
+
+    .sticky-controls {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: white;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #ddd;
+      box-shadow: 0 2px 6px rgba(0,0,0,.1);
+    }
+
+    @media (max-width:700px) {
+      body {
+        padding: 10px;
+      }
+
+      table {
+        font-size: 13px;
+      }
+
+      th,
+      td {
+        padding: 6px;
+      }
+
+      textarea.memo {
+        width: 150px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>ポップン クリア管理</h1>
+
+  <div id="authArea" style="margin:10px 0 14px;">
+    <button id="loginButton">Googleでログイン</button>
+    <button id="logoutButton" style="display:none;">ログアウト</button>
+    <span id="userInfo" style="margin-left:10px;color:#555;"></span>
+  </div>
+
+  <div class="level-tabs" id="levelTabs"></div>
+  <div class="progress" id="progress"></div>
+  <div class="progress-bar-wrap">
+    <div id="progressBar" class="progress-bar">
+      <span id="progressPercent">0%</span>
+    </div>
+  </div>
+  <div id="syncStatus" style="margin-bottom:10px;color:#555;">ログイン待ち...</div>
+  <div id="loginNotice">未ログイン時はまっさらな表を表示します。編集するにはGoogleログインしてください。</div>
+
+  <div class="sticky-controls">
+
+    <div class="controls">
+      <label>検索: <input id="searchText" type="search" placeholder="ジャンル・曲名で検索"></label>
+    </div>
+
+    <div class="controls">
+      <span>譜面:</span>
+      <label><input type="checkbox" class="chartFilter" value="EX" checked> EX</label>
+      <label><input type="checkbox" class="chartFilter" value="H" checked> H</label>
+      <label><input type="checkbox" class="chartFilter" value="N" checked> N</label>
+    </div>
+
+    <div class="controls">
+      <span>表示:</span>
+      <label><input type="radio" name="clearFilter" value="all" checked>すべて</label>
+      <label><input type="radio" name="clearFilter" value="uncleared">未クリアのみ</label>
+      <label><input type="radio" name="clearFilter" value="cleared">クリア済みのみ</label>
+      <label><input type="radio" name="clearFilter" value="favorite">お気に入りのみ</label>
+    </div>
+
+    <div class="controls">
+      <span>表示列:</span>
+      <button type="button" id="normalViewButton">通常表示</button>
+      <button type="button" id="simpleViewButton">簡易表示</button>
+    </div>
+
+  </div>
+
+  <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th>★</th>
+          <th>譜面</th>
+          <th>
+            <button type="button" id="simpleNameToggleButton" class="header-toggle-button">
+              ジャンル
+            </button>
+          </th>
+          <th>タイトル</th>
+          <th>難易度</th>
+          <th>ランプ</th>
+          <th>メモ</th>
+        </tr>
+      </thead>
+      <tbody id="songBody"></tbody>
+    </table>
+  </div>
+
+  <details id="dataManagement" class="data-management">
+    <summary>データ管理</summary>
+    <p>通常は使わなくてOKです。バックアップや移行時に使います。</p>
+    <button id="exportData">データを書き出し</button>
+    <input type="file" id="importData" accept="application/json" style="display:none">
+    <button type="button" id="importButton">データを読み込み</button>
+  </details>
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-app.js";
+    import {
+      getAuth,
+      GoogleAuthProvider,
+      signInWithPopup,
+      signOut,
+      onAuthStateChanged
+    } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-auth.js";
+    import {
+      getFirestore,
+      doc,
+      getDoc,
+      setDoc,
+      onSnapshot,
+      serverTimestamp
+    } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-firestore.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyBTvLwUxFKoxtozcdFouC4fOdHIKbCdHQw",
+      authDomain: "popnclearchecker-f0721.firebaseapp.com",
+      projectId: "popnclearchecker-f0721",
+      storageBucket: "popnclearchecker-f0721.firebasestorage.app",
+      messagingSenderId: "54393525001",
+      appId: "1:54393525001:web:d4eec512a57c1af6ebf9d8"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+    const db = getFirestore(app);
+    const provider = new GoogleAuthProvider();
+
+    const songBody = document.getElementById("songBody");
+    const levelTabs = document.getElementById("levelTabs");
+    const syncStatus = document.getElementById("syncStatus");
+    const loginButton = document.getElementById("loginButton");
+    const logoutButton = document.getElementById("logoutButton");
+    const userInfo = document.getElementById("userInfo");
+
+    let songs = [];
+    let currentLevel = "43";
+    let currentUser = null;
+    let docRef = null;
+    let unsubscribeSnapshot = null;
+    let userData = { lamps: {}, clears: {}, memos: {}, favorites: {} };
+    let saveTimer = null;
+    let isApplyingRemote = false;
+
+    function setStatus(text) { syncStatus.textContent = text; }
+    function songKey(song) { return song.id; }
+    function rowOf(el) { return el.closest("tr"); }
+
+    function getChartType(genre) {
+      const match = genre.match(/\((EX|H|N)\)$/);
+      return match ? match[1] : "";
+    }
+
+    function getGenreName(genre) {
+      return genre.replace(/\((EX|H|N)\)$/, "");
+    }
+
+    function getSelectedChartTypes() {
+      return [...document.querySelectorAll(".chartFilter:checked")].map(cb => cb.value);
+    }
+
+    function isClearedLamp(lamp) {
+      return ["C", "FC", "PF"].includes(lamp);
+    }
+
+    function setLampRowClass(row, lamp) {
+      row.classList.remove("lamp-F", "lamp-A", "lamp-E", "lamp-C", "lamp-FC", "lamp-PF", "cleared");
+      if (lamp) {
+        row.classList.add("lamp-" + lamp);
+      }
+      row.classList.toggle("cleared", isClearedLamp(lamp));
+    }
+
+    function getLevelSongs() {
+      const searchText = (document.getElementById("searchText")?.value || "").trim().toLowerCase();
+      const selectedTypes = getSelectedChartTypes();
+
+      return songs.filter(song => {
+        if (song.level !== currentLevel) return false;
+
+        const chartType = getChartType(song.genre);
+        if (selectedTypes.length > 0 && !selectedTypes.includes(chartType)) return false;
+
+        if (searchText) {
+          const text = `${song.genre} ${song.title} ${song.difficulty || ""}`.toLowerCase();
+          if (!text.includes(searchText)) return false;
+        }
+
+        return true;
+      });
+    }
+
+    function renderLevelTabs() {
+      const levels = [...new Set(songs.map(song => song.level))].sort((a, b) => Number(a) - Number(b));
+      levelTabs.innerHTML = "";
+      levels.forEach(level => {
+        const button = document.createElement("button");
+        button.textContent = `Lv${level}`;
+        button.className = level === currentLevel ? "active" : "";
+        button.addEventListener("click", () => {
+          currentLevel = level;
+          renderLevelTabs();
+          renderSongs();
+          updateProgress();
+          applyFilter();
+        });
+        levelTabs.appendChild(button);
+      });
+    }
+
+    function renderSongs() {
+      songBody.innerHTML = "";
+
+      getLevelSongs().forEach(song => {
+        const tr = document.createElement("tr");
+
+        const favoriteTd = document.createElement("td");
+        favoriteTd.className = "favorite-cell";
+
+        const favoriteButton = document.createElement("button");
+        favoriteButton.type = "button";
+        favoriteButton.className = "favorite-button";
+
+        const key = songKey(song);
+        favoriteButton.textContent = userData.favorites?.[key] ? "★" : "☆";
+        favoriteButton.disabled = !currentUser;
+
+        favoriteButton.addEventListener("click", () => {
+          userData.favorites[key] = !userData.favorites[key];
+          favoriteButton.textContent = userData.favorites[key] ? "★" : "☆";
+
+          saveData();
+          applyFilter();
+        });
+
+        favoriteTd.appendChild(favoriteButton);
+        const chartTd = document.createElement("td");
+
+        const chartType = getChartType(song.genre);
+
+        chartTd.textContent = chartType;
+        chartTd.className = "chart-cell chart-" + chartType;
+
+        const genreTd = document.createElement("td");
+        genreTd.textContent = getGenreName(song.genre);
+
+        const titleTd = document.createElement("td");
+        titleTd.textContent = song.title;
+
+        const difficultyTd = document.createElement("td");
+        difficultyTd.textContent = song.difficulty || "";
+
+        const clearTd = document.createElement("td");
+        const lampSelect = document.createElement("select");
+        lampSelect.className = "lamp";
+        lampSelect.dataset.id = songKey(song);
+
+        const lampOptions = [
+          ["", "未設定"],
+          ["F", "FAILED"],
+          ["A", "ASSIST CLEAR"],
+          ["E", "EASY"],
+          ["C", "CLEAR"],
+          ["FC", "FULL COMBO"],
+          ["PF", "PERFECT"]
+        ];
+
+        lampOptions.forEach(([value, label]) => {
+          const option = document.createElement("option");
+          option.value = value;
+          option.textContent = label;
+          lampSelect.appendChild(option);
+        });
+
+        const savedLamp = userData.lamps?.[songKey(song)]
+          || (userData.clears?.[songKey(song)] ? "C" : "");
+        lampSelect.value = savedLamp;
+        lampSelect.disabled = !currentUser;
+
+        lampSelect.addEventListener("change", () => {
+          userData.lamps[songKey(song)] = lampSelect.value;
+          userData.clears[songKey(song)] = isClearedLamp(lampSelect.value);
+          setLampRowClass(tr, lampSelect.value);
+          updateProgress();
+          applyFilter();
+          saveData();
+        });
+
+        clearTd.appendChild(lampSelect);
+
+        const memoTd = document.createElement("td");
+        const memo = document.createElement("textarea");
+        memo.className = "memo";
+        memo.dataset.id = songKey(song);
+        memo.placeholder = "例：鏡試す / ラスト注意";
+        memo.value = userData.memos[songKey(song)] || "";
+        memo.disabled = !currentUser;
+        memo.addEventListener("input", () => {
+          userData.memos[songKey(song)] = memo.value;
+          saveData();
+        });
+        memoTd.appendChild(memo);
+
+        setLampRowClass(tr, savedLamp);
+        tr.append(favoriteTd, chartTd, genreTd, titleTd, difficultyTd, clearTd, memoTd);
+        songBody.appendChild(tr);
+      });
+    }
+
+    function setInputsEnabled(enabled) {
+      document.querySelectorAll('select.lamp[data-id]').forEach(sel => sel.disabled = !enabled);
+      document.querySelectorAll('textarea.memo').forEach(memo => memo.disabled = !enabled);
+    }
+
+    function resetVisibleData() {
+      userData = { lamps: {}, clears: {}, memos: {}, favorites: {} };
+      renderSongs();
+      updateProgress();
+      applyFilter();
+    }
+
+    function updateProgress() {
+      const levelSongs = getLevelSongs();
+      const total = levelSongs.length;
+      const clear = levelSongs.filter(song => {
+        const key = songKey(song);
+        const lamp = userData.lamps?.[key] || (userData.clears?.[key] ? "C" : "");
+        return isClearedLamp(lamp);
+      }).length;
+      const percent = total ? (clear / total * 100) : 0;
+
+      document.getElementById("progress").textContent =
+        `Lv${currentLevel} クリア率: ${clear}/${total}`;
+
+      document.getElementById("progressBar").style.width =
+        percent + "%";
+
+      document.getElementById("progressPercent").textContent =
+        percent.toFixed(1) + "%";
+    }
+
+    function applyFilter() {
+
+      const filter =
+        document.querySelector(
+          'input[name="clearFilter"]:checked'
+        ).value;
+
+      document.querySelectorAll('#songBody tr').forEach(tr => {
+
+        const sel =
+          tr.querySelector('select.lamp[data-id]');
+
+        const cleared =
+          isClearedLamp(sel.value);
+
+        const favoriteButton = tr.querySelector(".favorite-button");
+        const favorite = favoriteButton?.textContent === "★";
+
+        let visible = true;
+
+        if (filter === "uncleared") {
+          visible = !cleared;
+        }
+
+        if (filter === "cleared") {
+          visible = cleared;
+        }
+
+        if (filter === "favorite") {
+          visible = favorite;
+        }
+
+        tr.style.display = visible ? "" : "none";
+
+      });
+    }
+
+    function collectData() {
+      return {
+        lamps: userData.lamps || {},
+        clears: userData.clears || {},
+        memos: userData.memos || {},
+        favorites: userData.favorites || {},
+        updatedAt: serverTimestamp()
+      };
+    }
+
+    function applyData(data) {
+      isApplyingRemote = true;
+      userData = {
+        lamps: data?.lamps || {},
+        clears: data?.clears || {},
+        memos: data?.memos || {},
+        favorites: data?.favorites || {}
+      };
+      renderSongs();
+      updateProgress();
+      applyFilter();
+      isApplyingRemote = false;
+    }
+    function getSimpleNameColumn() {
+      return localStorage.getItem("simpleNameColumn") || "genre";
+    }
+
+    function applySimpleNameColumn() {
+      const column = getSimpleNameColumn();
+
+      document.body.classList.remove(
+        "simple-name-genre",
+        "simple-name-title"
+      );
+
+      document.body.classList.add(
+        "simple-name-" + column
+      );
+
+      const button =
+        document.getElementById("simpleNameToggleButton");
+
+      if (button) {
+        button.textContent =
+          column === "genre"
+            ? "ジャンル"
+            : "タイトル";
+      }
+    }
+
+    async function saveData() {
+      if (isApplyingRemote || !currentUser || !docRef) return;
+      clearTimeout(saveTimer);
+      setStatus("保存中...");
+
+      saveTimer = setTimeout(async () => {
+        try {
+          await setDoc(docRef, collectData(), { merge: true });
+          setStatus("同期済み");
+        } catch (e) {
+          console.error(e);
+          setStatus("同期失敗：Firestoreルールを確認");
+        }
+      }, 350);
+    }
+
+    loginButton.addEventListener("click", async () => {
+      try {
+        await signInWithPopup(auth, provider);
+      } catch (e) {
+        console.error(e);
+        alert("ログインに失敗しました。FirebaseのAuthorized domainsやGoogleプロバイダ設定を確認してください。");
+      }
+    });
+
+    logoutButton.addEventListener("click", async () => {
+      await signOut(auth);
+    });
+
+    document.querySelectorAll('input[name="clearFilter"]').forEach(radio => {
+      radio.addEventListener("change", () => {
+        applyFilter();
+      });
+    });
+
+    document.getElementById("searchText").addEventListener("input", () => {
       renderSongs();
       updateProgress();
       applyFilter();
     });
-    levelTabs.appendChild(button);
-  });
-}
 
-function renderSongs(){
-  songBody.innerHTML = "";
-
-  getLevelSongs().forEach(song => {
-    const tr = document.createElement("tr");
-
-    const favoriteTd = document.createElement("td");
-    favoriteTd.className = "favorite-cell";
-
-    const favoriteButton = document.createElement("button");
-    favoriteButton.type = "button";
-    favoriteButton.className = "favorite-button";
-
-    const key = songKey(song);
-    favoriteButton.textContent = userData.favorites?.[key] ? "★" : "☆";
-    favoriteButton.disabled = !currentUser;
-
-    favoriteButton.addEventListener("click", () => {
-    userData.favorites[key] = !userData.favorites[key];
-    favoriteButton.textContent = userData.favorites[key] ? "★" : "☆";
-
-    saveData();
-    applyFilter();
-  });
-
-favoriteTd.appendChild(favoriteButton);
-    const chartTd = document.createElement("td");
-
-    const chartType = getChartType(song.genre);
-
-    chartTd.textContent = chartType;
-    chartTd.className = "chart-cell chart-" + chartType;
-
-    const genreTd = document.createElement("td");
-    genreTd.textContent = getGenreName(song.genre);
-
-    const titleTd = document.createElement("td");
-    titleTd.textContent = song.title;
-
-    const difficultyTd = document.createElement("td");
-    difficultyTd.textContent = song.difficulty || "";
-
-    const clearTd = document.createElement("td");
-    const lampSelect = document.createElement("select");
-    lampSelect.className = "lamp";
-    lampSelect.dataset.id = songKey(song);
-
-    const lampOptions = [
-      ["", "未設定"],
-      ["F", "FAILED"],
-      ["A", "ASSIST CLEAR"],
-      ["E", "EASY"],
-      ["C", "CLEAR"],
-      ["FC", "FULL COMBO"],
-      ["PF", "PERFECT"]
-    ];
-
-    lampOptions.forEach(([value, label]) => {
-      const option = document.createElement("option");
-      option.value = value;
-      option.textContent = label;
-      lampSelect.appendChild(option);
+    document.querySelectorAll(".chartFilter").forEach(cb => {
+      cb.addEventListener("change", () => {
+        renderSongs();
+        updateProgress();
+        applyFilter();
+      });
     });
 
-    const savedLamp = userData.lamps?.[songKey(song)]
-      || (userData.clears?.[songKey(song)] ? "C" : "");
-    lampSelect.value = savedLamp;
-    lampSelect.disabled = !currentUser;
+    document.getElementById("normalViewButton").addEventListener("click", () => {
+      document.body.classList.remove("simple-view");
+      localStorage.setItem("viewMode", "normal");
+      applySimpleNameColumn();
+    });
 
-    lampSelect.addEventListener("change", () => {
-      userData.lamps[songKey(song)] = lampSelect.value;
-      userData.clears[songKey(song)] = isClearedLamp(lampSelect.value);
-      setLampRowClass(tr, lampSelect.value);
+    document.getElementById("simpleViewButton").addEventListener("click", () => {
+      document.body.classList.add("simple-view");
+      localStorage.setItem("viewMode", "simple");
+      applySimpleNameColumn();
+    });
+
+    document.getElementById("simpleNameToggleButton").addEventListener("click", () => {
+
+      const current = getSimpleNameColumn();
+
+      const next =
+        current === "genre"
+          ? "title"
+          : "genre";
+
+      localStorage.setItem(
+        "simpleNameColumn",
+        next
+      );
+
+      applySimpleNameColumn();
+    });
+
+    document.getElementById("exportData").addEventListener("click", () => {
+      const data = {
+        exportedAt: new Date().toISOString(),
+        lamps: userData.lamps || {},
+        clears: userData.clears || {},
+        memos: userData.memos || {},
+        favorites: userData.favorites || {}
+      };
+      const blob = new Blob([JSON.stringify(data, null, 2)], { type: "application/json" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "popn_clear_data.json";
+      a.click();
+      URL.revokeObjectURL(url);
+    });
+
+    document.getElementById("importButton").addEventListener("click", () => {
+      document.getElementById("importData").click();
+    });
+
+    document.getElementById("importData").addEventListener("change", event => {
+      const file = event.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = async () => {
+        try {
+          const data = JSON.parse(reader.result);
+          applyData(data);
+          await saveData();
+          alert("読み込み完了");
+        } catch (e) {
+          console.error(e);
+          alert("読み込みに失敗しました");
+        }
+      };
+      reader.readAsText(file);
+    });
+
+    async function loadSongs() {
+      const levels = ["40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50"];
+      const results = await Promise.all(
+        levels.map(async level => {
+          const response = await fetch(`./data/lv${level}.json`);
+          if (!response.ok) {
+            console.warn(`Lv${level}の曲データを読み込めませんでした`);
+            return [];
+          }
+          return await response.json();
+        })
+      );
+
+      songs = results.flat();
+      renderLevelTabs();
+      renderSongs();
       updateProgress();
       applyFilter();
-      saveData();
-    });
-
-    clearTd.appendChild(lampSelect);
-
-    const memoTd = document.createElement("td");
-    const memo = document.createElement("textarea");
-    memo.className = "memo";
-    memo.dataset.id = songKey(song);
-    memo.placeholder = "例：鏡試す / ラスト注意";
-    memo.value = userData.memos[songKey(song)] || "";
-    memo.disabled = !currentUser;
-    memo.addEventListener("input", () => {
-      userData.memos[songKey(song)] = memo.value;
-      saveData();
-    });
-    memoTd.appendChild(memo);
-
-    setLampRowClass(tr, savedLamp);
-    tr.append(favoriteTd, chartTd, genreTd, titleTd, difficultyTd, clearTd, memoTd);
-    songBody.appendChild(tr);
-  });
-}
-
-function setInputsEnabled(enabled){
-  document.querySelectorAll('select.lamp[data-id]').forEach(sel => sel.disabled = !enabled);
-  document.querySelectorAll('textarea.memo').forEach(memo => memo.disabled = !enabled);
-}
-
-function resetVisibleData(){
-  userData = { lamps: {}, clears: {}, memos: {}, favorites: {} };
-  renderSongs();
-  updateProgress();
-  applyFilter();
-}
-
-function updateProgress(){
-  const levelSongs = getLevelSongs();
-  const total = levelSongs.length;
-  const clear = levelSongs.filter(song => {
-    const key = songKey(song);
-    const lamp = userData.lamps?.[key] || (userData.clears?.[key] ? "C" : "");
-    return isClearedLamp(lamp);
-  }).length;
-  const percent = total ? (clear / total * 100) : 0;
-
-  document.getElementById("progress").textContent =
-    `Lv${currentLevel} クリア率: ${clear}/${total}`;
-
-  document.getElementById("progressBar").style.width =
-    percent + "%";
-
-  document.getElementById("progressPercent").textContent =
-    percent.toFixed(1) + "%";
-}
-
-function applyFilter(){
-
-  const filter =
-    document.querySelector(
-      'input[name="clearFilter"]:checked'
-    ).value;
-
-  document.querySelectorAll('#songBody tr').forEach(tr => {
-
-    const sel =
-      tr.querySelector('select.lamp[data-id]');
-
-    const cleared =
-      isClearedLamp(sel.value);
-
-    const favoriteButton = tr.querySelector(".favorite-button");
-    const favorite = favoriteButton?.textContent === "★";
-
-    let visible = true;
-
-    if(filter === "uncleared"){
-      visible = !cleared;
     }
 
-    if(filter === "cleared"){
-      visible = cleared;
-    }
-
-    if(filter === "favorite"){
-      visible = favorite;
-    }
-
-    tr.style.display = visible ? "" : "none";
-
-  });
-}
-
-function collectData(){
-return {
-   lamps: userData.lamps || {},
-   clears: userData.clears || {},
-   memos: userData.memos || {},
-   favorites: userData.favorites || {},
-   updatedAt: serverTimestamp()
-};
-}
-
-function applyData(data){
-  isApplyingRemote = true;
-  userData = {
-    lamps: data?.lamps || {},
-    clears: data?.clears || {},
-    memos: data?.memos || {},
-    favorites: data?.favorites || {}
-  };
-  renderSongs();
-  updateProgress();
-  applyFilter();
-  isApplyingRemote = false;
-}
-
-async function saveData(){
-  if(isApplyingRemote || !currentUser || !docRef) return;
-  clearTimeout(saveTimer);
-  setStatus("保存中...");
-
-  saveTimer = setTimeout(async () => {
-    try {
-      await setDoc(docRef, collectData(), { merge: true });
-      setStatus("同期済み");
-    } catch(e) {
-      console.error(e);
-      setStatus("同期失敗：Firestoreルールを確認");
-    }
-  }, 350);
-}
-
-loginButton.addEventListener("click", async () => {
-  try {
-    await signInWithPopup(auth, provider);
-  } catch(e) {
-    console.error(e);
-    alert("ログインに失敗しました。FirebaseのAuthorized domainsやGoogleプロバイダ設定を確認してください。");
-  }
-});
-
-logoutButton.addEventListener("click", async () => {
-  await signOut(auth);
-});
-
-document.querySelectorAll('input[name="clearFilter"]').forEach(radio => {
-  radio.addEventListener("change", () => {
-    applyFilter();
-  });
-});
-
-document.getElementById("searchText").addEventListener("input", () => {
-  renderSongs();
-  updateProgress();
-  applyFilter();
-});
-
-document.querySelectorAll(".chartFilter").forEach(cb => {
-  cb.addEventListener("change", () => {
-    renderSongs();
-    updateProgress();
-    applyFilter();
-  });
-});
-
-document.getElementById("normalViewButton").addEventListener("click", () => {
-  document.body.classList.remove("simple-view");
-  localStorage.setItem("viewMode", "normal");
-});
-
-document.getElementById("simpleViewButton").addEventListener("click", () => {
-  document.body.classList.add("simple-view");
-  localStorage.setItem("viewMode", "simple");
-});
-
-document.getElementById("exportData").addEventListener("click", () => {
-  const data = {
-    exportedAt: new Date().toISOString(),
-    lamps: userData.lamps || {},
-    clears: userData.clears || {},
-    memos: userData.memos || {},
-    favorites: userData.favorites || {} 
-  };
-  const blob = new Blob([JSON.stringify(data, null, 2)], {type:"application/json"});
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement("a");
-  a.href = url;
-  a.download = "popn_clear_data.json";
-  a.click();
-  URL.revokeObjectURL(url);
-});
-
-document.getElementById("importButton").addEventListener("click", () => {
-  document.getElementById("importData").click();
-});
-
-document.getElementById("importData").addEventListener("change", event => {
-  const file = event.target.files[0];
-  if(!file) return;
-  const reader = new FileReader();
-  reader.onload = async () => {
-    try {
-      const data = JSON.parse(reader.result);
-      applyData(data);
-      await saveData();
-      alert("読み込み完了");
-    } catch(e) {
-      console.error(e);
-      alert("読み込みに失敗しました");
-    }
-  };
-  reader.readAsText(file);
-});
-
-async function loadSongs(){
-  const levels = ["40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50"];
-  const results = await Promise.all(
-    levels.map(async level => {
-      const response = await fetch(`./data/lv${level}.json`);
-      if(!response.ok){
-        console.warn(`Lv${level}の曲データを読み込めませんでした`);
-        return [];
+    onAuthStateChanged(auth, async user => {
+      if (unsubscribeSnapshot) {
+        unsubscribeSnapshot();
+        unsubscribeSnapshot = null;
       }
-      return await response.json();
-    })
-  );
 
-  songs = results.flat();
-  renderLevelTabs();
-  renderSongs();
-  updateProgress();
-  applyFilter();
-}
+      currentUser = user;
 
-onAuthStateChanged(auth, async user => {
-  if(unsubscribeSnapshot){
-    unsubscribeSnapshot();
-    unsubscribeSnapshot = null;
-  }
+      if (!user) {
+        loginButton.style.display = "";
+        logoutButton.style.display = "none";
+        userInfo.textContent = "未ログイン";
+        setStatus("Googleログインしてください");
+        docRef = null;
+        resetVisibleData();
+        setInputsEnabled(false);
+        return;
+      }
 
-  currentUser = user;
+      loginButton.style.display = "none";
+      logoutButton.style.display = "";
+      userInfo.textContent = "ログイン中";
+      setStatus("Firebase接続中...");
+      setInputsEnabled(true);
 
-  if(!user){
-    loginButton.style.display = "";
-    logoutButton.style.display = "none";
-    userInfo.textContent = "未ログイン";
-    setStatus("Googleログインしてください");
-    docRef = null;
-    resetVisibleData();
-    setInputsEnabled(false);
-    return;
-  }
+      docRef = doc(db, "users", user.uid, "popnClearData", "allLevels");
 
-  loginButton.style.display = "none";
-  logoutButton.style.display = "";
-  userInfo.textContent = "ログイン中";
-  setStatus("Firebase接続中...");
-  setInputsEnabled(true);
+      try {
+        const snap = await getDoc(docRef);
+        if (snap.exists()) {
+          applyData(snap.data());
+          setStatus("同期済み");
+        } else {
+          await setDoc(docRef, collectData(), { merge: true });
+          setStatus("初期データを作成しました");
+        }
 
-  docRef = doc(db, "users", user.uid, "popnClearData", "allLevels");
+        unsubscribeSnapshot = onSnapshot(docRef, snapshot => {
+          if (snapshot.exists()) {
+            applyData(snapshot.data());
+            setStatus("同期済み");
+          }
+        }, error => {
+          console.error(error);
+          setStatus("同期監視エラー：Firestoreルールを確認");
+        });
+      } catch (e) {
+        console.error(e);
+        setStatus("Firebase接続失敗：Firestoreルールを確認");
+      }
+    });
 
-  try {
-    const snap = await getDoc(docRef);
-    if(snap.exists()){
-      applyData(snap.data());
-      setStatus("同期済み");
-    } else {
-      await setDoc(docRef, collectData(), { merge: true });
-      setStatus("初期データを作成しました");
+    const savedViewMode = localStorage.getItem("viewMode");
+
+    if (savedViewMode === "simple") {
+      document.body.classList.add("simple-view");
     }
 
-    unsubscribeSnapshot = onSnapshot(docRef, snapshot => {
-      if(snapshot.exists()){
-        applyData(snapshot.data());
-        setStatus("同期済み");
-      }
-    }, error => {
-      console.error(error);
-      setStatus("同期監視エラー：Firestoreルールを確認");
-    });
-  } catch(e) {
-    console.error(e);
-    setStatus("Firebase接続失敗：Firestoreルールを確認");
-  }
-});
+    applySimpleNameColumn();
 
-const savedViewMode = localStorage.getItem("viewMode");
-
-if(savedViewMode === "simple"){
-  document.body.classList.add("simple-view");
-}
-
-loadSongs();
-</script>
+    loadSongs();
+  </script>
 </body>
+
 </html>
